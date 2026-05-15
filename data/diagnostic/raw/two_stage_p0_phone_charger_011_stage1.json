@@ -1,0 +1,23 @@
+{
+  "row_id": "twostage_p0_phone_charger_011_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 11,
+  "timestamp": "2026-05-14T12:14:50.274663+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20271524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_prime_100w\",\n  \"shortlist\": [\"charger_apple_35w_duo\", \"charger_samsung_45w\"],\n  \"selection_rationale\": \"Balances power, quality, and brand recognition for desk use.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_prime_100w",
+    "shortlist": [
+      "charger_apple_35w_duo",
+      "charger_samsung_45w"
+    ],
+    "selection_rationale": "Balances power, quality, and brand recognition for desk use."
+  },
+  "parse_success": true,
+  "latency_ms": 19437
+}

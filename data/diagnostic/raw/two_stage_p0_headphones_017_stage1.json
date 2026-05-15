@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_headphones_017_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 17,
+  "timestamp": "2026-05-14T11:30:53.308437+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20277524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_sony_ult_wear\",\n  \"shortlist\": [\"headphones_sony_ult_wear\", \"headphones_jbl_tune770nc\", \"headphones_edifier_stax\"],\n  \"selection_rationale\": \"Balances price and quality well; known brand with good reviews.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_sony_ult_wear",
+    "shortlist": [
+      "headphones_sony_ult_wear",
+      "headphones_jbl_tune770nc",
+      "headphones_edifier_stax"
+    ],
+    "selection_rationale": "Balances price and quality well; known brand with good reviews."
+  },
+  "parse_success": true,
+  "latency_ms": 25384
+}

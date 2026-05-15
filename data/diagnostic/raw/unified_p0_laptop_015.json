@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_015",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 15,
+  "timestamp": "2026-05-14T11:55:34.237500+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20275514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_asus_zenbook_14\",\n  \"shortlist\": [\"laptop_asus_zenbook_14\", \"laptop_hp_elitebook_845\", \"laptop_dell_xps_14\"],\n  \"recommendation_text\": \"The ASUS ZenBook 14 offers excellent value for budget-conscious buyers, delivering a high-quality OLED display and lightweight design under $900. Despite its less powerful processor compared to competitors, it excels in everyday office tasks like document editing and web browsing. The 512GB SSD ensures ample storage space, while the Windows 11 Home OS provides universal software compatibility.\",\n  \"selection_rationale\": \"Balances budget constraints with quality display and performance.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_asus_zenbook_14",
+    "shortlist": [
+      "laptop_asus_zenbook_14",
+      "laptop_hp_elitebook_845",
+      "laptop_dell_xps_14"
+    ],
+    "recommendation_text": "The ASUS ZenBook 14 offers excellent value for budget-conscious buyers, delivering a high-quality OLED display and lightweight design under $900. Despite its less powerful processor compared to competitors, it excels in everyday office tasks like document editing and web browsing. The 512GB SSD ensures ample storage space, while the Windows 11 Home OS provides universal software compatibility.",
+    "selection_rationale": "Balances budget constraints with quality display and performance."
+  },
+  "parse_success": true,
+  "latency_ms": 39768
+}

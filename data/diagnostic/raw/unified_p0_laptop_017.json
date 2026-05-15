@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_017",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 17,
+  "timestamp": "2026-05-14T11:58:29.361986+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20277514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_macbook_pro_m4\",\n  \"shortlist\": [\"laptop_macbook_air_m4\", \"laptop_thinkpad_x1_carbon\", \"laptop_hp_elitebook_845\"],\n  \"recommendation_text\": \"For data analysis, the MacBook Pro M4 is an excellent choice. It boasts a powerful Apple M4 Pro processor with 24GB RAM and a stunning mini-LED XDR display for visualizing complex datasets. The laptop's exceptional battery life of 17 hours ensures uninterrupted work sessions, while its macOS operating system offers robust security features and seamless integration with Apple\u2019s ecosystem. Although the base storage is limited to 512GB, it can be expanded via external drives or cloud services. Despite a higher price point, the MacBook Pro M4 delivers unparalleled performance-per-watt, making it ideal for demanding data analysis tasks.\",\n  \"selection_rationale\": \"Best processor and RAM for heavy workloads; excellent battery life; macOS ecosystem integration.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_macbook_pro_m4",
+    "shortlist": [
+      "laptop_macbook_air_m4",
+      "laptop_thinkpad_x1_carbon",
+      "laptop_hp_elitebook_845"
+    ],
+    "recommendation_text": "For data analysis, the MacBook Pro M4 is an excellent choice. It boasts a powerful Apple M4 Pro processor with 24GB RAM and a stunning mini-LED XDR display for visualizing complex datasets. The laptop's exceptional battery life of 17 hours ensures uninterrupted work sessions, while its macOS operating system offers robust security features and seamless integration with Apple\u2019s ecosystem. Although the base storage is limited to 512GB, it can be expanded via external drives or cloud services. Despite a higher price point, the MacBook Pro M4 delivers unparalleled performance-per-watt, making it ideal for demanding data analysis tasks.",
+    "selection_rationale": "Best processor and RAM for heavy workloads; excellent battery life; macOS ecosystem integration."
+  },
+  "parse_success": true,
+  "latency_ms": 45313
+}

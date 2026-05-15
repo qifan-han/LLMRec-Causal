@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_014",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 14,
+  "timestamp": "2026-05-14T12:17:37.919148+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20274514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_prime_100w\",\n  \"shortlist\": [\"charger_anker_prime_100w\", \"charger_baseus_65w\", \"charger_voltix_65w\"],\n  \"recommendation_text\": \"For an office desk setup, the Anker Prime 100W charger stands out due to its high wattage and compact form factor. It can charge multiple devices simultaneously, making it ideal for a busy workspace. Despite being slightly heavier than alternatives, its build quality is excellent and it supports PPS for fast charging. The inclusion of GaN technology ensures efficient power delivery without compromising on size. While the price is higher, the premium features justify the cost for those who value performance over budget constraints.\",\n  \"selection_rationale\": \"Offers best balance of wattage, form factor, and brand recognition.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_prime_100w",
+    "shortlist": [
+      "charger_anker_prime_100w",
+      "charger_baseus_65w",
+      "charger_voltix_65w"
+    ],
+    "recommendation_text": "For an office desk setup, the Anker Prime 100W charger stands out due to its high wattage and compact form factor. It can charge multiple devices simultaneously, making it ideal for a busy workspace. Despite being slightly heavier than alternatives, its build quality is excellent and it supports PPS for fast charging. The inclusion of GaN technology ensures efficient power delivery without compromising on size. While the price is higher, the premium features justify the cost for those who value performance over budget constraints.",
+    "selection_rationale": "Offers best balance of wattage, form factor, and brand recognition."
+  },
+  "parse_success": true,
+  "latency_ms": 32138
+}

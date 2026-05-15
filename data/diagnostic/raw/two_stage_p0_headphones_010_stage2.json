@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_010_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 10,
+  "timestamp": "2026-05-14T11:22:31.914356+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20270525,
+  "stage": "writer",
+  "raw_response": "Given your high quality sensitivity and brand familiarity with Sony, the Sony WH-1000XM5 headphones are an excellent choice for commuting. They offer industry-leading noise cancellation and a comfortable lightweight design, ensuring you can enjoy clear sound even in noisy environments. With a battery life of 30 hours, these headphones will last through long commutes without needing a recharge. Although they are slightly above your budget at $348, their premium features make them worth the investment for someone who prioritizes quality over cost.",
+  "parsed": {
+    "recommendation_text": "Given your high quality sensitivity and brand familiarity with Sony, the Sony WH-1000XM5 headphones are an excellent choice for commuting. They offer industry-leading noise cancellation and a comfortable lightweight design, ensuring you can enjoy clear sound even in noisy environments. With a battery life of 30 hours, these headphones will last through long commutes without needing a recharge. Although they are slightly above your budget at $348, their premium features make them worth the investment for someone who prioritizes quality over cost."
+  },
+  "parse_success": true,
+  "latency_ms": 13257
+}

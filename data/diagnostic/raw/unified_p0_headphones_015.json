@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_headphones_015",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 15,
+  "timestamp": "2026-05-14T11:28:01.751856+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20275514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_sony_wh1000xm5\",\n  \"shortlist\": [\"headphones_sony_ult_wear\", \"headphones_bose_qc_ultra\", \"headphones_apple_airpods_max\"],\n  \"recommendation_text\": \"For office work, the Sony WH-1000XM5 offers top-tier noise cancellation and sound quality at a premium price. Its lightweight build ensures comfort during long hours of use, making it ideal for an office setting. While its non-foldable design is less travel-friendly, the XM5's superior audio performance and noise isolation make it stand out in this category.\",\n  \"selection_rationale\": \"Best noise cancellation and sound quality; comfortable for extended wear.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_sony_wh1000xm5",
+    "shortlist": [
+      "headphones_sony_ult_wear",
+      "headphones_bose_qc_ultra",
+      "headphones_apple_airpods_max"
+    ],
+    "recommendation_text": "For office work, the Sony WH-1000XM5 offers top-tier noise cancellation and sound quality at a premium price. Its lightweight build ensures comfort during long hours of use, making it ideal for an office setting. While its non-foldable design is less travel-friendly, the XM5's superior audio performance and noise isolation make it stand out in this category.",
+    "selection_rationale": "Best noise cancellation and sound quality; comfortable for extended wear."
+  },
+  "parse_success": true,
+  "latency_ms": 34580
+}

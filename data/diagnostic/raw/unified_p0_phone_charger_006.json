@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_006",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 6,
+  "timestamp": "2026-05-14T12:09:08.460360+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20266514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_nano_67w\",\n  \"shortlist\": [\"charger_anker_nano_67w\", \"charger_samsung_45w\", \"charger_belkin_25w\"],\n  \"recommendation_text\": \"For travel, the Anker Nano 67W charger is highly recommended. It offers fast charging and a compact form factor ideal for on-the-go use. Despite warming up under full load, its GaN technology ensures efficiency and portability. The included PPS support enhances compatibility with various devices. While it's slightly pricey, its quality justifies the cost, making it a reliable choice for frequent travelers.\",\n  \"selection_rationale\": \"Balances price, quality, brand recognition, and travel suitability.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_nano_67w",
+    "shortlist": [
+      "charger_anker_nano_67w",
+      "charger_samsung_45w",
+      "charger_belkin_25w"
+    ],
+    "recommendation_text": "For travel, the Anker Nano 67W charger is highly recommended. It offers fast charging and a compact form factor ideal for on-the-go use. Despite warming up under full load, its GaN technology ensures efficiency and portability. The included PPS support enhances compatibility with various devices. While it's slightly pricey, its quality justifies the cost, making it a reliable choice for frequent travelers.",
+    "selection_rationale": "Balances price, quality, brand recognition, and travel suitability."
+  },
+  "parse_success": true,
+  "latency_ms": 30141
+}

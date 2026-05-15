@@ -1,0 +1,1382 @@
+[
+  {
+    "persona_id": "headphones_001",
+    "category": "headphones",
+    "age_range": "35-44",
+    "purchase_context": "Their child's cheap headphones broke right before a long road trip.",
+    "budget": "$20-$50",
+    "technical_knowledge": "low",
+    "primary_use_case": "Kid entertainment during travel",
+    "secondary_use_case": "Occasional tablet use at home",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "durable build",
+      "volume limiting"
+    ],
+    "features_to_avoid": [
+      "complex controls"
+    ],
+    "prior_experience": "Has bought several low-cost kids headphones that broke quickly",
+    "one_paragraph_description": "A parent focused on keeping their child entertained and safe during long trips. They want something affordable but sturdier than past purchases, with built-in volume limits to protect hearing. They are wary of wasting money again on flimsy products."
+  },
+  {
+    "persona_id": "headphones_002",
+    "category": "headphones",
+    "age_range": "25-34",
+    "purchase_context": "Needs a last-minute birthday gift for a partner who listens to music daily.",
+    "budget": "$80-$150",
+    "technical_knowledge": "high",
+    "primary_use_case": "Gift for casual music listening",
+    "secondary_use_case": "Phone calls",
+    "brand_preference": "prefers recognizable brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "good packaging",
+      "wireless connectivity"
+    ],
+    "features_to_avoid": [
+      "overly niche audiophile features"
+    ],
+    "prior_experience": "Has owned basic wireless earbuds but not deeply researched audio gear",
+    "one_paragraph_description": "A busy professional picking out a thoughtful but safe gift. They want something that looks premium and works reliably without needing deep research. Brand familiarity and presentation matter almost as much as sound quality."
+  },
+  {
+    "persona_id": "headphones_003",
+    "category": "headphones",
+    "age_range": "45-54",
+    "purchase_context": "Replacing old wired headphones that stopped working with their TV setup.",
+    "budget": "$60-$120",
+    "technical_knowledge": "low",
+    "primary_use_case": "Watching TV at night without disturbing others",
+    "secondary_use_case": "None",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "comfortable for long wear",
+      "easy TV connectivity"
+    ],
+    "features_to_avoid": [
+      "complicated pairing processes"
+    ],
+    "prior_experience": "Used simple wired over-ear headphones for years",
+    "one_paragraph_description": "A home user who values simplicity and comfort over cutting-edge features. They want something easy to set up with their television and comfortable for extended viewing sessions. They are cautious about anything that seems overly technical."
+  },
+  {
+    "persona_id": "headphones_004",
+    "category": "headphones",
+    "age_range": "18-24",
+    "purchase_context": "Starting college and needs headphones for studying in shared spaces.",
+    "budget": "$50-$100",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Studying in noisy environments",
+    "secondary_use_case": "Casual music listening",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "noise isolation",
+      "portable design"
+    ],
+    "features_to_avoid": [
+      "bulky form factor"
+    ],
+    "prior_experience": "Previously used cheap earbuds that lacked noise control",
+    "one_paragraph_description": "A student trying to stay focused in dorms and libraries. They want effective noise reduction without spending too much, and something easy to carry in a backpack. They're balancing tight finances with the need for better concentration."
+  },
+  {
+    "persona_id": "headphones_005",
+    "category": "headphones",
+    "age_range": "65+",
+    "purchase_context": "Looking for headphones to better hear audio during video calls with family.",
+    "budget": "$40-$90",
+    "technical_knowledge": "low",
+    "primary_use_case": "Video calls",
+    "secondary_use_case": "Watching online videos",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "clear voice audio",
+      "simple controls"
+    ],
+    "features_to_avoid": [
+      "tiny buttons"
+    ],
+    "prior_experience": "Limited experience with modern wireless devices",
+    "one_paragraph_description": "An older adult focused on staying connected with family. They prioritize clarity and ease of use, and may struggle with small controls or complex setup. Reliability and comfort matter more than style or advanced features."
+  },
+  {
+    "persona_id": "headphones_006",
+    "category": "headphones",
+    "age_range": "35-44",
+    "purchase_context": "Outfitting a small office with headphones for employees to take calls.",
+    "budget": "$30-$70",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Office call handling",
+    "secondary_use_case": "Occasional music",
+    "brand_preference": "prefers business-oriented brands",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "built-in microphone",
+      "durability"
+    ],
+    "features_to_avoid": [
+      "flashy aesthetics"
+    ],
+    "prior_experience": "Has purchased bulk office equipment before",
+    "one_paragraph_description": "An office manager balancing cost and functionality for multiple employees. They need dependable, no-frills headsets that can handle daily use and basic communication needs. Consistency and value matter more than premium features."
+  },
+  {
+    "persona_id": "headphones_007",
+    "category": "headphones",
+    "age_range": "25-34",
+    "purchase_context": "Training for a marathon and needs secure headphones for daily runs.",
+    "budget": "$70-$160",
+    "technical_knowledge": "high",
+    "primary_use_case": "Running and workouts",
+    "secondary_use_case": "Podcasts during commutes",
+    "brand_preference": "leans toward fitness brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "sweat resistance",
+      "secure fit"
+    ],
+    "features_to_avoid": [
+      "heavy over-ear designs"
+    ],
+    "prior_experience": "Has used earbuds that frequently fell out during exercise",
+    "one_paragraph_description": "An active user who needs reliable audio gear that stays in place during intense workouts. They\u2019re willing to spend more for comfort and durability but want proof it will hold up under sweat and motion. Past frustrations with fit make them cautious."
+  },
+  {
+    "persona_id": "headphones_008",
+    "category": "headphones",
+    "age_range": "55-64",
+    "purchase_context": "Taking frequent flights and wants a more comfortable travel experience.",
+    "budget": "$150-$300",
+    "technical_knowledge": "low",
+    "primary_use_case": "Air travel comfort",
+    "secondary_use_case": "Hotel TV listening",
+    "brand_preference": "recognizes major brands",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "active noise cancellation",
+      "long battery life"
+    ],
+    "features_to_avoid": [
+      "poor padding"
+    ],
+    "prior_experience": "Has used airline-provided headphones but found them uncomfortable",
+    "one_paragraph_description": "A frequent traveler prioritizing comfort and quiet during flights. They are willing to invest in a premium product but want it to be straightforward and reliable. Comfort over long periods is their main concern."
+  },
+  {
+    "persona_id": "headphones_009",
+    "category": "headphones",
+    "age_range": "18-24",
+    "purchase_context": "Buying their first personal headphones after relying on shared devices.",
+    "budget": "$25-$60",
+    "technical_knowledge": "low",
+    "primary_use_case": "Everyday phone use",
+    "secondary_use_case": "Streaming videos",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "low",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "easy Bluetooth pairing",
+      "affordable price"
+    ],
+    "features_to_avoid": [
+      "premium add-ons that increase cost"
+    ],
+    "prior_experience": "Little to no ownership of personal audio gear",
+    "one_paragraph_description": "A first-time buyer looking for something simple and affordable. They care more about convenience and price than audio fidelity, and want a hassle-free experience. This purchase is about independence and everyday practicality."
+  },
+  {
+    "persona_id": "headphones_010",
+    "category": "headphones",
+    "age_range": "45-54",
+    "purchase_context": "Needs headphones for late-night gaming without disturbing family.",
+    "budget": "$90-$180",
+    "technical_knowledge": "high",
+    "primary_use_case": "Console gaming",
+    "secondary_use_case": "Voice chat",
+    "brand_preference": "avoids unknown brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "low audio latency",
+      "clear microphone"
+    ],
+    "features_to_avoid": [
+      "short battery life"
+    ],
+    "prior_experience": "Previously used TV speakers and basic earbuds",
+    "one_paragraph_description": "A casual gamer who wants an immersive but practical setup for evening play. They need reliable audio performance and clear communication without diving into complex gear. Balancing performance with ease of use is key."
+  },
+  {
+    "persona_id": "headphones_011",
+    "category": "headphones",
+    "age_range": "35-44",
+    "purchase_context": "Needs a durable pair for a 10-year-old after the previous headphones snapped.",
+    "budget": "$30-$60",
+    "technical_knowledge": "low",
+    "primary_use_case": "Child's online classes and tablet use",
+    "secondary_use_case": "Travel entertainment",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "durable build",
+      "volume limiting"
+    ],
+    "features_to_avoid": [
+      "complicated controls"
+    ],
+    "prior_experience": "Has bought multiple low-cost kids headphones that broke quickly",
+    "one_paragraph_description": "A parent focused on practicality, they want something that will survive daily wear and tear without being too expensive. Safety features like volume limiting matter, but they also don\u2019t want to replace them every few months. They are wary of gimmicks and prefer simple, sturdy designs."
+  },
+  {
+    "persona_id": "headphones_012",
+    "category": "headphones",
+    "age_range": "25-34",
+    "purchase_context": "Buying a last-minute birthday gift for a partner who commutes daily.",
+    "budget": "$100-$180",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Commuting on public transit",
+    "secondary_use_case": "Casual music listening at home",
+    "brand_preference": "Sony",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "noise cancellation",
+      "comfortable fit"
+    ],
+    "features_to_avoid": [
+      "cheap plastic feel"
+    ],
+    "prior_experience": "Owns basic earbuds but hasn\u2019t bought premium headphones before",
+    "one_paragraph_description": "This buyer wants a gift that feels thoughtful and useful without needing deep research. They\u2019ve heard good things about noise cancellation and want something reliable for daily commuting. They lean toward recognizable brands to reduce the risk of disappointment."
+  },
+  {
+    "persona_id": "headphones_013",
+    "category": "headphones",
+    "age_range": "55-64",
+    "purchase_context": "Looking for a first pair of wireless headphones after getting a new smartphone.",
+    "budget": "$50-$120",
+    "technical_knowledge": "low",
+    "primary_use_case": "Listening to audiobooks and podcasts",
+    "secondary_use_case": "Phone calls",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "easy Bluetooth pairing",
+      "long battery life"
+    ],
+    "features_to_avoid": [
+      "touch-only controls"
+    ],
+    "prior_experience": "Used wired headphones for years",
+    "one_paragraph_description": "A first-time wireless user who values simplicity over cutting-edge features. They want something intuitive to operate without fiddling with apps or gestures. Reliability and ease of use matter more than sound nuance."
+  },
+  {
+    "persona_id": "headphones_014",
+    "category": "headphones",
+    "age_range": "18-24",
+    "purchase_context": "Replacing lost earbuds before returning to campus.",
+    "budget": "$20-$50",
+    "technical_knowledge": "high",
+    "primary_use_case": "Casual music listening between classes",
+    "secondary_use_case": "Watching videos on phone",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "low",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "wireless convenience",
+      "compact case"
+    ],
+    "features_to_avoid": [
+      "bulky designs"
+    ],
+    "prior_experience": "Frequently buys budget wireless earbuds and replaces them often",
+    "one_paragraph_description": "A student who prioritizes convenience and price over longevity. Losing or damaging earbuds is common, so they don\u2019t want to invest much. They care more about portability and quick replacement than premium sound."
+  },
+  {
+    "persona_id": "headphones_015",
+    "category": "headphones",
+    "age_range": "45-54",
+    "purchase_context": "Outfitting a small office with shared headphones for virtual meetings.",
+    "budget": "$40-$90",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Office video calls",
+    "secondary_use_case": "Occasional training videos",
+    "brand_preference": "Logitech",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "built-in microphone",
+      "durability for shared use"
+    ],
+    "features_to_avoid": [
+      "wireless-only models"
+    ],
+    "prior_experience": "Has purchased office peripherals in bulk before",
+    "one_paragraph_description": "An office manager balancing cost and reliability across multiple employees. They prefer straightforward, wired solutions that minimize troubleshooting. Consistency and durability matter more than individual comfort or premium features."
+  },
+  {
+    "persona_id": "headphones_016",
+    "category": "headphones",
+    "age_range": "65+",
+    "purchase_context": "Needs headphones that work well with a TV for late-night viewing.",
+    "budget": "$70-$150",
+    "technical_knowledge": "low",
+    "primary_use_case": "Watching television without disturbing others",
+    "secondary_use_case": "None",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "comfortable over-ear design",
+      "simple setup with TV"
+    ],
+    "features_to_avoid": [
+      "tiny earbuds"
+    ],
+    "prior_experience": "Has struggled with poorly fitting earbuds before",
+    "one_paragraph_description": "An older buyer prioritizing comfort and clarity, especially for dialogue-heavy shows. They want something easy to set up with minimal ongoing adjustments. Physical comfort over long sessions is just as important as sound quality."
+  },
+  {
+    "persona_id": "headphones_017",
+    "category": "headphones",
+    "age_range": "25-34",
+    "purchase_context": "Training for a marathon and needs reliable workout headphones.",
+    "budget": "$80-$160",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Running and workouts",
+    "secondary_use_case": "Commuting",
+    "brand_preference": "Jabra",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "sweat resistance",
+      "secure fit"
+    ],
+    "features_to_avoid": [
+      "loose-fitting earbuds"
+    ],
+    "prior_experience": "Had earbuds fall out during runs",
+    "one_paragraph_description": "A fitness-focused buyer who needs headphones that stay put during intense movement. Durability against sweat and weather is critical. They\u2019re willing to spend more if it solves recurring frustrations."
+  },
+  {
+    "persona_id": "headphones_018",
+    "category": "headphones",
+    "age_range": "35-44",
+    "purchase_context": "Upgrading after years of using airline-provided headphones during frequent travel.",
+    "budget": "$200-$350",
+    "technical_knowledge": "high",
+    "primary_use_case": "Frequent air travel",
+    "secondary_use_case": "Work calls on laptop",
+    "brand_preference": "Bose",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "strong noise cancellation",
+      "long battery life"
+    ],
+    "features_to_avoid": [
+      "short battery life"
+    ],
+    "prior_experience": "Has used basic or borrowed headphones during flights",
+    "one_paragraph_description": "A frequent traveler ready to invest in comfort and quiet during long flights. They value proven performance and brand reputation over experimentation. The purchase is driven by accumulated frustration with subpar travel audio."
+  },
+  {
+    "persona_id": "headphones_019",
+    "category": "headphones",
+    "age_range": "45-54",
+    "purchase_context": "Needs a replacement after their old wired headphones stopped working.",
+    "budget": "$60-$110",
+    "technical_knowledge": "low",
+    "primary_use_case": "Listening to music at home",
+    "secondary_use_case": "Occasional phone calls",
+    "brand_preference": "avoids unknown brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "wired option",
+      "clear sound"
+    ],
+    "features_to_avoid": [
+      "complex apps"
+    ],
+    "prior_experience": "Used the same pair for many years",
+    "one_paragraph_description": "A practical buyer who prefers familiar, no-frills products. They are hesitant about fully wireless setups and prefer something dependable with minimal learning curve. Longevity and straightforward use are key concerns."
+  },
+  {
+    "persona_id": "headphones_020",
+    "category": "headphones",
+    "age_range": "18-24",
+    "purchase_context": "Buying headphones for shared dorm living to block out noise.",
+    "budget": "$90-$170",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Studying in noisy environments",
+    "secondary_use_case": "Gaming",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "noise isolation",
+      "comfortable for long sessions"
+    ],
+    "features_to_avoid": [
+      "heavy clamping force"
+    ],
+    "prior_experience": "Used cheap earbuds that didn\u2019t block noise effectively",
+    "one_paragraph_description": "A student dealing with constant background noise who needs a more immersive listening experience. Comfort over long study sessions is just as important as sound isolation. They\u2019re willing to spend a bit more to improve focus and reduce distractions."
+  },
+  {
+    "persona_id": "headphones_021",
+    "category": "headphones",
+    "age_range": "35-44",
+    "purchase_context": "Needs a durable pair after their child broke the previous headphones during a flight.",
+    "budget": "$30-$70",
+    "technical_knowledge": "low",
+    "primary_use_case": "Child entertainment during travel",
+    "secondary_use_case": "Occasional tablet use at home",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "volume limiting",
+      "durable build"
+    ],
+    "features_to_avoid": [
+      "complex controls"
+    ],
+    "prior_experience": "Has bought inexpensive kids headphones before that broke quickly",
+    "one_paragraph_description": "A parent of a young child who frequently travels and needs something that can survive rough handling. They prioritize safety features like volume limiting and want something simple enough for a child to use independently. They are cautious about spending too much after previous breakage."
+  },
+  {
+    "persona_id": "headphones_022",
+    "category": "headphones",
+    "age_range": "55-64",
+    "purchase_context": "Looking for a comfortable way to listen to TV audio without disturbing their spouse.",
+    "budget": "$80-$150",
+    "technical_knowledge": "low",
+    "primary_use_case": "Wireless TV listening",
+    "secondary_use_case": "Phone calls occasionally",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "easy setup",
+      "comfortable fit for long use"
+    ],
+    "features_to_avoid": [
+      "tiny earbuds"
+    ],
+    "prior_experience": "Mostly used wired headphones years ago",
+    "one_paragraph_description": "An older adult who wants a straightforward solution for watching TV at higher volumes without bothering others. They value comfort and simplicity over cutting-edge features and may need clear instructions to get started. Reliability and ease of use matter more than brand prestige."
+  },
+  {
+    "persona_id": "headphones_023",
+    "category": "headphones",
+    "age_range": "25-34",
+    "purchase_context": "Buying a last-minute birthday gift for a partner who listens to music daily.",
+    "budget": "$150-$250",
+    "technical_knowledge": "high",
+    "primary_use_case": "Gift for daily music listening",
+    "secondary_use_case": "Work calls",
+    "brand_preference": "Sony",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "good sound quality",
+      "active noise cancellation"
+    ],
+    "features_to_avoid": [
+      "cheap plastic feel"
+    ],
+    "prior_experience": "Has owned mid-range earbuds personally",
+    "one_paragraph_description": "A gift buyer trying to balance impressiveness with practicality. They want something recognizable and high-quality but aren\u2019t deeply knowledgeable about specs. Reviews and brand reputation play a big role in narrowing down options quickly."
+  },
+  {
+    "persona_id": "headphones_024",
+    "category": "headphones",
+    "age_range": "18-24",
+    "purchase_context": "Replacing lost earbuds before returning to college campus.",
+    "budget": "$40-$90",
+    "technical_knowledge": "high",
+    "primary_use_case": "Listening to music while walking around campus",
+    "secondary_use_case": "Casual gaming",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "wireless connectivity",
+      "portable case"
+    ],
+    "features_to_avoid": [
+      "bulky over-ear design"
+    ],
+    "prior_experience": "Previously owned budget wireless earbuds",
+    "one_paragraph_description": "A student who needs a quick, affordable replacement after losing their last pair. They care about portability and decent sound but are willing to compromise on premium features. Convenience and price matter more than long-term durability."
+  },
+  {
+    "persona_id": "headphones_025",
+    "category": "headphones",
+    "age_range": "45-54",
+    "purchase_context": "Outfitting a small office with shared headphones for virtual meetings.",
+    "budget": "$20-$50",
+    "technical_knowledge": "low",
+    "primary_use_case": "Office video calls",
+    "secondary_use_case": "Training videos",
+    "brand_preference": "avoids unknown brands",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "built-in microphone",
+      "easy cleaning"
+    ],
+    "features_to_avoid": [
+      "wireless models that need charging"
+    ],
+    "prior_experience": "Has purchased basic office equipment in bulk",
+    "one_paragraph_description": "An office manager responsible for equipping staff with reliable but inexpensive tools. They prioritize consistency, ease of maintenance, and minimal troubleshooting. Bulk purchasing and dependable brands are more important than advanced features."
+  },
+  {
+    "persona_id": "headphones_026",
+    "category": "headphones",
+    "age_range": "65+",
+    "purchase_context": "Trying headphones for the first time to listen to audiobooks on a tablet.",
+    "budget": "$25-$60",
+    "technical_knowledge": "low",
+    "primary_use_case": "Audiobook listening at home",
+    "secondary_use_case": "Phone calls",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "low",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "simple controls",
+      "clear voice audio"
+    ],
+    "features_to_avoid": [
+      "touch-sensitive controls"
+    ],
+    "prior_experience": "No prior headphone ownership",
+    "one_paragraph_description": "An elderly first-time buyer who wants a simple way to enjoy audiobooks without disturbing others. They need intuitive controls and clear sound rather than advanced features. Complexity or confusing interfaces could easily discourage continued use."
+  },
+  {
+    "persona_id": "headphones_027",
+    "category": "headphones",
+    "age_range": "25-34",
+    "purchase_context": "Replacing gym headphones that stopped holding a charge.",
+    "budget": "$70-$140",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Workouts and running",
+    "secondary_use_case": "Commuting",
+    "brand_preference": "JBL",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "sweat resistance",
+      "secure fit"
+    ],
+    "features_to_avoid": [
+      "loose-fitting earbuds"
+    ],
+    "prior_experience": "Used sports earbuds regularly",
+    "one_paragraph_description": "A fitness-focused buyer who needs headphones that can keep up with intense workouts. They\u2019ve experienced battery degradation before and want something more reliable. Comfort during movement is just as important as sound quality."
+  },
+  {
+    "persona_id": "headphones_028",
+    "category": "headphones",
+    "age_range": "35-44",
+    "purchase_context": "Seeking noise-blocking headphones to focus while working from a busy home.",
+    "budget": "$200-$350",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Remote work focus",
+    "secondary_use_case": "Occasional travel",
+    "brand_preference": "Bose",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "strong noise cancellation",
+      "long battery life"
+    ],
+    "features_to_avoid": [
+      "poor microphone quality"
+    ],
+    "prior_experience": "Previously owned mid-tier wired headphones",
+    "one_paragraph_description": "A remote worker dealing with household noise and distractions throughout the day. They\u2019re willing to invest in premium features if it significantly improves concentration and call clarity. Comfort over long work sessions is a key consideration."
+  },
+  {
+    "persona_id": "headphones_029",
+    "category": "headphones",
+    "age_range": "18-24",
+    "purchase_context": "Buying their first pair of headphones for online classes and shared living spaces.",
+    "budget": "$25-$80",
+    "technical_knowledge": "low",
+    "primary_use_case": "Online classes and lectures",
+    "secondary_use_case": "Music streaming",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "clear microphone",
+      "affordable price"
+    ],
+    "features_to_avoid": [
+      "complicated setup"
+    ],
+    "prior_experience": "Has only used phone speakers or borrowed headphones",
+    "one_paragraph_description": "A first-time buyer who needs an affordable and functional solution for schoolwork. They prioritize clear audio and a working microphone for virtual classes but don\u2019t want to overspend. Ease of use is essential since they lack experience with audio gear."
+  },
+  {
+    "persona_id": "headphones_030",
+    "category": "headphones",
+    "age_range": "45-54",
+    "purchase_context": "Upgrading after years of using cheap earbuds that frequently fail.",
+    "budget": "$100-$180",
+    "technical_knowledge": "low",
+    "primary_use_case": "Daily commuting on public transit",
+    "secondary_use_case": "Podcasts at home",
+    "brand_preference": "avoids unknown brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "durability",
+      "good battery life"
+    ],
+    "features_to_avoid": [
+      "fragile cables"
+    ],
+    "prior_experience": "Repeatedly bought low-cost earbuds that broke",
+    "one_paragraph_description": "A commuter frustrated with constantly replacing cheap headphones and ready to invest in something more reliable. They want a noticeable step up in durability and convenience without diving into overly complex features. Brand trust and proven longevity matter a lot."
+  },
+  {
+    "persona_id": "headphones_031",
+    "category": "headphones",
+    "age_range": "35-44",
+    "purchase_context": "Her 9-year-old keeps breaking cheap headphones during online classes, so she wants a sturdier replacement.",
+    "budget": "$30-$70",
+    "technical_knowledge": "low",
+    "primary_use_case": "Child's remote learning and schoolwork",
+    "secondary_use_case": "Watching cartoons",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "durable build",
+      "volume limiting"
+    ],
+    "features_to_avoid": [
+      "complex controls"
+    ],
+    "prior_experience": "Has bought several low-cost kids headphones that broke within months",
+    "one_paragraph_description": "A busy parent juggling work and childcare, she prioritizes durability and safety over sound quality. She is tired of replacing flimsy headphones and wants something that will last at least a school year. She doesn\u2019t follow brands and prefers something simple and reliable."
+  },
+  {
+    "persona_id": "headphones_032",
+    "category": "headphones",
+    "age_range": "55-64",
+    "purchase_context": "He wants headphones to better hear TV dialogue without increasing volume for others.",
+    "budget": "$80-$150",
+    "technical_knowledge": "low",
+    "primary_use_case": "Watching television with enhanced clarity",
+    "secondary_use_case": "Listening to radio programs",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "comfortable fit",
+      "easy connectivity to TV"
+    ],
+    "features_to_avoid": [
+      "tiny buttons"
+    ],
+    "prior_experience": "Has only used basic wired earbuds occasionally",
+    "one_paragraph_description": "Recently retired, he values comfort and simplicity over cutting-edge features. He struggles with small controls and wants something easy to set up with his television. He is willing to spend a bit more if it clearly improves speech clarity."
+  },
+  {
+    "persona_id": "headphones_033",
+    "category": "headphones",
+    "age_range": "25-34",
+    "purchase_context": "Her current earbuds stopped working right before a long international flight.",
+    "budget": "$150-$300",
+    "technical_knowledge": "high",
+    "primary_use_case": "Air travel and long-haul flights",
+    "secondary_use_case": "Occasional work calls",
+    "brand_preference": "Bose or Sony",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "strong noise cancellation",
+      "long battery life"
+    ],
+    "features_to_avoid": [
+      "bulky design"
+    ],
+    "prior_experience": "Previously owned mid-range wireless earbuds",
+    "one_paragraph_description": "A frequent traveler who values peace and quiet on flights, she sees this purchase as urgent and important. She has some awareness of premium brands but isn\u2019t deeply technical. Comfort and effective noise cancellation matter more than niche features."
+  },
+  {
+    "persona_id": "headphones_034",
+    "category": "headphones",
+    "age_range": "18-24",
+    "purchase_context": "He wants a pair of headphones as a birthday gift for his girlfriend.",
+    "budget": "$50-$120",
+    "technical_knowledge": "low",
+    "primary_use_case": "Gift giving",
+    "secondary_use_case": "Casual music listening (recipient)",
+    "brand_preference": "Apple or trendy brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "stylish design",
+      "good packaging"
+    ],
+    "features_to_avoid": [
+      "complicated setup"
+    ],
+    "prior_experience": "Has bought inexpensive earbuds for himself",
+    "one_paragraph_description": "A college student focused on finding something that looks good and feels like a thoughtful gift. He is not deeply concerned with audio specs but wants a recognizable or aesthetically pleasing option. Reviews and appearance influence him more than technical details."
+  },
+  {
+    "persona_id": "headphones_035",
+    "category": "headphones",
+    "age_range": "45-54",
+    "purchase_context": "She needs to equip a small office with several headphones for shared use.",
+    "budget": "$20-$50",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Office equipment for shared desks",
+    "secondary_use_case": "Virtual meetings",
+    "brand_preference": "avoids unknown brands",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "easy cleaning",
+      "reliable wired connection"
+    ],
+    "features_to_avoid": [
+      "wireless-only models"
+    ],
+    "prior_experience": "Has purchased office peripherals in bulk before",
+    "one_paragraph_description": "An office manager responsible for keeping costs down while ensuring functionality, she prioritizes practicality and durability. She prefers simple wired options that won\u2019t require troubleshooting or charging. Bulk purchasing and consistency matter more than premium features."
+  },
+  {
+    "persona_id": "headphones_036",
+    "category": "headphones",
+    "age_range": "65+",
+    "purchase_context": "He is buying his first pair of headphones to listen to audiobooks privately.",
+    "budget": "$40-$90",
+    "technical_knowledge": "low",
+    "primary_use_case": "Listening to audiobooks at home",
+    "secondary_use_case": "Phone calls",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "simple controls",
+      "comfortable ear padding"
+    ],
+    "features_to_avoid": [
+      "touch controls"
+    ],
+    "prior_experience": "No prior headphone ownership",
+    "one_paragraph_description": "An older adult new to personal audio devices, he values ease of use above all else. He is wary of complicated features and prefers something intuitive and comfortable for extended listening. Clear instructions and minimal setup are important to him."
+  },
+  {
+    "persona_id": "headphones_037",
+    "category": "headphones",
+    "age_range": "25-34",
+    "purchase_context": "His gym banned loudspeakers, so he needs headphones for workouts.",
+    "budget": "$70-$180",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Gym workouts and running",
+    "secondary_use_case": "Commuting",
+    "brand_preference": "JBL or Beats",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "sweat resistance",
+      "secure fit"
+    ],
+    "features_to_avoid": [
+      "over-ear bulky models"
+    ],
+    "prior_experience": "Has used cheap earbuds that fell out frequently",
+    "one_paragraph_description": "An active user frustrated by poorly fitting earbuds, he wants something reliable during intense workouts. He cares more about fit and durability than perfect sound. Brand recognition gives him some confidence, but he is open to alternatives."
+  },
+  {
+    "persona_id": "headphones_038",
+    "category": "headphones",
+    "age_range": "35-44",
+    "purchase_context": "She needs better audio quality for remote therapy sessions with clients.",
+    "budget": "$120-$250",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Professional video calls and therapy sessions",
+    "secondary_use_case": "Music for relaxation",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "clear microphone",
+      "all-day comfort"
+    ],
+    "features_to_avoid": [
+      "audio leakage"
+    ],
+    "prior_experience": "Has used basic headsets with inconsistent audio quality",
+    "one_paragraph_description": "A therapist working from home, she needs reliable and clear audio to maintain professionalism with clients. Comfort for long sessions is critical, and she is cautious about trying unfamiliar products. She is willing to invest in something dependable."
+  },
+  {
+    "persona_id": "headphones_039",
+    "category": "headphones",
+    "age_range": "18-24",
+    "purchase_context": "He just started college and needs affordable headphones for studying in noisy dorms.",
+    "budget": "$25-$60",
+    "technical_knowledge": "low",
+    "primary_use_case": "Studying in shared living spaces",
+    "secondary_use_case": "Watching lectures",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "basic noise isolation",
+      "lightweight"
+    ],
+    "features_to_avoid": [
+      "expensive premium features"
+    ],
+    "prior_experience": "Has used bundled earbuds from phones",
+    "one_paragraph_description": "A budget-conscious student navigating dorm life, he needs something functional without overspending. He values comfort and some level of noise blocking but doesn\u2019t expect premium performance. Simplicity and affordability drive his decision."
+  },
+  {
+    "persona_id": "headphones_040",
+    "category": "headphones",
+    "age_range": "45-54",
+    "purchase_context": "His old wired headphones finally broke after years of use, and he needs a replacement quickly.",
+    "budget": "$60-$140",
+    "technical_knowledge": "low",
+    "primary_use_case": "Daily commuting on public transport",
+    "secondary_use_case": "Listening to podcasts at home",
+    "brand_preference": "avoids unfamiliar brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "durability",
+      "reliable connectivity"
+    ],
+    "features_to_avoid": [
+      "fragile hinges"
+    ],
+    "prior_experience": "Owned a long-lasting pair of wired headphones",
+    "one_paragraph_description": "A routine-driven commuter, he values reliability and familiarity over new features. His previous headphones lasted years, so he expects similar durability from a replacement. He prefers trusted brands and straightforward functionality."
+  },
+  {
+    "persona_id": "headphones_041",
+    "category": "headphones",
+    "age_range": "35-44",
+    "purchase_context": "Buying a durable pair for a 9-year-old after the previous headphones broke within a month.",
+    "budget": "$20-$40",
+    "technical_knowledge": "low",
+    "primary_use_case": "Child's tablet use for games and videos",
+    "secondary_use_case": "Car travel entertainment",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "volume limiting",
+      "durable build"
+    ],
+    "features_to_avoid": [
+      "complex controls"
+    ],
+    "prior_experience": "Has bought several cheap kids' headphones that broke quickly",
+    "one_paragraph_description": "A parent focused on value and durability, frustrated by repeatedly replacing fragile headphones. They want something safe for hearing and sturdy enough to survive rough handling. Brand matters less than reliability and simplicity."
+  },
+  {
+    "persona_id": "headphones_042",
+    "category": "headphones",
+    "age_range": "25-34",
+    "purchase_context": "Needs a last-minute gift for a partner who listens to music daily.",
+    "budget": "$80-$150",
+    "technical_knowledge": "low",
+    "primary_use_case": "Gift giving",
+    "secondary_use_case": "Occasional personal use",
+    "brand_preference": "recognizable brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "good packaging",
+      "positive reviews"
+    ],
+    "features_to_avoid": [
+      "unknown brands"
+    ],
+    "prior_experience": "Rarely buys audio gear and relies on reviews and ratings",
+    "one_paragraph_description": "This buyer is more concerned with making a safe, well-received gift than technical specs. They gravitate toward familiar brands and products with strong social proof. Convenience and perceived quality matter more than deep research."
+  },
+  {
+    "persona_id": "headphones_043",
+    "category": "headphones",
+    "age_range": "55-64",
+    "purchase_context": "Replacing an old wired pair that no longer works with their newer phone.",
+    "budget": "$50-$100",
+    "technical_knowledge": "low",
+    "primary_use_case": "Phone calls and occasional music",
+    "secondary_use_case": "Watching TV on a tablet",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "easy Bluetooth pairing",
+      "clear call quality"
+    ],
+    "features_to_avoid": [
+      "tiny earbuds"
+    ],
+    "prior_experience": "Used wired headphones for years, new to wireless",
+    "one_paragraph_description": "An older adult transitioning to wireless audio who values simplicity and clarity over advanced features. They are cautious about new technology and want something easy to set up and comfortable. Reliability and straightforward controls are key."
+  },
+  {
+    "persona_id": "headphones_044",
+    "category": "headphones",
+    "age_range": "18-24",
+    "purchase_context": "Buying first personal headphones for studying in shared dorm spaces.",
+    "budget": "$30-$70",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Studying in noisy environments",
+    "secondary_use_case": "Casual music listening",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "passive noise isolation",
+      "comfortable fit"
+    ],
+    "features_to_avoid": [
+      "bulky designs"
+    ],
+    "prior_experience": "Has only used cheap earbuds bundled with phones",
+    "one_paragraph_description": "A student looking for an affordable upgrade from basic earbuds to something more effective for focus. They want decent comfort for long sessions and enough noise reduction to handle dorm noise. Budget constraints limit premium options."
+  },
+  {
+    "persona_id": "headphones_045",
+    "category": "headphones",
+    "age_range": "45-54",
+    "purchase_context": "Outfitting a small office with multiple headphones for shared use.",
+    "budget": "$15-$30",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Office workstation use",
+    "secondary_use_case": "Video calls",
+    "brand_preference": "bulk-friendly brands",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "low",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "durability",
+      "easy cleaning"
+    ],
+    "features_to_avoid": [
+      "wireless models"
+    ],
+    "prior_experience": "Has purchased office equipment in bulk before",
+    "one_paragraph_description": "An office manager focused on cost efficiency and practicality when buying multiple units. They prioritize durability and ease of maintenance over sound quality. Simplicity and consistency across units are more important than brand prestige."
+  },
+  {
+    "persona_id": "headphones_046",
+    "category": "headphones",
+    "age_range": "25-34",
+    "purchase_context": "Replacing lost earbuds needed for daily commuting.",
+    "budget": "$60-$120",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Public transit listening",
+    "secondary_use_case": "Phone calls",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "compact size",
+      "stable Bluetooth connection"
+    ],
+    "features_to_avoid": [
+      "over-ear designs"
+    ],
+    "prior_experience": "Previously owned mid-range wireless earbuds",
+    "one_paragraph_description": "A commuter who values portability and convenience, needing a quick replacement after losing a previous pair. They are comfortable with wireless tech and prioritize ease of use in crowded environments. They're willing to compromise slightly on sound for practicality."
+  },
+  {
+    "persona_id": "headphones_047",
+    "category": "headphones",
+    "age_range": "65+",
+    "purchase_context": "Looking for headphones to better hear TV audio without raising volume.",
+    "budget": "$70-$140",
+    "technical_knowledge": "low",
+    "primary_use_case": "TV listening",
+    "secondary_use_case": "Radio or audiobooks",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "comfortable over-ear fit",
+      "long battery life"
+    ],
+    "features_to_avoid": [
+      "in-ear designs"
+    ],
+    "prior_experience": "Limited experience with modern audio devices",
+    "one_paragraph_description": "An older user seeking clearer audio for TV without disturbing others. Comfort and ease of use are critical, especially for extended listening sessions. They prefer straightforward controls and reliable performance over advanced features."
+  },
+  {
+    "persona_id": "headphones_048",
+    "category": "headphones",
+    "age_range": "35-44",
+    "purchase_context": "Needs headphones for remote work calls after complaints about background noise.",
+    "budget": "$90-$180",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Work video conferencing",
+    "secondary_use_case": "Light music listening",
+    "brand_preference": "known work-focused brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "noise-canceling microphone",
+      "all-day comfort"
+    ],
+    "features_to_avoid": [
+      "flashy aesthetics"
+    ],
+    "prior_experience": "Previously used basic earbuds for calls",
+    "one_paragraph_description": "A remote worker upgrading to improve call quality and professionalism. They are motivated by feedback from colleagues and want a reliable, comfortable solution for long meetings. Performance and clarity outweigh style."
+  },
+  {
+    "persona_id": "headphones_049",
+    "category": "headphones",
+    "age_range": "18-24",
+    "purchase_context": "Buying headphones for gym workouts after earbuds kept falling out.",
+    "budget": "$40-$90",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Exercise and workouts",
+    "secondary_use_case": "Casual daily use",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "secure fit",
+      "sweat resistance"
+    ],
+    "features_to_avoid": [
+      "heavy over-ear models"
+    ],
+    "prior_experience": "Has tried multiple cheap earbuds with poor fit",
+    "one_paragraph_description": "A fitness-focused user frustrated by earbuds that don't stay in place during workouts. They want something reliable and comfortable for movement without spending too much. Durability and fit are more important than premium sound."
+  },
+  {
+    "persona_id": "headphones_050",
+    "category": "headphones",
+    "age_range": "45-54",
+    "purchase_context": "Upgrading from very old headphones to enjoy audiobooks during evening relaxation.",
+    "budget": "$100-$200",
+    "technical_knowledge": "low",
+    "primary_use_case": "Audiobook listening at home",
+    "secondary_use_case": "Occasional music",
+    "brand_preference": "no preference",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "clear voice reproduction",
+      "comfortable padding"
+    ],
+    "features_to_avoid": [
+      "overly bass-heavy sound"
+    ],
+    "prior_experience": "Used the same wired headphones for over a decade",
+    "one_paragraph_description": "A home listener seeking a noticeable upgrade in comfort and clarity for spoken-word content. They value a relaxed listening experience and are willing to spend more for quality. Simplicity and comfort matter more than advanced tech features."
+  },
+  {
+    "persona_id": "headphones_051",
+    "category": "headphones",
+    "age_range": "35-44",
+    "purchase_context": "Buying durable headphones after their child broke the last two pairs during school use.",
+    "budget": "$40-$80",
+    "technical_knowledge": "low",
+    "primary_use_case": "Child's online learning and homework",
+    "secondary_use_case": "Watching cartoons",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "durable build",
+      "volume limiting"
+    ],
+    "features_to_avoid": [
+      "fragile hinges"
+    ],
+    "prior_experience": "Previously bought cheap headphones that broke quickly",
+    "one_paragraph_description": "A parent focused on practicality, they need something that can survive daily use by a young child. They are not interested in premium audio, but reliability and safety features matter. They prefer something affordable but not disposable."
+  },
+  {
+    "persona_id": "headphones_052",
+    "category": "headphones",
+    "age_range": "25-34",
+    "purchase_context": "Looking for a last-minute birthday gift for a partner who commutes daily.",
+    "budget": "$100-$200",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Gift for commuting partner",
+    "secondary_use_case": "Occasional personal use",
+    "brand_preference": "Sony",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "noise cancellation",
+      "comfortable fit"
+    ],
+    "features_to_avoid": [
+      "complicated controls"
+    ],
+    "prior_experience": "Has owned mid-range earbuds but not over-ear headphones",
+    "one_paragraph_description": "They want something thoughtful but not overly technical, relying on recognizable brands for confidence. The goal is a safe, appreciated gift that improves a daily commute. They are balancing time pressure with the desire to pick something reliable."
+  },
+  {
+    "persona_id": "headphones_053",
+    "category": "headphones",
+    "age_range": "55-64",
+    "purchase_context": "Replacing old wired headphones that stopped working with their TV.",
+    "budget": "$60-$120",
+    "technical_knowledge": "low",
+    "primary_use_case": "Watching television without disturbing others",
+    "secondary_use_case": "Listening to radio or podcasts",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "easy setup",
+      "clear dialogue audio"
+    ],
+    "features_to_avoid": [
+      "touch controls"
+    ],
+    "prior_experience": "Used basic wired headphones for years",
+    "one_paragraph_description": "They prioritize simplicity and clarity over modern features. Complicated pairing or controls are a concern, and they want something that just works with minimal setup. Comfort for longer listening sessions is also important."
+  },
+  {
+    "persona_id": "headphones_054",
+    "category": "headphones",
+    "age_range": "18-24",
+    "purchase_context": "Buying first pair of headphones for college dorm life.",
+    "budget": "$30-$70",
+    "technical_knowledge": "low",
+    "primary_use_case": "Listening to music in shared living spaces",
+    "secondary_use_case": "Online classes",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "affordable",
+      "decent sound isolation"
+    ],
+    "features_to_avoid": [
+      "bulky design"
+    ],
+    "prior_experience": "Has only used basic earbuds bundled with phones",
+    "one_paragraph_description": "A first-time buyer navigating limited funds, they want an upgrade from cheap earbuds without overspending. They need something versatile for both entertainment and school. Style matters a bit, but cost is the deciding factor."
+  },
+  {
+    "persona_id": "headphones_055",
+    "category": "headphones",
+    "age_range": "45-54",
+    "purchase_context": "Office manager ordering multiple headphones for a shared workspace.",
+    "budget": "$20-$50",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Office use for video calls",
+    "secondary_use_case": "Training sessions",
+    "brand_preference": "avoids unknown brands",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "built-in microphone",
+      "bulk pricing availability"
+    ],
+    "features_to_avoid": [
+      "wireless only"
+    ],
+    "prior_experience": "Has purchased office equipment in bulk before",
+    "one_paragraph_description": "They are focused on consistency, cost control, and ease of deployment across a team. Reliability and compatibility matter more than audio quality. They prefer known brands that minimize support issues."
+  },
+  {
+    "persona_id": "headphones_056",
+    "category": "headphones",
+    "age_range": "65+",
+    "purchase_context": "Trying headphones for the first time to listen to audiobooks without disturbing a spouse.",
+    "budget": "$50-$100",
+    "technical_knowledge": "low",
+    "primary_use_case": "Audiobook listening at home",
+    "secondary_use_case": "Phone calls",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "simple controls",
+      "lightweight design"
+    ],
+    "features_to_avoid": [
+      "small buttons"
+    ],
+    "prior_experience": "No prior headphone ownership",
+    "one_paragraph_description": "They are cautious about new technology and want something intuitive. Comfort and ease of use are more important than advanced features. Clear instructions and minimal setup are key to a successful purchase."
+  },
+  {
+    "persona_id": "headphones_057",
+    "category": "headphones",
+    "age_range": "25-34",
+    "purchase_context": "Replacing lost earbuds before an upcoming international trip.",
+    "budget": "$150-$300",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Travel and flights",
+    "secondary_use_case": "Work calls on the go",
+    "brand_preference": "Bose",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "strong noise cancellation",
+      "long battery life"
+    ],
+    "features_to_avoid": [
+      "short battery life"
+    ],
+    "prior_experience": "Previously owned premium earbuds",
+    "one_paragraph_description": "They value comfort and quiet during long flights and are willing to pay for it. Brand familiarity helps them make a quick decision under time pressure. They expect reliable performance across different environments."
+  },
+  {
+    "persona_id": "headphones_058",
+    "category": "headphones",
+    "age_range": "35-44",
+    "purchase_context": "Seeking headphones to use while doing yard work and home projects.",
+    "budget": "$80-$150",
+    "technical_knowledge": "low",
+    "primary_use_case": "Listening to music while doing outdoor chores",
+    "secondary_use_case": "Podcasts during DIY projects",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "sweat resistance",
+      "secure fit"
+    ],
+    "features_to_avoid": [
+      "easily slipping earbuds"
+    ],
+    "prior_experience": "Used basic wired headphones that got damaged outdoors",
+    "one_paragraph_description": "They need something rugged enough for active, sometimes messy environments. Audio quality is secondary to durability and staying in place during movement. They are wary of products that might fail under outdoor conditions."
+  },
+  {
+    "persona_id": "headphones_059",
+    "category": "headphones",
+    "age_range": "18-24",
+    "purchase_context": "Buying headphones for gaming after moving into a shared apartment.",
+    "budget": "$70-$140",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Console gaming with voice chat",
+    "secondary_use_case": "Streaming videos",
+    "brand_preference": "HyperX",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "clear microphone",
+      "comfortable for long sessions"
+    ],
+    "features_to_avoid": [
+      "poor mic quality"
+    ],
+    "prior_experience": "Has used entry-level gaming headsets",
+    "one_paragraph_description": "They want an immersive experience without disturbing roommates. Communication clarity is just as important as sound quality. They are comfortable comparing options but still guided by known gaming brands."
+  },
+  {
+    "persona_id": "headphones_060",
+    "category": "headphones",
+    "age_range": "45-54",
+    "purchase_context": "Buying headphones to help focus in a noisy open office environment.",
+    "budget": "$200-$400",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Noise isolation for office work",
+    "secondary_use_case": "Occasional travel",
+    "brand_preference": "Apple",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "top-tier noise cancellation",
+      "seamless device switching"
+    ],
+    "features_to_avoid": [
+      "poor integration with existing devices"
+    ],
+    "prior_experience": "Uses Apple ecosystem products regularly",
+    "one_paragraph_description": "They are investing in productivity and expect a premium, hassle-free experience. Integration with their existing devices is a major factor in decision-making. They are willing to pay more to avoid friction and distractions."
+  }
+]

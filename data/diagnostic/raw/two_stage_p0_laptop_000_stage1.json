@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_laptop_000_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 0,
+  "timestamp": "2026-05-14T11:34:52.515111+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20260524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_asus_zenbook_14\",\n  \"shortlist\": [\"laptop_asus_zenbook_14\", \"laptop_hp_elitebook_845\", \"laptop_dell_xps_14\"],\n  \"selection_rationale\": \"Balances budget, quality, and brand familiarity well.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_asus_zenbook_14",
+    "shortlist": [
+      "laptop_asus_zenbook_14",
+      "laptop_hp_elitebook_845",
+      "laptop_dell_xps_14"
+    ],
+    "selection_rationale": "Balances budget, quality, and brand familiarity well."
+  },
+  "parse_success": true,
+  "latency_ms": 30737
+}

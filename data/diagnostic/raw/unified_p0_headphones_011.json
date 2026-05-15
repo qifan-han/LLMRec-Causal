@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_headphones_011",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 11,
+  "timestamp": "2026-05-14T11:23:09.198914+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20271514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_jbl_tune770nc\",\n  \"shortlist\": [\"headphones_jbl_tune770nc\", \"headphones_edifier_stax\", \"headphones_soundcore_space_q45\"],\n  \"recommendation_text\": \"For office work, the JBL Tune 770NC offers a solid balance of features and affordability. With basic noise cancellation, it's suitable for reducing ambient noise in an office setting. Its 44-hour battery life ensures all-day use without needing to recharge. The punchy sound signature is well-suited for long hours of work, providing clear audio for calls and meetings. At $79.95, it fits within the budget while offering a comfortable over-ear design with multipoint connectivity.\",\n  \"selection_rationale\": \"Best value for office use; affordable price point.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_jbl_tune770nc",
+    "shortlist": [
+      "headphones_jbl_tune770nc",
+      "headphones_edifier_stax",
+      "headphones_soundcore_space_q45"
+    ],
+    "recommendation_text": "For office work, the JBL Tune 770NC offers a solid balance of features and affordability. With basic noise cancellation, it's suitable for reducing ambient noise in an office setting. Its 44-hour battery life ensures all-day use without needing to recharge. The punchy sound signature is well-suited for long hours of work, providing clear audio for calls and meetings. At $79.95, it fits within the budget while offering a comfortable over-ear design with multipoint connectivity.",
+    "selection_rationale": "Best value for office use; affordable price point."
+  },
+  "parse_success": true,
+  "latency_ms": 37283
+}

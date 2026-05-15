@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_headphones_000_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 0,
+  "timestamp": "2026-05-14T11:09:36.727800+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20260524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_sennheiser_momentum4\",\n  \"shortlist\": [\"headphones_sony_ult_wear\", \"headphones_jbl_tune770nc\", \"headphones_sennheiser_momentum4\"],\n  \"selection_rationale\": \"Balances quality and budget with strong sound and ANC.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_sennheiser_momentum4",
+    "shortlist": [
+      "headphones_sony_ult_wear",
+      "headphones_jbl_tune770nc",
+      "headphones_sennheiser_momentum4"
+    ],
+    "selection_rationale": "Balances quality and budget with strong sound and ANC."
+  },
+  "parse_success": true,
+  "latency_ms": 25575
+}

@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_013_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 13,
+  "timestamp": "2026-05-14T11:26:15.527735+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20273525,
+  "stage": "writer",
+  "raw_response": "The Sony over-ear wireless headphones offer excellent value for your budget and commuting needs. With a mid-range price point and impressive 50-hour battery life, they provide reliable performance on the go. Good noise cancellation helps block out distractions during commutes, while LDAC codec support ensures high-quality audio. Though not class-leading in build quality or ANC, these headphones are still comfortable and foldable for easy storage.",
+  "parsed": {
+    "recommendation_text": "The Sony over-ear wireless headphones offer excellent value for your budget and commuting needs. With a mid-range price point and impressive 50-hour battery life, they provide reliable performance on the go. Good noise cancellation helps block out distractions during commutes, while LDAC codec support ensures high-quality audio. Though not class-leading in build quality or ANC, these headphones are still comfortable and foldable for easy storage."
+  },
+  "parse_success": true,
+  "latency_ms": 11227
+}

@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_001_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 1,
+  "timestamp": "2026-05-14T11:11:00.526922+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20261525,
+  "stage": "writer",
+  "raw_response": "Given your price sensitivity and budget constraints, the JBL Tune 770NC is an excellent choice. It offers solid value with its over-ear wireless design, decent noise cancellation, and a generous battery life of 44 hours. The punchy sound signature is well-suited for casual listening, and its foldable construction makes it easy to carry around. While the build quality is mostly plastic and lacks high-res codec support, it still delivers good performance within your budget constraints.",
+  "parsed": {
+    "recommendation_text": "Given your price sensitivity and budget constraints, the JBL Tune 770NC is an excellent choice. It offers solid value with its over-ear wireless design, decent noise cancellation, and a generous battery life of 44 hours. The punchy sound signature is well-suited for casual listening, and its foldable construction makes it easy to carry around. While the build quality is mostly plastic and lacks high-res codec support, it still delivers good performance within your budget constraints."
+  },
+  "parse_success": true,
+  "latency_ms": 12724
+}

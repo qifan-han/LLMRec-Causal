@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_001",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 1,
+  "timestamp": "2026-05-14T11:35:49.049887+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20261514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_macbook_pro_m4\",\n  \"shortlist\": [\"laptop_macbook_air_m4\", \"laptop_thinkpad_x1_carbon\", \"laptop_hp_elitebook_845\"],\n  \"recommendation_text\": \"For data analysis, the MacBook Pro M4 is unparalleled. Its Apple M4 Pro processor and 24GB RAM ensure lightning-fast performance for complex calculations and large datasets. The laptop's macOS system offers robust security features and seamless integration with Apple's ecosystem of tools designed for professionals. With a stunning mini-LED XDR display and an impressive battery life, the MacBook Pro M4 provides both visual clarity and portability essential for data analysts on-the-go. Although it is pricey and lacks Windows compatibility for some enterprise software, its overall quality and performance make it a top choice.\",\n  \"selection_rationale\": \"Best processor and RAM for data analysis; excellent display and battery life.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_macbook_pro_m4",
+    "shortlist": [
+      "laptop_macbook_air_m4",
+      "laptop_thinkpad_x1_carbon",
+      "laptop_hp_elitebook_845"
+    ],
+    "recommendation_text": "For data analysis, the MacBook Pro M4 is unparalleled. Its Apple M4 Pro processor and 24GB RAM ensure lightning-fast performance for complex calculations and large datasets. The laptop's macOS system offers robust security features and seamless integration with Apple's ecosystem of tools designed for professionals. With a stunning mini-LED XDR display and an impressive battery life, the MacBook Pro M4 provides both visual clarity and portability essential for data analysts on-the-go. Although it is pricey and lacks Windows compatibility for some enterprise software, its overall quality and performance make it a top choice.",
+    "selection_rationale": "Best processor and RAM for data analysis; excellent display and battery life."
+  },
+  "parse_success": true,
+  "latency_ms": 43964
+}

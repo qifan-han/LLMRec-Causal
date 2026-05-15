@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_headphones_019_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 19,
+  "timestamp": "2026-05-14T11:33:27.703200+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20279524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_sennheiser_momentum4\",\n  \"shortlist\": [\"headphones_sennheiser_momentum4\", \"headphones_jbl_tune770nc\", \"headphones_edifier_stax\"],\n  \"selection_rationale\": \"Balanced sound, long battery life; beats JBL and Edifier in build quality.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_sennheiser_momentum4",
+    "shortlist": [
+      "headphones_sennheiser_momentum4",
+      "headphones_jbl_tune770nc",
+      "headphones_edifier_stax"
+    ],
+    "selection_rationale": "Balanced sound, long battery life; beats JBL and Edifier in build quality."
+  },
+  "parse_success": true,
+  "latency_ms": 26101
+}

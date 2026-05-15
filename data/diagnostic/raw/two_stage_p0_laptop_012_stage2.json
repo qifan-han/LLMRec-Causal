@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_laptop_012_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 12,
+  "timestamp": "2026-05-14T11:52:08.274862+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20272525,
+  "stage": "writer",
+  "raw_response": "The ASUS ZenBook 14 is an excellent choice for a budget-conscious student. It offers a remarkable OLED display and lightweight design at under $900, making it highly cost-effective. With 16GB RAM and a decent Intel Core Ultra 5 processor, it handles everyday tasks smoothly. Though the speakers are weak and there's no upgrade path for RAM, its battery life of up to 13 hours is impressive.",
+  "parsed": {
+    "recommendation_text": "The ASUS ZenBook 14 is an excellent choice for a budget-conscious student. It offers a remarkable OLED display and lightweight design at under $900, making it highly cost-effective. With 16GB RAM and a decent Intel Core Ultra 5 processor, it handles everyday tasks smoothly. Though the speakers are weak and there's no upgrade path for RAM, its battery life of up to 13 hours is impressive."
+  },
+  "parse_success": true,
+  "latency_ms": 12076
+}

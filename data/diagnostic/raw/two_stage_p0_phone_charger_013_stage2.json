@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_phone_charger_013_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 13,
+  "timestamp": "2026-05-14T12:17:05.778678+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20273525,
+  "stage": "writer",
+  "raw_response": "The Belkin ultra-compact charger is an excellent choice for your bedside setup due to its small size and lightweight design. It fits perfectly on a nightstand without taking up much space. Although it lacks GaN technology and supports only one device at 25W, its affordability within your budget makes it a practical option despite your moderate price sensitivity.",
+  "parsed": {
+    "recommendation_text": "The Belkin ultra-compact charger is an excellent choice for your bedside setup due to its small size and lightweight design. It fits perfectly on a nightstand without taking up much space. Although it lacks GaN technology and supports only one device at 25W, its affordability within your budget makes it a practical option despite your moderate price sensitivity."
+  },
+  "parse_success": true,
+  "latency_ms": 9766
+}

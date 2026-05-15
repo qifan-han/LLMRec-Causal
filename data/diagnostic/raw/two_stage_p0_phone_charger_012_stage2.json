@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_phone_charger_012_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 12,
+  "timestamp": "2026-05-14T12:16:06.825189+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20272525,
+  "stage": "writer",
+  "raw_response": "The Baseus 65W charger is a great value for your office desk setup due to its compact foldable design and high wattage output. It supports both USB-C and USB-A ports with PPS technology, making it versatile for various devices. While some users report minor issues like inconsistent fast-charging with certain laptops and a faint coil whine, the overall satisfaction is high given the budget-friendly price of $25.99. This charger offers good quality at an affordable rate, aligning well with your price sensitivity preferences.",
+  "parsed": {
+    "recommendation_text": "The Baseus 65W charger is a great value for your office desk setup due to its compact foldable design and high wattage output. It supports both USB-C and USB-A ports with PPS technology, making it versatile for various devices. While some users report minor issues like inconsistent fast-charging with certain laptops and a faint coil whine, the overall satisfaction is high given the budget-friendly price of $25.99. This charger offers good quality at an affordable rate, aligning well with your price sensitivity preferences."
+  },
+  "parse_success": true,
+  "latency_ms": 13121
+}

@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_009",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 9,
+  "timestamp": "2026-05-14T11:47:15.685451+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20269514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_asus_zenbook_14\",\n  \"shortlist\": [\"laptop_asus_zenbook_14\", \"laptop_hp_elitebook_845\", \"laptop_dell_xps_14\"],\n  \"recommendation_text\": \"The ASUS ZenBook 14 offers remarkable value for a student, combining an OLED display with lightweight design and decent performance under $900. Despite its less powerful processor compared to competitors, it delivers a quality screen experience that is ideal for budget-conscious students who prioritize visual clarity over raw power. The laptop's port selection includes HDMI and USB-A, ensuring compatibility with various peripherals. While the speakers are tinny, this model provides an excellent balance of features and affordability.\",\n  \"selection_rationale\": \"Balances price and quality well; OLED display is a standout feature.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_asus_zenbook_14",
+    "shortlist": [
+      "laptop_asus_zenbook_14",
+      "laptop_hp_elitebook_845",
+      "laptop_dell_xps_14"
+    ],
+    "recommendation_text": "The ASUS ZenBook 14 offers remarkable value for a student, combining an OLED display with lightweight design and decent performance under $900. Despite its less powerful processor compared to competitors, it delivers a quality screen experience that is ideal for budget-conscious students who prioritize visual clarity over raw power. The laptop's port selection includes HDMI and USB-A, ensuring compatibility with various peripherals. While the speakers are tinny, this model provides an excellent balance of features and affordability.",
+    "selection_rationale": "Balances price and quality well; OLED display is a standout feature."
+  },
+  "parse_success": true,
+  "latency_ms": 41621
+}

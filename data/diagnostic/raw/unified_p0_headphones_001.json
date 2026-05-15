@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_headphones_001",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 1,
+  "timestamp": "2026-05-14T11:10:22.548191+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20261514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_jbl_tune770nc\",\n  \"shortlist\": [\"headphones_jbl_tune770nc\", \"headphones_edifier_stax\", \"headphones_soundcore_space_q45\"],\n  \"recommendation_text\": \"For a budget-conscious user, the JBL Tune 770NC offers excellent value with solid noise cancellation and battery life. It's affordable at $80, has good build quality, and supports AAC/SBC codecs. While its ANC is basic compared to premium models, it still provides decent isolation for casual use. The punchy sound signature suits those who enjoy bass-heavy tunes.\",\n  \"selection_rationale\": \"Best balance of price, features, and brand familiarity.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_jbl_tune770nc",
+    "shortlist": [
+      "headphones_jbl_tune770nc",
+      "headphones_edifier_stax",
+      "headphones_soundcore_space_q45"
+    ],
+    "recommendation_text": "For a budget-conscious user, the JBL Tune 770NC offers excellent value with solid noise cancellation and battery life. It's affordable at $80, has good build quality, and supports AAC/SBC codecs. While its ANC is basic compared to premium models, it still provides decent isolation for casual use. The punchy sound signature suits those who enjoy bass-heavy tunes.",
+    "selection_rationale": "Best balance of price, features, and brand familiarity."
+  },
+  "parse_success": true,
+  "latency_ms": 34804
+}

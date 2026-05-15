@@ -1,0 +1,491 @@
+% !TEX TS-program = pdflatex
+% Unbundling LLM Recommenders: Retrieval, Persuasion, and Consumer Choice
+% Working draft for QME conference, May 15 2026.
+%
+% Style anchors:
+%  - Structure: Gui and Kim (2025).
+%  - Econometric expression: Feldman, Venugopal, Spiess, and Feder (2026).
+%  - Voice: prior work by the author (Twitch gambling-ban paper).
+
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{stackengine}
+\hypersetup{colorlinks=true, linkcolor=blue!50!black, citecolor=blue!50!black}
+
+\newtheorem{assumption}{Assumption}
+\newtheorem{remark}{Remark}
+\newtheorem{result}{Result}
+
+\newcommand{\Real}{\mathbb{R}}
+\newcommand{\Expect}{\mathbb{E}}
+\newcommand{\E}{E}
+\newcommand{\J}{J}
+\newcommand{\Y}{Y}
+\newcommand{\X}{X}
+\newcommand{\Q}{Q}
+\newcommand{\Z}{Z}
+\newcommand{\Qreg}{Q}
+\newcommand{\Rreg}{R}
+\newcommand{\catalog}{\mathcal{A}}
+\newcommand{\dR}{\Delta_R}
+\newcommand{\dP}{\Delta_P}
+\newcommand{\dRP}{\Delta_{R\times P}}
+\newcommand{\dtotal}{\Delta_{\mathrm{total}}}
+\newcommand{\KOS}{K^{\mathrm{1s}}}
+\newcommand{\KMO}{K^{\mathrm{2s}}}
+\newcommand{\genneq}{\stackrel{\textit{\scriptsize generally}}{\neq}}
+
+\title{\textbf{Unbundling LLM Recommenders:\\ Retrieval, Persuasion, and Consumer Choice}}
+\author{Qifan Han\thanks{Department of Marketing, Chinese University of Hong Kong, Shenzhen. Email: hanqifan@cuhk.edu.cn.}}
+\date{This draft: \today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+When an LLM shopping assistant changes consumer choice, is the effect driven by product selection or by persuasive expression? We propose a modular $2 \times 2$ experimental design that crosses a retrieval policy $\Qreg \in \{0,1\}$ with an expression policy $\Rreg \in \{0,1\}$ to separately identify these two channels. The design exploits the observation that LLM-mediated product recommendations bundle two economically distinct functions --- selecting which product to recommend and generating the language that presents the recommendation --- functions that a standard prompt A/B test conflates into a single total effect. We first conduct an architecture diagnostic using a local LLM and find that the retrieval--expression interaction is negligible, supporting the factored design. We then deploy the $2 \times 2$ experiment on 30 real headphone products with Amazon metadata and 2{,}508 user reviews, where the treatment is whether the recommender has access to historical sales records and buyer feedback. Simple cell-mean contrasts on the modular design identify the effects of the assigned retrieval and expression policies over the feasible recommendation support, while a one-shot prompt A/B test delivers only the total effect. We show that a naive regression of outcomes on realized expression intensity is biased whenever expression covaries with latent product-consumer fit, with a closed-form bias that is non-monotonic in the endogeneity parameter. Taken together, the design allows firms to determine which layer of the LLM recommendation pipeline drives the observed consumer response.
+\end{abstract}
+
+\medskip
+\noindent\textbf{Keywords:} LLM recommendation, factorial design, retrieval, persuasion, latent textual treatments.
+
+\bigskip
+%-------------------------------------------------------------------------
+\section{Introduction}
+%-------------------------------------------------------------------------
+
+Large language model (LLM) shopping assistants are rapidly becoming a primary interface for product discovery.\footnote{Throughout this paper, an LLM shopping assistant refers to any chatbot interface that returns one or more product suggestions accompanied by generated explanatory text. The category includes ChatGPT's shopping experience, Perplexity, Amazon's Rufus, and numerous retailer-deployed agents.} Consumers can submit a natural-language query --- for a laptop, a pair of headphones, or a phone charger --- and receive a conversational recommendation within seconds. Unlike a conventional product ranker that returns a sorted list, the LLM assistant selects one or more products \emph{and} generates explanatory text that frames why each recommendation fits the consumer's stated needs.
+
+In this paper, we study how firms can separate the causal effect of an LLM recommendation policy into two economically distinct components: a \emph{retrieval} effect, which captures the impact of changing which product is selected, and a \emph{persuasion} effect, which captures the impact of changing how the recommendation is expressed. When a backend policy change at a retailer's LLM raises the click rate, the retailer needs to know whether the lift came from selecting better-fitting products, from writing more compelling explanations, or from the interaction between the two. These correspond to different investments --- in catalog grounding, in prompt engineering, or in matched product-expression strategies --- and the standard prompt A/B test does not distinguish them.
+
+On the one hand, the standard randomization argument does most of what a firm wants. Randomizing the backend prompt across consumers identifies the total effect of a policy change, a well-known result that follows directly from the potential-outcomes framework. On the other hand, the same total effect can be generated by very different mixes of retrieval-side and expression-side lifts, and these mixes correspond to different resource allocation decisions. A firm observing a positive prompt A/B result still does not know whether to invest in better product selection or better copywriting.
+
+The distinction between retrieval and recommendation is well established in the computer science literature, where two-stage recommender systems separate candidate retrieval from final ranking \citep{hou2023bridging, ma2020off, hron2021component}. Our contribution is not to invent this distinction but to formalize it as a \emph{causal decomposition} within the potential-outcomes framework, and to provide an implementable factorial experiment that identifies each component's effect on consumer outcomes.
+
+We propose a modular $2 \times 2$ experimental design that crosses a \emph{retrieval policy} $\Qreg \in \{0,1\}$ with an \emph{expression policy} $\Rreg \in \{0,1\}$. The design has two stages: the first stage selects a product under the assigned retrieval policy; the second stage generates recommendation text under the assigned expression policy, conditional on the selected product. Crossing $\Qreg$ and $\Rreg$ creates four cells, including the hybrid regimes $(\Qreg=1, \Rreg=0)$ and $(\Qreg=0, \Rreg=1)$ that a one-shot policy change does not realize. Cell-mean contrasts on this design identify the retrieval effect $\dR$, the persuasion effect $\dP$, and their interaction $\dRP$, while a one-shot prompt A/B test identifies only the total effect $\dtotal$. The econometric identification follows standard factorial-design logic \citep{egami2019causal, muralidharan2025factorial}; the contribution is defining the marketing-relevant policy components and implementing the corresponding experiment for LLM-mediated recommendation.
+
+We present two sets of empirical exercises. First, we conduct an \emph{architecture diagnostic} using a local LLM (Qwen~2.5~14B) to assess whether the retrieval--expression interaction effect is negligible. Using a four-cell modular design across three product categories and 30 consumer-product clusters, we find no pooled evidence of a systematic retrieval--expression interaction (Bradley--Terry $\hat{\theta} = 0.002$, bootstrap $P(>0) = 51\%$), while the expression effect is large and precisely estimated ($\hat{\theta} = 0.84$, $P(>0) = 100\%$). This finding supports the feasibility of the factored $2 \times 2$ design in the architecture and product categories we study.
+
+Second, we deploy the $2 \times 2$ design on real product data. We assemble a catalog of 30~headphone products with metadata from the Amazon Reviews 2023 dataset \citep{hou2024amazon}, including real prices, ratings, and 2{,}508 verified user reviews. We generate 60~consumer personas via GPT and set the treatment to be whether the LLM recommender has access to historical sales records and buyer review summaries --- or sees only the product specifications. The local LLM (Qwen~2.5~14B) generates recommendations under each of the four cells, and GPT-5.3 serves as the demand-side evaluator in both absolute and pairwise protocols. This exercise provides a controlled but ecologically grounded test of the modular design.
+
+Our findings provide at least threefold insights for marketing research and practice. First, a standard prompt A/B test identifies the total effect of a policy change but not the component-allocation question: the same total effect can correspond to qualitatively different mixes of retrieval-side and expression-side lifts, and the A/B test does not distinguish them. Second, a firm or researcher who regresses outcomes on realized expression intensity systematically overstates the persuasion channel whenever expression covaries with latent product-consumer fit, and we derive the closed form of this bias. Third, the modular design is deployable on platforms that can separately assign retrieval and expression policies, lock the selected product before text generation, and verify that the expression stage does not change the nominated item. The design affects only experimental allocation, not identification: it requires no modification to the underlying recommendation model, only an experimenter-controlled randomization. Taken together, these findings suggest that firms can move from ``the LLM helped'' to ``this layer of the LLM helped'' with a small, well-structured platform experiment.
+
+%-------------------------------------------------------------------------
+\section{Related Literature}\label{section:lit}
+%-------------------------------------------------------------------------
+
+This paper connects four strands of existing literature: causal recommendation and counterfactual policy learning, two-stage and LLM-based recommender systems, persuasive/explanatory recommendation language, and causal inference with text and generative AI.
+
+\paragraph{Causal effects of recommendations and counterfactual policy learning.}
+A growing literature treats recommendation as a causal action rather than merely a prediction problem. \citet{swaminathan2015batch} study learning from logged bandit feedback and develop counterfactual risk minimization for stochastic policy learning in online systems such as recommendation, advertising, and search. \citet{schnabel2016recommendations} explicitly frame recommendations as treatments and use propensity-based methods to debias learning and evaluation under self-selection and recommender-induced selection bias. \citet{sharma2015estimating} estimate the causal impact of recommender systems from observational data, emphasizing the distinction between observed recommendation-driven activity and incremental behavior. \citet{sato2020unbiased} propose learning to rank items by the causal effect of recommendation rather than by predicted purchase probability, and \citet{sato2021online} develop online interleaving methods for evaluating recommendation models by causal effects. This work shares the premise that recommendations are interventions, but differs in the object of decomposition: existing work typically studies the causal effect of item exposure or recommendation policies, whereas we decompose an LLM recommendation into experimentally manipulable retrieval and expression components.
+
+\paragraph{Two-stage and LLM-based recommender systems.}
+Modern recommender systems often separate candidate generation, retrieval, ranking, and presentation. \citet{ma2020off} develop off-policy learning methods for two-stage recommender systems and show that ignoring interactions between stages can lead to suboptimal policies. \citet{hron2021component} further show that two-stage recommenders cannot generally be understood as the sum of independently optimized components because interactions between nominators and rankers affect overall performance. Recent work brings large language models into this pipeline. \citet{hou2023bridging} introduce BLaIR, a family of language-item representation models for retrieval and recommendation, together with the Amazon Reviews 2023 dataset used in our empirical exercise. \citet{hou2024large} show that LLMs can serve as zero-shot rankers for recommender systems, while also documenting limitations related to history order, item position, and popularity. \citet{lichtenberg2024llm} study popularity bias in LLM-based recommender systems and the role of prompt tuning, and \citet{deldjoo2024} examine provider fairness, temporal stability, recency, and prompt-design effects in ChatGPT-based recommender systems. This literature establishes that LLM recommenders can select, rank, and bias product exposure, but it does not provide a causal experiment that separates product selection from generated expression.
+
+\paragraph{Recommendation explanations and persuasive expression.}
+A separate literature studies the language that accompanies recommendations. \citet{xrec2024} introduce an LLM-based framework for generating comprehensive natural-language explanations of recommendations by connecting collaborative signals to language generation. \citet{rahman2026persuasive} show that persuasive natural-language explanations can influence users' choices among recommended options. More broadly, \citet{reisenbichler2022nlg} show that natural-language generation can support content marketing, while \citet{costello2024persuasion} provide evidence that personalized AI dialogue can durably shift beliefs in a noncommercial setting. In marketing theory, \citet{shin2024messenger} model advertising content and messenger choice as a Bayesian-persuasion problem in which communication changes consumers' information environment. These papers motivate the expression side of our framework: generated recommendation text is not a passive explanation of a fixed product choice, but an economically meaningful component that may affect consumer outcomes.
+
+\paragraph{Causal inference with text and generative AI.}
+Our design also relates to work on text as treatment, text as outcome, and generative AI as an experimental tool. \citet{egami2018causal} introduce a split-sample workflow for making causal inferences using discovered text measures as treatments or outcomes, and \citet{feder2022causal} survey the broader role of causal inference in NLP. Most closely related methodologically, \citet{feldman2026latent} develop a pipeline for estimating effects of latent textual treatments, combining LLM-based generation and steering with robust causal estimation, and show why naive text-as-treatment estimates can be biased when text mixes treatment and covariate information. \citet{nakamura2025gpi} use generative AI representations to improve causal representation learning for text-as-treatment problems. \citet{gui2024causal} caution that LLM-simulated subjects can violate experimental unconfoundedness when treatment prompts unintentionally change unspecified covariates, and \citet{angelopoulos2024causal} show how A/B-test evidence can be used to causally align language-model outputs with downstream marketing outcomes. Relative to this literature, our contribution is not a general method for arbitrary textual treatments. We define a specific marketing decomposition --- retrieval versus expression in LLM-mediated recommendation --- and show how a modular factorial design identifies the corresponding component effects without relying on post hoc mediation through realized text features.
+
+Finally, our estimands draw on the language of mediation and factorial experiments. Classical mediation work formalizes direct, indirect, and interaction-related decompositions \citep{robins1992mediation, pearl2001direct, imai2010identification, vanderweele2014three}. Factorial-experiment methods characterize main and interaction effects when multiple randomized factors are crossed \citep{egami2019causal, muralidharan2025factorial}. We use these tools in a policy-component experiment: the retrieval policy and expression policy are directly randomized, so the main empirical objects are cell-mean contrasts rather than text-as-mediator estimands. The design is not a post hoc mediation analysis of realized text. It is a factorial experiment over policy components: retrieval policy and expression policy are assigned by the experimenter before recommendation generation.
+
+The remainder of the paper is structured as follows. Section~\ref{section:framework} introduces the setting, notation, estimands, and identification. Section~\ref{section:design} describes the modular $2 \times 2$ experiment. Section~\ref{section:empirics} presents the empirical design and data. Section~\ref{section:results} reports the results. Section~\ref{section:conclusion} concludes.
+
+%-------------------------------------------------------------------------
+\section{Framework}\label{section:framework}
+%-------------------------------------------------------------------------
+
+\subsection{Setting}
+
+A consumer-session indexed by $i$ arrives at an LLM-mediated shopping interface, submits a query, and receives a natural-language recommendation. The interface returns a tuple $(\J_i, \E_i)$ --- a selected product $\J_i \in \catalog_i$ and an expression state $\E_i$ --- and the consumer takes an action $\Y_i \in \{0, 1\}$ (click, purchase, or search-continuation).\footnote{We use binary outcomes for tractability; the framework applies to any scalar outcome.} A backend policy controls both layers of the interface. We treat each consumer-session as an independent unit, and our object of interest is the average causal effect of changing the backend policy.
+
+\subsection{Random variables and potential outcomes}
+
+We adopt the potential-outcomes framework \citep{wager2024causal}. For each consumer-session $i$:
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=2pt]
+\item $\X_i$ denotes the pre-treatment context (the query, conversation history, stated preferences, budget, and any session covariates available before recommendation);
+\item $\catalog_i \subseteq \mathcal{J}$ denotes the feasible product catalog for the session;
+\item $\J_i \in \catalog_i$ is the recommended product;
+\item $\E_i \in \Real$ is the realized expression intensity;\footnote{We model $\E$ as a real-valued scalar throughout the analytical results. The intensity encodes observable features such as endorsement strength, comparative framing, or quality emphasis. The framework extends to multivariate $\E$ without altering the identification results.}
+\item $\Y_i \in \{0, 1\}$ is the outcome.
+\end{itemize}
+
+We write the joint potential outcome as $\Y_i(j, e)$, the outcome that consumer-session $i$ would realize if shown product $j$ with expression state $e$. Policy assignments are denoted $\Z_i \in \{0, 1\}$ for the one-shot bundled policy and $(\Qreg_i, \Rreg_i) \in \{0, 1\}^2$ for the modular policies.\footnote{We use $\Qreg$ and $\Rreg$ for policy assignments and reserve $\Q_{ij}$ (with two subscripts) for the latent product-consumer fit score introduced in Section~\ref{section:empirics}. The two uses of the letter $Q$ are contextually distinct: $\Qreg_i \in \{0,1\}$ is a binary treatment indicator, while $\Q_{ij} \in [0,1]$ is a continuous covariate.} Realized assignments determine which potential outcome is observed under SUTVA and consistency.
+
+\subsection{Policy kernels}\label{section:kernels}
+
+A backend policy induces a distribution over $(j, e)$ pairs through a stochastic kernel. We write the one-shot kernel under policy $z$ as
+\begin{equation}
+\KOS_z(j, e \mid x, \catalog) = \Pr(\J_i = j, \E_i = e \mid \X_i = x, \catalog_i = \catalog, \Z_i = z).
+\label{eq:kernel-oneshot}
+\end{equation}
+By the chain rule, this kernel factorizes as $\KOS_z(j, e \mid x, \catalog) = \KOS_z^{\J}(j \mid x, \catalog) \cdot \KOS_z^{\E}(e \mid x, \catalog, j)$.
+
+The modular kernel replaces the single policy index with two independent indices:
+\begin{equation}
+\KMO_{q,r}(j, e \mid x, \catalog) = K_q^{\J}(j \mid x, \catalog) \cdot K_r^{\E}(e \mid x, \catalog, j).
+\label{eq:kernel-modular}
+\end{equation}
+The substantive difference is the bundle structure: in the one-shot kernel, $z$ enters both the retrieval factor and the expression factor; in the modular kernel, $q$ enters only the retrieval factor and $r$ enters only the expression factor.
+
+\subsection{Estimands}\label{section:estimands}
+
+We define four estimands. The \emph{total one-shot effect} is the expected-outcome difference between two bundled policies:
+\begin{equation}
+\dtotal = \Expect\!\left[\textstyle\sum_{j,e} \KOS_1(j, e \mid \X, \catalog) \Y(j, e)\right]
+          - \Expect\!\left[\textstyle\sum_{j,e} \KOS_0(j, e \mid \X, \catalog) \Y(j, e)\right]. \label{eq:total}
+\end{equation}
+The three modular estimands decompose the effect by channel:
+\begin{align}
+\dR     &= \Expect\!\left[\textstyle\sum_{j,e} \KMO_{1,0}(j, e \mid \X, \catalog) \Y(j, e)\right]
+          - \Expect\!\left[\textstyle\sum_{j,e} \KMO_{0,0}(j, e \mid \X, \catalog) \Y(j, e)\right] \label{eq:retrieval} \\
+\dP     &= \Expect\!\left[\textstyle\sum_{j,e} \KMO_{0,1}(j, e \mid \X, \catalog) \Y(j, e)\right]
+          - \Expect\!\left[\textstyle\sum_{j,e} \KMO_{0,0}(j, e \mid \X, \catalog) \Y(j, e)\right] \label{eq:persuasion} \\
+\dRP    &= \Expect\!\left[\Y(\KMO_{1,1}) - \Y(\KMO_{1,0}) - \Y(\KMO_{0,1}) + \Y(\KMO_{0,0})\right].
+          \label{eq:interaction}
+\end{align}
+These estimands map onto distinct firm investments. The retrieval effect $\dR$ measures the return to better product selection (catalog grounding, improved consumer profiling). The persuasion effect $\dP$ measures the return to better expression (prompt engineering, copywriting templates). The interaction $\dRP$ measures whether the two channels are complements or substitutes.
+
+\subsection{Identification}\label{section:identification}
+
+The identification of $\dtotal$ from one-shot randomized data is a standard result: under SUTVA, consistency, and randomized assignment of $\Z$, the total effect equals $\Expect[\Y \mid \Z = 1] - \Expect[\Y \mid \Z = 0]$ \citep{wager2024causal}. We take this as a benchmark.
+
+However, the one-shot difference does not identify $\dR$, $\dP$, or $\dRP$ separately. The intuition is that a bundled policy change $z = 0 \to z = 1$ realizes only two of the four modular cells --- $(q=0, r=0)$ and $(q=1, r=1)$ --- so the hybrid cells $(q=1, r=0)$ and $(q=0, r=1)$ that distinguish the retrieval channel from the expression channel are never observed.\footnote{A formal counterexample is given in Appendix~\ref{section:proof-nonid}: two potential-outcome arrays yield the same $\dtotal$ but different $(\dR, \dP, \dRP)$ triples. The one-shot data cannot distinguish them.}
+
+The modular $2 \times 2$ design resolves this by spanning all four cells. Under SUTVA, consistency, randomized assignment of $(\Qreg, \Rreg)$, and overlap, the cell-mean contrasts identify each component:
+\begin{align*}
+\dR  &= \Expect[\Y \mid \Qreg = 1, \Rreg = 0] - \Expect[\Y \mid \Qreg = 0, \Rreg = 0], \\
+\dP  &= \Expect[\Y \mid \Qreg = 0, \Rreg = 1] - \Expect[\Y \mid \Qreg = 0, \Rreg = 0], \\
+\dRP &= \Expect[\Y \mid \Qreg = 1, \Rreg = 1] - \Expect[\Y \mid \Qreg = 1, \Rreg = 0] \\
+     &\quad{}- \Expect[\Y \mid \Qreg = 0, \Rreg = 1] + \Expect[\Y \mid \Qreg = 0, \Rreg = 0].
+\end{align*}
+This follows directly from the standard identification argument for factorial experiments \citep{egami2019causal}: randomized assignment makes each cell mean an unbiased estimate of the expected potential outcome under the corresponding modular policy. The contribution is the definition of the marketing-relevant estimands --- $\dR$, $\dP$, and $\dRP$ --- and a deployable experiment that identifies them.
+
+\subsection{Naive realized-expression regression}\label{section:naive-bias}
+
+While the modular design identifies each channel cleanly, a researcher might instead regress outcomes on the \emph{realized} expression intensity $\E_i$, hoping to estimate the persuasion channel without the factorial design. We show that this approach is biased whenever $\E$ covaries with latent product-consumer fit.
+
+\begin{result}[Naive realized-expression bias]\label{res:naive}
+Suppose $\E_i = e_0 + \tau \Rreg_i + \lambda_{\mathrm{fit}} \tilde{\Q}_{i, \J_i} + \sigma_E \eta_i$, where $\tilde{\Q}_{i, \J_i}$ is a latent product-consumer fit channel that enters the outcome equation $\Y_i = \beta_0 + \beta_E \E_i + \beta_Q \tilde{\Q}_{i, \J_i} + \nu_i$. If the researcher does not observe $\tilde{\Q}_{i, \J_i}$, the OLS coefficient of $\Y_i$ on $\E_i$ converges in probability to
+\begin{equation}
+\beta_E^{\mathrm{naive}} \;=\; \beta_E + \frac{\lambda_{\mathrm{fit}} \mathrm{Var}(\tilde{\Q})}{\lambda_{\mathrm{fit}}^2 \mathrm{Var}(\tilde{\Q}) + \sigma_E^2} \beta_Q,
+\label{eq:naive-bias}
+\end{equation}
+and the bias is positive whenever $\lambda_{\mathrm{fit}} \beta_Q > 0$.
+\end{result}
+
+\noindent\textbf{Interpretation.} The bias formula in Equation~\eqref{eq:naive-bias} follows from standard omitted-variable algebra (the derivation is in Appendix~\ref{section:proof-naive}). The practically relevant observation is that the bias is \emph{non-monotonic} in $\lambda_{\mathrm{fit}}$: the numerator is linear while the denominator is quadratic, so the bias rises to a maximum at $\lambda_{\mathrm{fit}}^\star = \sigma_E / \sqrt{\mathrm{Var}(\tilde{\Q})}$ and falls back toward zero at the extremes. This means that a firm cannot bound the bias simply by arguing that expression-fit endogeneity is ``small'' or ``large'' --- the worst case is at moderate endogeneity, precisely the empirically plausible range.
+
+%-------------------------------------------------------------------------
+\section{Experimental Design}\label{section:design}
+%-------------------------------------------------------------------------
+
+\subsection{Two-stage architecture}
+
+The experiment has two stages.
+
+\textbf{Stage 1 (retrieval).} Take the consumer context $\X_i$ and the feasible catalog $\catalog_i$. Apply retrieval policy $\Qreg_i \in \{0, 1\}$. Return a product $\J_i \in \catalog_i$. In a deployed system, this stage corresponds to a JSON-mode call that returns a product identifier and a shortlist, without persuasive text.
+
+\textbf{Stage 2 (expression).} Take the product $\J_i$ returned by Stage~1 along with the consumer context. Apply expression policy $\Rreg_i \in \{0, 1\}$. Return the recommendation text. In a deployed system, this stage corresponds to a free-form generation call that does not change the selected product.
+
+The architecture has three deployment requirements. First, the platform must be able to issue separable retrieval and expression calls, which is now standard in production pipelines \citep{ma2020off}. Second, the expression stage cannot rewrite the product selected in Stage~1; in practice, this is enforced through the prompt and verified ex~post. Third, the modular cell assignment must be uncorrelated with the consumer covariates, which is satisfied by experimenter-controlled randomization.
+
+\subsection{Estimands and managerial mapping}
+
+Three estimands, one per managerial decision.
+
+The \emph{retrieval effect} $\dR$ is the probability-scale change in outcomes when the firm switches from a baseline retrieval rule to an alternative, holding the expression rule fixed. It maps to an investment in catalog grounding, retrieval-side fine-tuning, or improved consumer profiling.
+
+The \emph{persuasion effect} $\dP$ is the probability-scale change in outcomes when the firm switches from a baseline expression rule to an alternative, holding the retrieval rule fixed. It maps to an investment in prompt engineering, copywriting templates, or expression-side fine-tuning.
+
+The \emph{retrieval--persuasion interaction} $\dRP$ is the difference of the persuasion effect across retrieval rules. It maps to an investment in matched product-expression strategies: for instance, persuasive language for niche products but neutral language for bestsellers. The sign of $\dRP$ tests whether persuasive expression substitutes for or complements product-market fit.
+
+%-------------------------------------------------------------------------
+\section{Empirical Strategy}\label{section:empirics}
+%-------------------------------------------------------------------------
+
+We present two sets of empirical exercises. The first is an architecture diagnostic that tests whether the retrieval--expression interaction is negligible, justifying the factored design. The second is the main experiment, which deploys the $2 \times 2$ design on real product data with a treatment grounded in information access.
+
+\subsection{Exercise 1: Architecture diagnostic}\label{section:diagnostic}
+
+\subsubsection{Motivation}
+
+The modular $2 \times 2$ design requires that the retrieval and expression stages be executed separately. A natural concern is whether this decomposition introduces artifacts: does a two-stage recommender behave fundamentally differently from a unified (one-shot) LLM recommender? If the interaction $\dRP$ is large, the factored design may capture dynamics that do not arise in practice. We address this concern empirically.
+
+\subsubsection{Design}
+
+We deploy a four-cell modular design on a local LLM (Qwen~2.5~14B via Ollama). For each of three product categories --- phone chargers (8~products), headphones (10~products), and laptops (10~products) --- we generate 10~consumer profiles and run each consumer through all four cells: $(\Qreg=0, \Rreg=0)$, $(\Qreg=1, \Rreg=0)$, $(\Qreg=0, \Rreg=1)$, and $(\Qreg=1, \Rreg=1)$, yielding 120~recommendation packages across 30~consumer-product clusters. The retrieval policy $\Qreg=1$ provides the LLM with historical purchase data (conversion rates, satisfaction scores, segment-level fit); the expression policy $\Rreg=1$ instructs the LLM to write as an experienced advisor referencing buyer patterns. Under $\Qreg=0$ and $\Rreg=0$, the LLM sees only product specifications and writes a straightforward spec-based recommendation.
+
+A separate LLM (GPT-5.3) evaluates all $\binom{4}{2} \times 30 = 180$ within-cluster pairwise comparisons under a blinded pairwise protocol that randomizes the presentation order and strips condition labels.
+
+\subsubsection{Decomposition method}
+
+We estimate cell-level demand utilities using two complementary approaches. First, a simple pairwise score (win = 1, tie = 0.5, loss = 0) normalized so that $U(00) = 0$. Second, a Bradley--Terry model fit to the full pairwise matrix, which produces log-strength parameters $\theta$ on a common scale. Retrieval, expression, and interaction effects are computed as cell-mean contrasts. We obtain confidence intervals and posterior probabilities via cluster bootstrap ($B = 2{,}000$), sampling consumer clusters with replacement.
+
+\subsubsection{Results}
+
+Table~\ref{table:diagnostic} reports the pooled Bradley--Terry decomposition.
+
+\begin{table}[h]
+\centering
+\caption{Architecture diagnostic: Bradley--Terry decomposition (pooled, 30 clusters).}
+\label{table:diagnostic}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Component & Estimate & Boot SE & 95\% CI & $P(>0)$ \\
+\midrule
+Retrieval $\dR$      & 0.084 & 0.242 & [$-$0.40, 0.54] & 65\% \\
+Expression $\dP$     & 0.841 & 0.187 & [0.46, 1.20] & 100\% \\
+Interaction $\dRP$   & 0.002 & 0.189 & [$-$0.38, 0.36] & 51\% \\
+Total                & 0.926 & 0.233 & [0.48, 1.39] & 100\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The estimated pooled interaction is close to zero in magnitude ($\hat{\theta} = 0.002$) and indistinguishable from noise ($P(>0) = 51\%$, equivalent to a coin flip). By contrast, the expression effect is large and precisely estimated. The category-level results are reported in Appendix~\ref{section:diagnostic-detail}: the interaction is near zero for headphones ($0.006$) and shows opposing signs for laptops ($+0.54$) and phone chargers ($-0.59$), consistent with noise rather than a systematic pattern at this sample size.
+
+\textbf{Interpretation.} The near-zero pooled interaction supports the feasibility of the factored design: in our setting, the total effect of a ``full bundle'' policy change (switching both retrieval and expression) is well approximated by the sum of the retrieval and expression main effects. The diagnostic is an internal architecture check for the modular design under the local model and product categories studied. It does not establish that retrieval--expression interactions are generally small for all frontier LLMs or product domains, but it provides empirical justification for the $2 \times 2$ design we deploy in the main experiment.
+
+\subsection{Exercise 2: History-shock experiment}\label{section:history-shock}
+
+\subsubsection{Motivation}
+
+The architecture diagnostic establishes that the factored design is a reasonable approximation. The main experiment deploys this design on real product data, with a treatment grounded in a substantive information shock: whether the LLM recommender has access to historical sales records and user reviews.
+
+\subsubsection{Product catalog}
+
+We assemble a catalog of 30~headphone products from the Amazon Reviews 2023 dataset \citep{hou2024amazon}. The catalog spans 21~brands, prices from \$14 to \$348, and four popularity tiers (bestseller, mainstream, niche, long tail) assigned by rating-count quantiles. For each product, we extract the title, brand, price, average rating, rating count, and feature list from the Amazon metadata. We partition products into three price tiers: budget ($\leq\$25$, 10~products), midrange ($\$26$--$\$100$, 10~products), and premium ($>\$100$, 10~products). Details on product selection and metadata fields are in Appendix~\ref{section:catalog}.
+
+\subsubsection{Consumer reviews}
+
+We extract 2{,}508 verified user reviews for all 30~products from the Amazon Reviews 2023 dataset by streaming the gzipped review file and filtering for our target product identifiers. Each product receives a review quota proportional to its rating count (a proxy for sales volume), capped at 100~reviews per product. Reviews are ranked by helpfulness votes, and the top reviews under each quota are retained. All 30~products are covered.
+
+\subsubsection{Consumer personas}
+
+We generate 60~consumer personas using GPT, stratified across 8~consumer segments: budget students, commuters, frequent travelers, remote workers, audiophiles, gym users, gamers, and casual listeners. Each persona includes a one-paragraph description, a budget range, a primary use case, must-have and must-avoid feature lists, and a technical knowledge level. The persona generation prompt and the full list of personas are in Appendix~\ref{section:personas}.
+
+\subsubsection{Treatment: the history shock}
+
+The treatment is an information shock applied to the LLM recommender. In the \emph{generic} (unshocked) condition, the recommender sees only product specifications --- brand, model name, price, and a list of key features. It does \emph{not} have access to sales data, rating counts, popularity rankings, review summaries, or any historical purchase feedback. In the \emph{history-aware} (shocked) condition, the recommender additionally sees rating counts, average ratings, popularity tiers, and qualitative summaries derived from real user reviews and segment-level affinity scores. The shocked recommender's system prompt instructs it to act as ``an experienced shopping recommender'' with access to ``product attributes, public review summaries, and internal historical purchase-feedback patterns,'' while the generic recommender's system prompt states that it ``only has access to the product catalog and the consumer's stated needs.'' The exact prompts for both conditions are reproduced in Appendix~\ref{section:prompts}.
+
+\subsubsection{Four-cell design}
+
+We cross the retrieval policy $\Qreg \in \{0, 1\}$ with the expression policy $\Rreg \in \{0, 1\}$ to produce four cells:
+\begin{center}
+\small
+\begin{tabular}{lcc}
+\toprule
+& Expression: Generic ($\Rreg=0$) & Expression: History ($\Rreg=1$) \\
+\midrule
+Retrieval: Generic ($\Qreg=0$) & Cell 00 (baseline) & Cell 01 \\
+Retrieval: History ($\Qreg=1$) & Cell 10 & Cell 11 (full bundle) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Each of the 60~personas passes through all four cells, yielding 240~recommendation packages. In Stage~1, the LLM receives the consumer persona and the product catalog (with or without sales data, depending on $\Qreg$) and returns a product selection in JSON format. In Stage~2, the LLM receives the selected product and the consumer persona (with or without review summaries, depending on $\Rreg$) and generates a natural-language recommendation package consisting of a recommendation text, a tradeoff disclosure, and a persuasion sentence. The supply-side model is Qwen~2.5~14B running locally via Ollama at temperature 0.7, with per-cell seeding for reproducibility.
+
+\subsubsection{Demand-side evaluation}
+
+GPT-5.3 serves as the demand-side evaluator in two protocols. In the \emph{absolute} protocol, each recommendation package is evaluated on seven scales: fit (1--7), purchase probability (0--100), expected satisfaction (0--100), trust (1--7), clarity (1--7), persuasive intensity (1--7), and tradeoff disclosure (1--7). In the \emph{pairwise} protocol, all six within-cluster pairs are compared on four dimensions (overall, purchase, satisfaction, trust), with randomized presentation order and blinded condition labels. We decompose the pairwise data using the same Bradley--Terry framework as in the architecture diagnostic, with cluster-bootstrap inference ($B = 2{,}000$).
+
+\subsubsection{Leakage control}
+
+A key concern is that the shocked recommender might ``leak'' numerical evidence from the history data --- citing exact rating counts, conversion rates, or rankings --- which would confound the expression treatment with an information treatment. We enforce anti-leakage at three levels. First, the shocked prompt explicitly instructs the LLM: ``Do not cite exact sales numbers, conversion rates, satisfaction rates, ranks, sample sizes, or percentages.'' Second, an automated leakage audit scans all 240~packages against 17~forbidden regex patterns (percentages, ordinal rankings, specific counts). Third, flagged packages are regenerated with a reinforced anti-leakage prompt. Leakage rates and the full pattern list are in Appendix~\ref{section:leakage}.
+
+%-------------------------------------------------------------------------
+\section{Results}\label{section:results}
+%-------------------------------------------------------------------------
+
+[Results will be reported here upon completion of the simulation run. The section will include: (i)~retrieval variation across $\Qreg=0$ and $\Qreg=1$; (ii)~absolute evaluation means by cell; (iii)~pairwise win rates and Bradley--Terry decomposition with cluster-bootstrap confidence intervals; (iv)~multi-outcome analysis across purchase probability, satisfaction, and trust channels.]
+
+%-------------------------------------------------------------------------
+\section{Conclusion}\label{section:conclusion}
+%-------------------------------------------------------------------------
+
+We propose a modular $2 \times 2$ experimental design that crosses an LLM retrieval policy with an LLM expression policy, and we show that the design identifies the effects of the assigned retrieval and expression policies over the feasible recommendation support induced by the experimental system. The framework builds on the observation that LLM-mediated product recommendation bundles two economically distinct functions: product selection and explanatory language. A standard prompt A/B test identifies the total effect of a backend policy change. The modular design separates the channels.
+
+In the architecture diagnostic, we find no pooled evidence of a systematic retrieval--expression interaction; the estimated pooled interaction is close to zero, although category-specific estimates remain noisy. This supports the feasibility of the factored design under the local model and product categories studied.
+
+Our findings provide at least threefold insights with managerial relevance for firms deploying LLM shopping assistants. First, a prompt A/B test is sufficient for deciding whether a bundled policy change works, but insufficient for deciding whether the lift came from retrieval, expression, or their interaction --- and these components correspond to different firm investments. Second, a firm or researcher who regresses outcomes on realized expression intensity systematically overstates the persuasion channel, with a bias that is non-monotonic in the endogeneity parameter --- a pattern we derive analytically. Third, the modular design is deployable on platforms that can separately assign retrieval and expression policies, lock the selected product before text generation, and verify that the expression stage does not change the nominated item. The design affects only experimental allocation, not identification: it does not require any modification to the underlying recommendation model, only an experimenter-controlled randomization.
+
+Our study is subject to several limitations that point to potential directions for future work. First, all consumer outcomes in this paper are evaluated by a separate LLM (GPT-5.3), not by human consumers. A field experiment with human subjects is the natural next step, and we view the modular design as ready to deploy in such a setting. Second, the design identifies the effects of the assigned policies over the feasible recommendation support; products that neither retrieval policy nominates lie outside the estimand. Third, the architecture diagnostic finds near-zero interaction under the local model and product categories studied; whether this extends to frontier models, other product domains, or different policy contrasts remains an open question.
+
+\bigskip
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\appendix
+
+%-------------------------------------------------------------------------
+\section{Analytical Derivations}\label{section:proofs}
+%-------------------------------------------------------------------------
+
+\subsection{Non-identification counterexample}\label{section:proof-nonid}
+
+We construct a counterexample showing that the one-shot difference does not identify $\dR$, $\dP$, or $\dRP$ separately. Consider two products $\{j_1, j_2\}$ and two expression states $\{e_0, e_1\}$, and write the potential outcomes as a $2 \times 2$ matrix $\Y(\cdot, \cdot)$. Let the one-shot kernels be $\KOS_0(j, e) = 0.5 \cdot \mathbf{1}\{j = j_1, e = e_0\} + 0.5 \cdot \mathbf{1}\{j = j_2, e = e_0\}$ and $\KOS_1(j, e) = 0.5 \cdot \mathbf{1}\{j = j_1, e = e_1\} + 0.5 \cdot \mathbf{1}\{j = j_2, e = e_1\}$. Then
+\[
+\dtotal = \tfrac{1}{2}\!\left[\Y(j_1, e_1) - \Y(j_1, e_0)\right] + \tfrac{1}{2}\!\left[\Y(j_2, e_1) - \Y(j_2, e_0)\right].
+\]
+Now consider two potential-outcome arrays. \textbf{Array~A} has $\Y(j_1, e_0) = 0.2$, $\Y(j_1, e_1) = 0.4$, $\Y(j_2, e_0) = 0.3$, $\Y(j_2, e_1) = 0.5$. \textbf{Array~B} has $\Y(j_1, e_0) = 0.3$, $\Y(j_1, e_1) = 0.5$, $\Y(j_2, e_0) = 0.2$, $\Y(j_2, e_1) = 0.4$. Both arrays yield $\dtotal = 0.2$, but the implied modular cell means differ: array~A and array~B generate different $(\dR, \dP, \dRP)$ triples despite producing the same $\dtotal$. $\square$
+
+\subsection{Naive realized-expression bias}\label{section:proof-naive}
+
+Standard omitted-variable bias for OLS. The full population regression $\Y = \beta_0 + \beta_E \E + \beta_Q \tilde{\Q} + \nu$ is correctly specified. The naive regression omits $\tilde{\Q}$, and the OLS coefficient on $\E$ satisfies
+\[
+\mathrm{plim}\, \hat{\beta}_E^{\mathrm{naive}} = \beta_E + \frac{\mathrm{Cov}(\E, \tilde{\Q})}{\mathrm{Var}(\E)} \beta_Q.
+\]
+With $\E = e_0 + \tau \Rreg + \lambda_{\mathrm{fit}} \tilde{\Q} + \sigma_E \eta$ and $\eta, \tilde{\Q}, \Rreg$ mutually independent, $\mathrm{Cov}(\E, \tilde{\Q}) = \lambda_{\mathrm{fit}} \mathrm{Var}(\tilde{\Q})$ and $\mathrm{Var}(\E) = \lambda_{\mathrm{fit}}^2 \mathrm{Var}(\tilde{\Q}) + \sigma_E^2 + \tau^2 \mathrm{Var}(\Rreg)$. Substituting yields the closed form in Equation~\eqref{eq:naive-bias}. $\square$
+
+The bias is maximized at $\lambda_{\mathrm{fit}}^\star = \sigma_E / \sqrt{\mathrm{Var}(\tilde{\Q})}$. To see this, differentiate the bias term $b(\lambda) = \lambda \mathrm{Var}(\tilde{\Q}) / (\lambda^2 \mathrm{Var}(\tilde{\Q}) + \sigma_E^2)$ and set the derivative to zero. The resulting equation $\sigma_E^2 - \lambda^2 \mathrm{Var}(\tilde{\Q}) = 0$ yields the interior maximum.
+
+%-------------------------------------------------------------------------
+\section{Structural DGP Validation}\label{section:dgp}
+%-------------------------------------------------------------------------
+
+To validate that the modular design recovers known ground-truth effects under controlled conditions, we construct a structural data-generating process with three hand-curated product catalogs (phone chargers, headphones, laptops) and 1{,}000 simulated consumers per category. Each consumer-product pair has a latent fit score $\Q_{ij}$, and we simulate outcomes under two DGPs: a persuasion-leaning DGP (brand-forward retrieval, expression as leading channel) and a retrieval-dominant DGP (fit-aware retrieval). Under both DGPs, the modular design recovers the three components within sampling noise, while the naive realized-expression regression overstates the persuasion effect by 80--130\% at policy-relevant endogeneity levels. The structural validation is documented in detail below.
+
+\subsection{Retrieval kernel}
+
+Under the persuasion-leaning DGP, the retrieval score for consumer $i$ and product $j$ is
+\[
+\mathrm{score}_{ij}(q) = a_Q \tilde{\Q}_{ij} + a_{\mathrm{inc}} \mathrm{incumbent}_j + a_{\mathrm{focal}} \cdot q \cdot \mathrm{focal\_brand}_j + \sigma_R \varepsilon_{ij},
+\]
+where $\tilde{\Q}_{ij}$ is the within-category standardized fit score and $\varepsilon_{ij} \sim \mathcal{N}(0, 1)$. The selected product is $\J_i(q) = \arg\max_{j} \mathrm{score}_{ij}(q)$. Under the retrieval-dominant DGP, the $a_{\mathrm{focal}}$ term is replaced by a direct $Q$-boost: $\mathrm{score}_{ij}(q) = (a_Q + \delta_{\mathrm{fit}} \cdot q) \tilde{\Q}_{ij} + a_{\mathrm{inc}} \mathrm{incumbent}_j + \sigma_R \varepsilon_{ij}$.
+
+\subsection{Expression kernel}
+
+One-shot: $\E_i(z) = e_0 + \tau_{\mathrm{backend}} z + \lambda_{\mathrm{fit}} \tilde{\Q}_{i, \J_i(z)} + \lambda_{\mathrm{inc}} \mathrm{incumbent}_{\J_i(z)} + \sigma_E \eta_i$.
+Modular: $\E_i(q, r) = e_0 + \tau_R r + \lambda_{\mathrm{fit}} \tilde{\Q}_{i, \J_i(q)} + \lambda_{\mathrm{inc}} \mathrm{incumbent}_{\J_i(q)} + \sigma_E \eta_i$.
+
+\subsection{Outcome equation}
+
+$\Y_i \sim \mathrm{Bernoulli}(\sigma(U_i))$ with $U_i = \beta_0 + \beta_Q \tilde{\Q}_{i,\J_i} + \beta_E \E_i + \beta_{\mathrm{inc}} \mathrm{incumbent}_{\J_i} + \beta_{\mathrm{incE}} \mathrm{incumbent}_{\J_i} \E_i$.
+
+\subsection{Parameter values}
+
+\begin{tabular}{lr@{\hskip 24pt}lr}
+\toprule
+\multicolumn{2}{c}{Persuasion-leaning DGP} & \multicolumn{2}{c}{Retrieval-dominant DGP} \\
+$a_Q = 1.0$ & $a_{\mathrm{inc}} = 0.20$ & $a_Q = 1.0$ & $a_{\mathrm{inc}} = 0.20$ \\
+$a_{\mathrm{focal}} = 0.50$ & $\sigma_R = 0.35$ & $a_{\mathrm{focal}} = 0$ & $\delta_{\mathrm{fit}} = 0.80$ \\
+$e_0 = 0$ & $\tau_{\mathrm{backend}} = 0.50$ & $e_0 = 0$ & $\tau_{\mathrm{backend}} = 0.50$ \\
+$\tau_R = 0.50$ & $\lambda_{\mathrm{fit}} = 1.0$ & $\tau_R = 0.50$ & $\lambda_{\mathrm{fit}} = 1.0$ \\
+$\lambda_{\mathrm{inc}} = 0.20$ & $\sigma_E = 0.50$ & $\lambda_{\mathrm{inc}} = 0.20$ & $\sigma_E = 0.50$ \\
+$\beta_0 = -0.80$ & $\beta_Q = 0.70$ & $\beta_0 = -0.80$ & $\beta_Q = 0.70$ \\
+$\beta_E = 0.50$ & $\beta_{\mathrm{inc}} = 0.25$ & $\beta_E = 0.35$ & $\beta_{\mathrm{inc}} = 0.25$ \\
+$\beta_{\mathrm{incE}} = -0.15$ & $\beta_{QE} = 0$ & $\beta_{\mathrm{incE}} = -0.15$ & $\beta_{QE} = 0$ \\
+\bottomrule
+\end{tabular}
+
+\subsection{Validation results}
+
+Pooled across the three categories, the modular cell contrasts recover the persuasion effect at $t = 2.56$ (estimate 0.032 against truth 0.037) in the persuasion-leaning DGP, and the retrieval effect at $t = 1.44$ (estimate 0.018 against truth 0.014) in the retrieval-dominant DGP. The naive estimator overstates persuasion by 135\% of the truth at $\lambda_{\mathrm{fit}} = 1.0$. A Monte Carlo sweep across $\lambda_{\mathrm{fit}} \in \{0, 0.25, 0.5, 0.75, 1.0, 1.5, 2.0\}$ with 25~replications per value traces the non-monotonic bias pattern predicted by Result~\ref{res:naive}. Master seed: 20260513 with \texttt{numpy.random.SeedSequence.spawn(5)}.
+
+%-------------------------------------------------------------------------
+\section{Architecture Diagnostic: Category-Level Detail}\label{section:diagnostic-detail}
+%-------------------------------------------------------------------------
+
+The architecture diagnostic of Section~\ref{section:diagnostic} is run on three categories. The category-level Bradley--Terry decompositions are:
+
+\begin{center}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+& \multicolumn{4}{c}{Bradley--Terry $\hat{\theta}$} \\
+Category & Retrieval & Expression & Interaction & Total \\
+\midrule
+Headphones    & $-$0.19 & 1.21 & 0.01 & 1.03 \\
+Laptops       & $-$0.16 & 0.31 & 0.54 & 0.69 \\
+Phone chargers & 0.60  & 1.13 & $-$0.59 & 1.14 \\
+\midrule
+\textbf{Pooled} & \textbf{0.08} & \textbf{0.84} & \textbf{0.00} & \textbf{0.93} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The opposing signs for laptops ($+0.54$) and phone chargers ($-0.59$) are consistent with noise at $n = 10$ clusters per category: neither has bootstrap $P(>0)$ far from 50\%. The headphones interaction is essentially zero ($0.01$, $P(>0) = 50.3\%$). Since the main experiment uses headphones only, the relevant category-level evidence is the most favorable for the factored design.
+
+%-------------------------------------------------------------------------
+\section{Product Catalog and Metadata}\label{section:catalog}
+%-------------------------------------------------------------------------
+
+The catalog comprises 30 headphone products selected from the Amazon Reviews 2023 dataset based on the following criteria: (i)~at least 30{,}000 customer ratings, (ii)~available price data, (iii)~brand diversity (21 unique brands). Products span four popularity tiers assigned by rating-count quartiles: bestseller (top 25\%, $\geq$100K ratings), mainstream (50--75th percentile), niche (25--50th), and long tail (bottom 25\%). Price tiers are assigned as budget ($\leq$\$25), midrange (\$26--\$100), and premium ($>$\$100), with 10 products per tier. The correlation between popularity rank and price is $+0.12$; between popularity rank and average rating, $+0.31$.
+
+For each product, we extract: ASIN, title, brand, price, average rating, rating count, raw feature list, and description from the Amazon metadata files. We derive key features (top 4 from the raw feature list), best-for segments (inferred from feature keywords), and drawbacks (inferred from common complaint patterns in the reviews).
+
+%-------------------------------------------------------------------------
+\section{Consumer Persona Generation}\label{section:personas}
+%-------------------------------------------------------------------------
+
+We generate 60 consumer personas using GPT, with 7--8 personas per segment across 8 segments: budget student, commuter, frequent traveler, remote worker, audiophile, gym user, gamer, and casual listener. Each persona includes: a one-paragraph natural-language description, an age range, a purchase context, a budget range, a technical knowledge level (low/medium/high), a primary use case, a secondary use case, must-have features, and features to avoid. The generation prompt asks GPT to produce diverse, realistic personas that span the attribute space within each segment.
+
+%-------------------------------------------------------------------------
+\section{Prompt Templates}\label{section:prompts}
+%-------------------------------------------------------------------------
+
+This appendix reproduces the exact prompts used for each cell of the $2 \times 2$ design. All prompts are sent to Qwen~2.5~14B via Ollama at temperature 0.7.
+
+\subsection{System prompts}
+
+\textbf{Generic recommender persona} ($\Qreg = 0$ or $\Rreg = 0$):
+
+\begin{quote}
+\small\ttfamily
+You are a product recommender. You only have access to the product catalog and the consumer's stated needs. You do NOT have access to sales data, review summaries, popularity rankings, or historical purchase feedback. Recommend based solely on product specifications and how they match the consumer's requirements.
+\end{quote}
+
+\textbf{History-aware recommender persona} ($\Qreg = 1$ or $\Rreg = 1$):
+
+\begin{quote}
+\small\ttfamily
+You are an experienced shopping recommender. You have access to product attributes, public review summaries, and internal historical purchase-feedback patterns. Your goal is not to recommend the most popular product. Your goal is to recommend the product most suitable for this specific consumer. Use historical evidence as background only. Do not cite exact sales numbers, conversion rates, satisfaction rates, ranks, sample sizes, or percentages. You may refer qualitatively to evidence such as ``often chosen by similar buyers,'' ``strong post-purchase feedback among travelers,'' ``mixed feedback from budget buyers,'' or ``frequent complaints about comfort.''
+\end{quote}
+
+\subsection{Retrieval prompts}
+
+\textbf{Generic retrieval} ($\Qreg = 0$): The LLM receives the generic persona, the consumer profile (one-paragraph description, budget, primary use case, must-have features, features to avoid), and the product catalog formatted as a list with product ID, brand, model name, price, average rating, and top 4 features. The catalog does \emph{not} include rating counts, popularity tiers, or review summaries. The prompt instructs: ``Select the single best product for this consumer based on their stated needs and the product specifications.'' Output: JSON with \texttt{selected\_product\_id} and \texttt{retrieval\_rationale\_internal}.
+
+\textbf{History-aware retrieval} ($\Qreg = 1$): The LLM receives the history-aware persona, the same consumer profile, and the product catalog enhanced with rating counts, popularity tiers, and qualitative summaries of segment-level affinity. The prompt instructs: ``Consider both the consumer's stated needs AND which products have historically satisfied similar buyers. If a popular, well-reviewed product fits the consumer's needs, prefer it over an obscure alternative --- unless the consumer has specific requirements the popular option cannot meet.'' Output: JSON with \texttt{selected\_product\_id}, \texttt{retrieval\_rationale\_internal}, and \texttt{history\_signal\_used}.
+
+\subsection{Expression prompts}
+
+\textbf{Generic expression} ($\Rreg = 0$): ``Write a recommendation based ONLY on the product specifications and the consumer's needs. Do not mention popularity, reviews, or how other buyers feel --- you only have the spec sheet.'' Style: ``Write a straightforward product recommendation based on the product specs and the consumer's stated needs. Be factual and concise. Stick to what is listed in the product features.'' Output: JSON with \texttt{recommendation\_text} (3--5 sentences), \texttt{tradeoff\_text} (1--2 sentences), and \texttt{persuasion\_text} (1 sentence).
+
+\textbf{History-aware expression} ($\Rreg = 1$): ``Write a recommendation that naturally weaves in your knowledge of how this product performs in the real world. Reference patterns like `buyers in your situation tend to...' or `this is a proven choice for...' or `the main complaint from similar users is...' --- but NEVER cite specific numbers, percentages, or rankings.'' Style: ``Write like an experienced shopping advisor who has seen thousands of customers buy and return products. Be opinionated and specific. Use your historical insight to give advice that goes beyond the spec sheet.'' The product detail block includes historical intelligence (segment-level affinity, review snippets). Output: JSON with the same fields plus \texttt{history\_language\_used}.
+
+%-------------------------------------------------------------------------
+\section{Leakage Audit}\label{section:leakage}
+%-------------------------------------------------------------------------
+
+The leakage audit scans all recommendation packages for 17 forbidden regex patterns covering: percentages (\texttt{\textbackslash d+\%}, \texttt{\textbackslash d+\textbackslash.\textbackslash d+\%}), ordinal rankings (``ranked \#\textbackslash d+'', ``top \textbackslash d+''), specific counts (``\textbackslash d+,\textbackslash d+ reviews'', ``\textbackslash d+,\textbackslash d+ ratings''), satisfaction rates (``\textbackslash d+ out of \textbackslash d+''), sample sizes (``based on \textbackslash d+ customers''), and conversion language (``\textbackslash d+\% of buyers'', ``\textbackslash d+\% satisfaction''). Packages that trigger any pattern are regenerated with a reinforced anti-leakage instruction prepended to the prompt.
+
+%-------------------------------------------------------------------------
+\section{Estimator Details}\label{section:estimators}
+%-------------------------------------------------------------------------
+
+\subsection{Cell-mean contrasts and analytical standard errors}
+
+For each modular cell $(q, r) \in \{0, 1\}^2$ we compute the cell mean $\bar{\Y}_{q, r}$ and the cell variance $s^2_{q, r}$. The standard error of a two-cell contrast is $\sqrt{s^2_{q_1, r_1} / n_{q_1, r_1} + s^2_{q_2, r_2} / n_{q_2, r_2}}$. The standard error of the four-cell interaction contrast is $\sqrt{\sum_{(q, r)} s^2_{q, r} / n_{q, r}}$.
+
+\subsection{Bradley--Terry model}
+
+We fit a Bradley--Terry model to the pairwise comparison data, treating ties as half-win/half-loss. The log-likelihood is maximized numerically with $\theta_{00} = 0$ as the identified baseline. Decomposition effects are computed as linear combinations of the four cell parameters.
+
+\subsection{Cluster bootstrap}
+
+We sample consumer clusters with replacement ($B = 2{,}000$) and re-estimate the Bradley--Terry model on each bootstrap sample. The $\alpha/2$ and $1 - \alpha/2$ quantiles of the bootstrap distribution provide confidence intervals. The posterior probability $P(>0)$ is the fraction of bootstrap replicates in which the effect estimate is positive.
+
+\end{document}

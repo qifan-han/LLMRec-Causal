@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_009",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 9,
+  "timestamp": "2026-05-14T12:12:25.307996+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20269514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_nano_67w\",\n  \"shortlist\": [\"charger_anker_nano_67w\", \"charger_baseus_65w\", \"charger_voltix_65w\"],\n  \"recommendation_text\": \"For multi-device charging, the Anker Nano 67W charger is highly recommended. It offers two USB-C ports and one USB-A port for versatile connectivity, making it ideal for various devices. Despite its compact size, it supports GaN technology and PPS, ensuring fast charging efficiency. Although it gets warm under full load and lacks a cable, its quality and brand reputation make it the best choice within your budget.\",\n  \"selection_rationale\": \"Balances quality, brand recognition, and multi-device compatibility.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_nano_67w",
+    "shortlist": [
+      "charger_anker_nano_67w",
+      "charger_baseus_65w",
+      "charger_voltix_65w"
+    ],
+    "recommendation_text": "For multi-device charging, the Anker Nano 67W charger is highly recommended. It offers two USB-C ports and one USB-A port for versatile connectivity, making it ideal for various devices. Despite its compact size, it supports GaN technology and PPS, ensuring fast charging efficiency. Although it gets warm under full load and lacks a cable, its quality and brand reputation make it the best choice within your budget.",
+    "selection_rationale": "Balances quality, brand recognition, and multi-device compatibility."
+  },
+  "parse_success": true,
+  "latency_ms": 29759
+}

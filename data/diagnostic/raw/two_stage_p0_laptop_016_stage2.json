@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_laptop_016_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 16,
+  "timestamp": "2026-05-14T11:57:44.046829+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20276525,
+  "stage": "writer",
+  "raw_response": "The MacBook Air M4 is an excellent choice for a student due to its lightweight design and long battery life, making it perfect for daily tasks like studying and light creative work. With 16GB of RAM and an integrated GPU, it handles basic software efficiently. Although the base storage is limited at 256GB, it's still a solid option given your budget and brand familiarity with Apple.",
+  "parsed": {
+    "recommendation_text": "The MacBook Air M4 is an excellent choice for a student due to its lightweight design and long battery life, making it perfect for daily tasks like studying and light creative work. With 16GB of RAM and an integrated GPU, it handles basic software efficiently. Although the base storage is limited at 256GB, it's still a solid option given your budget and brand familiarity with Apple."
+  },
+  "parse_success": true,
+  "latency_ms": 11327
+}

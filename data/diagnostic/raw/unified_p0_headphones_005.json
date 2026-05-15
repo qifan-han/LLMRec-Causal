@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_headphones_005",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 5,
+  "timestamp": "2026-05-14T11:15:33.171386+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20265514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_sennheiser_momentum4\",\n  \"shortlist\": [\"headphones_sony_wh1000xm5\", \"headphones_bose_qc_ultra\", \"headphones_sennheiser_momentum4\"],\n  \"recommendation_text\": \"For an audiophile prioritizing sound quality and battery life, the Sennheiser Momentum 4 stands out. It offers exceptional audio fidelity with a balanced tuning that appeals to discerning listeners. The 60-hour battery life ensures extended listening sessions without recharging. While it lacks some comfort compared to Sony's XM5, its audiophile-leaning sound signature makes up for any minor drawbacks.\",\n  \"selection_rationale\": \"Sennheiser Momentum 4 offers the best audio quality and longest battery life.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_sennheiser_momentum4",
+    "shortlist": [
+      "headphones_sony_wh1000xm5",
+      "headphones_bose_qc_ultra",
+      "headphones_sennheiser_momentum4"
+    ],
+    "recommendation_text": "For an audiophile prioritizing sound quality and battery life, the Sennheiser Momentum 4 stands out. It offers exceptional audio fidelity with a balanced tuning that appeals to discerning listeners. The 60-hour battery life ensures extended listening sessions without recharging. While it lacks some comfort compared to Sony's XM5, its audiophile-leaning sound signature makes up for any minor drawbacks.",
+    "selection_rationale": "Sennheiser Momentum 4 offers the best audio quality and longest battery life."
+  },
+  "parse_success": true,
+  "latency_ms": 35796
+}

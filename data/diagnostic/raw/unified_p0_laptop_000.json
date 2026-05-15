@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_000",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 0,
+  "timestamp": "2026-05-14T11:34:21.776845+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20260514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_asus_zenbook_14\",\n  \"shortlist\": [\"laptop_asus_zenbook_14\", \"laptop_macbook_air_m4\", \"laptop_hp_elitebook_845\"],\n  \"recommendation_text\": \"The ASUS ZenBook 14 offers remarkable value for budget-conscious buyers, delivering an OLED display and lightweight design under $900. It's a solid choice for documents, spreadsheets, and web browsing with decent performance. The Intel Core Ultra 5 processor is less powerful than competitors' Core Ultra 7 or Ryzen 7 but still handles basic office tasks well. However, the speakers are weak, and there's no upgrade path for RAM beyond the included 16GB.\",\n  \"selection_rationale\": \"Balances budget and quality with familiar ASUS brand.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_asus_zenbook_14",
+    "shortlist": [
+      "laptop_asus_zenbook_14",
+      "laptop_macbook_air_m4",
+      "laptop_hp_elitebook_845"
+    ],
+    "recommendation_text": "The ASUS ZenBook 14 offers remarkable value for budget-conscious buyers, delivering an OLED display and lightweight design under $900. It's a solid choice for documents, spreadsheets, and web browsing with decent performance. The Intel Core Ultra 5 processor is less powerful than competitors' Core Ultra 7 or Ryzen 7 but still handles basic office tasks well. However, the speakers are weak, and there's no upgrade path for RAM beyond the included 16GB.",
+    "selection_rationale": "Balances budget and quality with familiar ASUS brand."
+  },
+  "parse_success": true,
+  "latency_ms": 41872
+}

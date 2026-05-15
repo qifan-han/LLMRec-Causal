@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_headphones_000",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 0,
+  "timestamp": "2026-05-14T11:09:11.150633+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20260514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_sony_ult_wear\",\n  \"shortlist\": [\"headphones_sony_ult_wear\", \"headphones_jbl_tune770nc\", \"headphones_edifier_stax\"],\n  \"recommendation_text\": \"For a budget-conscious user prioritizing quality, the Sony WH-CH710N offers an excellent balance of features and performance. With good noise cancellation, impressive battery life, and a mid-range price point, it stands out for its durability and sound quality. While not as premium as higher-end models, it delivers solid value with LDAC support and a comfortable design. JBL Tune 750NC and Edifier W82BT are also strong contenders but fall short in build quality and noise cancellation.\",\n  \"selection_rationale\": \"Offers best balance of features and price for budget-conscious users.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_sony_ult_wear",
+    "shortlist": [
+      "headphones_sony_ult_wear",
+      "headphones_jbl_tune770nc",
+      "headphones_edifier_stax"
+    ],
+    "recommendation_text": "For a budget-conscious user prioritizing quality, the Sony WH-CH710N offers an excellent balance of features and performance. With good noise cancellation, impressive battery life, and a mid-range price point, it stands out for its durability and sound quality. While not as premium as higher-end models, it delivers solid value with LDAC support and a comfortable design. JBL Tune 750NC and Edifier W82BT are also strong contenders but fall short in build quality and noise cancellation.",
+    "selection_rationale": "Offers best balance of features and price for budget-conscious users."
+  },
+  "parse_success": true,
+  "latency_ms": 38689
+}

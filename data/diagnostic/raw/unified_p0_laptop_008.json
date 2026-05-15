@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_008",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 8,
+  "timestamp": "2026-05-14T11:45:51.039727+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20268514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_macbook_air_m4\",\n  \"shortlist\": [\"laptop_macbook_air_m4\", \"laptop_thinkpad_x1_carbon\", \"laptop_dell_xps_14\"],\n  \"recommendation_text\": \"The MacBook Air M4 is an excellent choice for a student due to its ultralight design, all-day battery life, and macOS ecosystem. It offers robust performance for everyday tasks like coding, document editing, and web browsing. The Liquid Retina display provides clear visuals, and the fanless design ensures quiet operation. Although it has limited storage (256GB) and lacks some ports compared to competitors, its lightweight form factor makes it ideal for carrying around campus. The MacBook Air's high brand familiarity score and macOS ecosystem make it a strong choice despite the price sensitivity.\",\n  \"selection_rationale\": \"Balances quality, portability, and brand recognition.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_macbook_air_m4",
+    "shortlist": [
+      "laptop_macbook_air_m4",
+      "laptop_thinkpad_x1_carbon",
+      "laptop_dell_xps_14"
+    ],
+    "recommendation_text": "The MacBook Air M4 is an excellent choice for a student due to its ultralight design, all-day battery life, and macOS ecosystem. It offers robust performance for everyday tasks like coding, document editing, and web browsing. The Liquid Retina display provides clear visuals, and the fanless design ensures quiet operation. Although it has limited storage (256GB) and lacks some ports compared to competitors, its lightweight form factor makes it ideal for carrying around campus. The MacBook Air's high brand familiarity score and macOS ecosystem make it a strong choice despite the price sensitivity.",
+    "selection_rationale": "Balances quality, portability, and brand recognition."
+  },
+  "parse_success": true,
+  "latency_ms": 43146
+}

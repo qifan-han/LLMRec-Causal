@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_laptop_000_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 0,
+  "timestamp": "2026-05-14T11:35:05.083662+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20260525,
+  "stage": "writer",
+  "raw_response": "The ASUS ZenBook 14 is an excellent choice for budget-conscious office use. With a remarkable OLED display and lightweight design, it offers great value under $900. Its Intel Core Ultra 5 processor provides decent performance, though it's less powerful than higher-tier options. The laptop includes 16GB RAM and has a long battery life of up to 13 hours, making it ideal for daily office tasks without breaking the bank.",
+  "parsed": {
+    "recommendation_text": "The ASUS ZenBook 14 is an excellent choice for budget-conscious office use. With a remarkable OLED display and lightweight design, it offers great value under $900. Its Intel Core Ultra 5 processor provides decent performance, though it's less powerful than higher-tier options. The laptop includes 16GB RAM and has a long battery life of up to 13 hours, making it ideal for daily office tasks without breaking the bank."
+  },
+  "parse_success": true,
+  "latency_ms": 12567
+}

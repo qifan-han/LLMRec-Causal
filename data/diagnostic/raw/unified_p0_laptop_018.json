@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_018",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 18,
+  "timestamp": "2026-05-14T12:00:21.928983+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20278514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_macbook_pro_m4\",\n  \"shortlist\": [\"laptop_macbook_air_m4\", \"laptop_thinkpad_x1_carbon\", \"laptop_dell_xps_14\"],\n  \"recommendation_text\": \"For creative media work, the MacBook Pro M4 is an excellent choice. It boasts a powerful Apple M4 Pro processor and 24GB RAM for smooth performance in demanding applications like video editing and graphic design. The laptop features a stunning mini-LED XDR display with exceptional color accuracy and brightness, crucial for precise color grading and visual work. With macOS, it offers seamless integration with popular creative software such as Final Cut Pro and Adobe Creative Suite. Although the base storage is limited to 512GB, external SSDs can be used for additional capacity. The MacBook Pro M4 also excels in portability with a lightweight design and an impressive battery life of up to 17 hours.\",\n  \"selection_rationale\": \"Best performance and display quality for creative tasks.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_macbook_pro_m4",
+    "shortlist": [
+      "laptop_macbook_air_m4",
+      "laptop_thinkpad_x1_carbon",
+      "laptop_dell_xps_14"
+    ],
+    "recommendation_text": "For creative media work, the MacBook Pro M4 is an excellent choice. It boasts a powerful Apple M4 Pro processor and 24GB RAM for smooth performance in demanding applications like video editing and graphic design. The laptop features a stunning mini-LED XDR display with exceptional color accuracy and brightness, crucial for precise color grading and visual work. With macOS, it offers seamless integration with popular creative software such as Final Cut Pro and Adobe Creative Suite. Although the base storage is limited to 512GB, external SSDs can be used for additional capacity. The MacBook Pro M4 also excels in portability with a lightweight design and an impressive battery life of up to 17 hours.",
+    "selection_rationale": "Best performance and display quality for creative tasks."
+  },
+  "parse_success": false,
+  "latency_ms": 45750
+}

@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_headphones_014_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 14,
+  "timestamp": "2026-05-14T11:27:16.293076+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20274524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_bose_qc_ultra\",\n  \"shortlist\": [\"headphones_sony_wh1000xm5\", \"headphones_bose_qc_ultra\", \"headphones_apple_airpods_max\"],\n  \"selection_rationale\": \"Bose QC Ultra offers best noise cancellation for gym/running, balanced by price and brand familiarity.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_bose_qc_ultra",
+    "shortlist": [
+      "headphones_sony_wh1000xm5",
+      "headphones_bose_qc_ultra",
+      "headphones_apple_airpods_max"
+    ],
+    "selection_rationale": "Bose QC Ultra offers best noise cancellation for gym/running, balanced by price and brand familiarity."
+  },
+  "parse_success": true,
+  "latency_ms": 26385
+}

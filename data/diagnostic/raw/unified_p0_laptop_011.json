@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_011",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 11,
+  "timestamp": "2026-05-14T11:50:04.209649+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20271514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_thinkpad_x1_carbon\",\n  \"shortlist\": [\"laptop_macbook_air_m4\", \"laptop_hp_elitebook_845\", \"laptop_lg_gram_14\"],\n  \"recommendation_text\": \"For business travel, the Lenovo ThinkPad X1 Carbon excels with its lightweight design (1.09 kg), long battery life, and robust Windows compatibility. It features a stunning OLED display, ample RAM, and full port selection, making it ideal for productivity on-the-go. While its battery life is slightly shorter than Apple's offerings, the ThinkPad compensates with superior GPU performance and enterprise-grade security features.\",\n  \"selection_rationale\": \"Balances weight, ports, and Windows compatibility.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_thinkpad_x1_carbon",
+    "shortlist": [
+      "laptop_macbook_air_m4",
+      "laptop_hp_elitebook_845",
+      "laptop_lg_gram_14"
+    ],
+    "recommendation_text": "For business travel, the Lenovo ThinkPad X1 Carbon excels with its lightweight design (1.09 kg), long battery life, and robust Windows compatibility. It features a stunning OLED display, ample RAM, and full port selection, making it ideal for productivity on-the-go. While its battery life is slightly shorter than Apple's offerings, the ThinkPad compensates with superior GPU performance and enterprise-grade security features.",
+    "selection_rationale": "Balances weight, ports, and Windows compatibility."
+  },
+  "parse_success": true,
+  "latency_ms": 39809
+}

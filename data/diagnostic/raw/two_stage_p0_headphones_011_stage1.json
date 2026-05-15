@@ -1,0 +1,23 @@
+{
+  "row_id": "twostage_p0_headphones_011_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 11,
+  "timestamp": "2026-05-14T11:23:33.328491+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20271524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_jbl_tune770nc\",\n  \"shortlist\": [\"headphones_jbl_tune770nc\", \"headphones_edifier_stax\"],\n  \"selection_rationale\": \"Best value with solid ANC and battery life.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_jbl_tune770nc",
+    "shortlist": [
+      "headphones_jbl_tune770nc",
+      "headphones_edifier_stax"
+    ],
+    "selection_rationale": "Best value with solid ANC and battery life."
+  },
+  "parse_success": true,
+  "latency_ms": 24128
+}

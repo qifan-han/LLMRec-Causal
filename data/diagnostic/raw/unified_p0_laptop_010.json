@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_010",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 10,
+  "timestamp": "2026-05-14T11:48:42.230881+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20270514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_asus_zenbook_14\",\n  \"shortlist\": [\"laptop_asus_zenbook_14\", \"laptop_hp_elitebook_845\", \"laptop_dell_xps_14\"],\n  \"recommendation_text\": \"The ASUS ZenBook 14 offers a compelling balance of performance, portability, and affordability for software development. Its OLED display provides vibrant visuals, while the Intel Core Ultra 5 processor ensures smooth multitasking. With 16GB RAM and ample storage, it handles coding and debugging efficiently. The lightweight design makes it easy to carry around, and its Windows 11 Home OS supports a wide range of development tools. Although the battery life is average at 13 hours, the ZenBook's overall value proposition is hard to beat within your budget.\",\n  \"selection_rationale\": \"Balances performance, portability, and cost effectively.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_asus_zenbook_14",
+    "shortlist": [
+      "laptop_asus_zenbook_14",
+      "laptop_hp_elitebook_845",
+      "laptop_dell_xps_14"
+    ],
+    "recommendation_text": "The ASUS ZenBook 14 offers a compelling balance of performance, portability, and affordability for software development. Its OLED display provides vibrant visuals, while the Intel Core Ultra 5 processor ensures smooth multitasking. With 16GB RAM and ample storage, it handles coding and debugging efficiently. The lightweight design makes it easy to carry around, and its Windows 11 Home OS supports a wide range of development tools. Although the battery life is average at 13 hours, the ZenBook's overall value proposition is hard to beat within your budget.",
+    "selection_rationale": "Balances performance, portability, and cost effectively."
+  },
+  "parse_success": true,
+  "latency_ms": 43062
+}

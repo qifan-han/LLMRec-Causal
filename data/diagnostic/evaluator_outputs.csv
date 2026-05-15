@@ -1,0 +1,116 @@
+row_id,persuasive_intensity,tradeoff_disclosure,fit_specificity,eval_rationale
+unified_p0_headphones_000,6,3,4,Mentions fit with budget and needs but lacks specificity. Strong endorsement but no detailed tradeoffs.
+twostage_p0_headphones_000,5,4,5,Mentions quality sensitivity and brand familiarity but not fully specific to budget or preferences.
+unified_p0_headphones_001,4,3,5,Mentions fit with budget and needs but lacks specificity on tradeoffs.
+twostage_p0_headphones_001,4,6,5,Mentions fit with budget but could be more specific about needs and tradeoffs.
+twostage_p0_headphones_002,6,2,5,Mentions specific benefits but lacks detailed fit reasoning and tradeoffs.
+unified_p0_headphones_003,4,6,5,"Mentions fit with budget and needs, balanced tone, notes tradeoffs."
+twostage_p0_headphones_003,4,5,5,Mentions fit with budget but lacks strong endorsement or detailed tradeoffs.
+unified_p0_headphones_004,4,2,5,Mentions fit but lacks specificity on consumer needs; neutral tone; no tradeoffs disclosed.
+twostage_p0_headphones_004,5,4,5,Mentions quality sensitivity and brand familiarity but lacks detailed linking to use case or preferences.
+unified_p0_headphones_005,5,4,5,Mentions specific audio quality and battery life benefits but lacks detailed consumer-specific fit.
+twostage_p0_headphones_005,5,3,6,Links sound quality and battery life to audiophile needs but lacks detailed fit reasoning; moderate endorsement with slight touch control caveat.
+unified_p0_headphones_006,5,3,6,Links features to gaming use case and mentions value but lacks detailed tradeoffs.
+twostage_p0_headphones_006,4,3,5,Mentions gaming use case and budget fit but lacks detailed feature alignment and tradeoffs.
+unified_p0_headphones_007,4,6,5,Mentions fit with budget and needs but could be more specific; moderate endorsement; discloses build quality and feature limitations.
+twostage_p0_headphones_007,4,5,5,Mentions fit with budget but lacks strong endorsement; notes tradeoffs like plastic build and sound quality.
+unified_p0_headphones_008,6,5,6,Links product features to gaming needs but could be more detailed on tradeoffs.
+twostage_p0_headphones_008,6,3,5,Links some features to needs but lacks specificity; positive tone with endorsement; mentions non-foldable design briefly.
+unified_p0_headphones_009,5,3,4,Mentions fit for office work and highlights key features but lacks deep specificity or tradeoff discussion.
+twostage_p0_headphones_009,4,3,5,Mentions fit for office work and key features but lacks detailed linking to consumer needs and minimizes tradeoffs.
+twostage_p0_headphones_010,5,2,6,Links product to consumer needs but lacks detailed tradeoffs.
+unified_p0_headphones_011,4,2,6,Links product to office use case and mentions key features but lacks detailed fit reasoning or tradeoffs.
+twostage_p0_headphones_011,4,3,6,Links product features to consumer needs but lacks detailed tradeoffs.
+unified_p0_headphones_012,4,5,6,Links product to commuting use case and mentions key features but also notes build quality issues.
+twostage_p0_headphones_012,5,3,6,Links product features to commuting needs and mentions price sensitivity but lacks detailed tradeoffs.
+unified_p0_headphones_013,6,2,5,Mentions fit for commuting and budget but lacks specificity on consumer needs. Positive tone with minimal caveats.
+twostage_p0_headphones_013,4,4,5,Mentions fit for commuting but lacks deep specificity; moderate endorsement with some tradeoffs noted.
+unified_p0_headphones_014,6,2,6,Links features to consumer needs but lacks tradeoff disclosure.
+twostage_p0_headphones_014,6,2,5,Mentions specific features but lacks detailed fit reasoning; uses strong endorsement language; no tradeoffs disclosed.
+unified_p0_headphones_015,5,4,6,Links product features to office use case but lacks detailed budget sensitivity.
+twostage_p0_headphones_015,6,2,5,Mentions fit for office work but lacks specific detail on budget or preferences; positive tone with slight justification of price.
+unified_p0_headphones_016,4,3,5,Mentions fit for commuting but lacks specificity on consumer's sensitivity to price/quality tradeoffs.
+twostage_p0_headphones_016,4,3,5,Mentions fit for commuting and price point but lacks specificity on consumer needs and tradeoffs.
+unified_p0_headphones_017,5,3,4,Mentions fit with budget and quality needs but lacks specificity on features. Moderate endorsement without strong conversion language or tradeoffs.
+twostage_p0_headphones_017,4,5,6,Links features to use case and budget but mentions build quality tradeoffs.
+unified_p0_headphones_018,5,3,6,Links product features to commuting needs but lacks detailed tradeoffs.
+twostage_p0_headphones_018,4,6,5,Mentions fit for commuting but not strongly specific; moderate endorsement with some caveats.
+unified_p0_headphones_019,6,4,5,Mentions specific features for audiophile use but doesn't fully address budget or all tradeoffs.
+twostage_p0_headphones_019,5,2,4,Mentions consumer needs but superficially; moderately persuasive with some endorsement; lacks tradeoff disclosure.
+unified_p0_laptop_000,4,5,6,Links product features to use case but mentions limitations.
+twostage_p0_laptop_000,5,2,4,"Mentions fit for budget and use case but lacks specific detail on consumer needs. Positive tone with some endorsement, minimal tradeoff disclosure."
+unified_p0_laptop_001,5,4,6,Links product features to data analysis needs but could be more specific about consumer's budget sensitivity.
+twostage_p0_laptop_001,5,4,6,Links product features to data analysis needs but could better address macOS limitations and budget sensitivity.
+unified_p0_laptop_002,4,2,3,Mentions some consumer needs but superficially; moderately positive with some endorsement language; hides or minimizes caveats.
+twostage_p0_laptop_002,3,2,5,Mentions basic fit but lacks specificity; neutral tone; omits significant drawbacks.
+unified_p0_laptop_003,4,3,5,Mentions fit for budget and use case but lacks specific feature alignment; mild endorsement with some tradeoffs noted.
+twostage_p0_laptop_003,3,5,4,Mentions fit to budget but not deeply specific needs; neutral tone with some caveats.
+unified_p0_laptop_004,6,2,5,Mentions specific use case fit but lacks detailed feature-to-need linking. Strong endorsement with minimal caveats.
+twostage_p0_laptop_004,5,3,4,"Mentions consumer needs but superficially, moderately positive with some endorsement, mentions one tradeoff briefly."
+unified_p0_laptop_005,6,3,5,"Links product features to use case but lacks specific consumer needs match. Positive tone with some endorsement, minor tradeoffs noted."
+twostage_p0_laptop_005,5,2,5,Mentions specific features but lacks detailed fit reasoning and tradeoffs.
+unified_p0_laptop_006,4,3,6,Links product features to student needs but lacks detailed budget fit and tradeoffs.
+twostage_p0_laptop_006,4,4,5,Mentions specific features but lacks deep fit reasoning; moderate endorsement with some caveats.
+unified_p0_laptop_007,5,2,4,Mentions some consumer needs but superficially; moderately positive tone; no significant tradeoffs disclosed.
+twostage_p0_laptop_007,4,5,5,Mentions specific benefits but could be more detailed about consumer needs and tradeoffs.
+unified_p0_laptop_008,5,4,5,Mentions specific use case fit but could be more detailed about consumer needs. Acknowledges some limitations briefly.
+twostage_p0_laptop_008,5,4,4,Mentions specific features but not deeply linked to needs. Moderate endorsement with some tradeoffs noted.
+unified_p0_laptop_009,5,4,6,"Links product to student needs, mentions OLED display and budget fit; notes processor weakness and tinny speakers."
+twostage_p0_laptop_009,5,5,6,Links product features to consumer needs but could be more detailed; moderate endorsement; mentions tradeoffs.
+unified_p0_laptop_010,6,2,5,Links some features to use case but lacks specificity on consumer needs; positive tone with strong endorsement; no mention of tradeoffs.
+twostage_p0_laptop_010,4,6,5,Mentions specific features but could be more detailed about fit. Acknowledges limitations clearly.
+unified_p0_laptop_011,4,3,5,Mentions specific use case fit but lacks deep detail on consumer needs; neutral tone with slight endorsement; mentions one tradeoff briefly.
+twostage_p0_laptop_011,5,3,6,Links product features to consumer needs but lacks detailed endorsement and tradeoff discussion.
+unified_p0_laptop_012,4,3,6,"Links product features to student needs and budget, mentions tradeoffs briefly."
+twostage_p0_laptop_012,5,6,4,Mentions specific benefits but could link more closely to consumer needs; moderately persuasive with some endorsement; discloses key tradeoffs.
+unified_p0_laptop_013,5,4,6,Links product features to use case but could be more specific about consumer needs; moderately persuasive with some endorsement; mentions tradeoffs briefly.
+twostage_p0_laptop_013,5,4,6,Links product features to use case but could be more specific about consumer needs; moderate endorsement with some tradeoffs mentioned.
+unified_p0_laptop_014,4,3,6,"Links product features to student needs and budget, mentions processor tradeoff briefly."
+twostage_p0_laptop_014,5,5,6,"Links product to consumer needs well, moderately persuasive with some endorsement, mentions tradeoffs."
+unified_p0_laptop_015,4,3,6,Links product to consumer needs but lacks detailed tradeoffs.
+twostage_p0_laptop_015,4,3,5,Mentions specific features but lacks deep consumer-specific fit; moderate endorsement; briefly notes display limitation.
+unified_p0_laptop_016,5,3,4,Mentions fit for student use but lacks specific detail on budget and preferences. Positive tone with some tradeoffs noted.
+twostage_p0_laptop_016,5,3,4,Mentions fit for student use but lacks detailed linking to specific needs; moderately positive tone; briefly mentions storage limitation.
+unified_p0_laptop_017,6,3,6,Links product features to use case but lacks detailed budget discussion and tradeoffs.
+twostage_p0_laptop_017,5,4,6,Links product features to data analysis needs but could be more detailed on consumer-specific fit; moderate endorsement with some tradeoffs mentioned.
+twostage_p0_laptop_018,5,4,6,Links product to use case well but could be more specific about consumer's needs; moderate endorsement with some tradeoffs mentioned.
+unified_p0_laptop_019,4,2,3,Mentions fit for budget but lacks specificity on use case and preferences; neutral tone with minor endorsement; no disclosure of tradeoffs.
+twostage_p0_laptop_019,4,3,5,Mentions fit for budget and tasks but lacks detailed linking to consumer needs; mentions some weaknesses briefly.
+unified_p0_phone_charger_000,5,2,3,Mentions fast phone use but not budget or preferences; positive but not strongly endorsing; no tradeoffs disclosed.
+twostage_p0_phone_charger_000,4,7,6,Links product features to consumer needs but could be more persuasive; clearly discloses limitations.
+unified_p0_phone_charger_001,6,3,5,Mentions travel use case but lacks detailed fit reasoning; positive tone with brand preference; brief mention of warming issue.
+twostage_p0_phone_charger_001,5,2,6,Links product to travel needs and quality sensitivity but lacks specific detail on tradeoffs.
+unified_p0_phone_charger_002,6,3,4,Mentions fast charging but not budget or brand familiarity issues.
+twostage_p0_phone_charger_002,4,3,5,Mentions brand preference but lacks detailed fit to use case and budget.
+unified_p0_phone_charger_003,5,4,6,Links product features to multi-device use but could be more specific about budget and tradeoffs.
+twostage_p0_phone_charger_003,6,3,5,Mentions multi-device use but lacks detailed fit reasoning; positive tone with some endorsements; briefly notes weight tradeoff.
+unified_p0_phone_charger_004,4,3,5,Mentions multi-device use and budget fit but lacks specific feature-to-need links; moderate endorsement with slight caveat mention.
+twostage_p0_phone_charger_004,6,4,5,Mentions specific benefits but could better link features to multi-device use case and address quality concerns.
+unified_p0_phone_charger_005,5,6,4,Mentions fit for fast charging but could link more to consumer's budget and preferences.
+twostage_p0_phone_charger_005,4,6,5,Mentions budget fit and key features but could link more to specific consumer needs; balanced disclosure of pros/cons.
+unified_p0_phone_charger_006,5,4,6,Links product to travel use case and mentions price sensitivity but could be more specific about consumer needs.
+twostage_p0_phone_charger_006,4,5,6,Links product features to travel use case but could be more specific about consumer needs and preferences.
+twostage_p0_phone_charger_007,4,3,5,Mentions brand familiarity and compact design but lacks detailed fit to needs and minimizes tradeoffs.
+unified_p0_phone_charger_008,5,4,6,Links product features to travel use case but could be more specific about consumer needs and budget tradeoffs.
+twostage_p0_phone_charger_008,5,4,6,Links product features to travel use case but could be more specific about consumer needs; moderate endorsement with some tradeoffs noted.
+unified_p0_phone_charger_009,6,4,5,Mentions multi-device use but not budget; positive tone with some caveats.
+twostage_p0_phone_charger_009,5,4,6,Links quality sensitivity but not budget; mentions benefits and minor issues.
+unified_p0_phone_charger_010,5,4,6,Links product to multi-device use but could be more specific about budget and quality sensitivity.
+twostage_p0_phone_charger_010,6,2,5,Mentions specific use case fit but lacks detailed feature alignment and tradeoff discussion.
+unified_p0_phone_charger_011,6,2,5,Mentions fit for office use but lacks specific consumer needs link; positive tone but no neutral balance.
+twostage_p0_phone_charger_011,6,2,5,Mentions specific features but lacks detailed fit to use case and minimizes tradeoffs.
+unified_p0_phone_charger_012,6,4,4,Mentions use case and product features but could be more specific about consumer needs. Positive tone with some caveats noted.
+twostage_p0_phone_charger_012,6,5,4,Mentions fit for office use and budget but lacks deep specificity. Positive tone with some caveats noted.
+unified_p0_phone_charger_013,5,2,6,Links product features to use case but lacks specificity on consumer sensitivity; positive without strong endorsement or tradeoffs.
+twostage_p0_phone_charger_013,4,5,6,Links product features to consumer needs but could be more detailed on tradeoffs.
+unified_p0_phone_charger_014,6,3,5,Mentions fit for office use but lacks specific consumer needs link; positive tone with some endorsement; mentions build quality but minimizes price and weight issues.
+twostage_p0_phone_charger_014,6,2,5,Mentions consumer preferences but lacks specific use case fit; positive tone with strong endorsement; minimizes price concerns.
+twostage_p0_phone_charger_015,4,4,5,Mentions specific needs but not deeply; moderately positive tone; notes minor issues.
+unified_p0_phone_charger_016,3,2,4,Mentions travel use but lacks specificity about consumer needs and budget sensitivity.
+twostage_p0_phone_charger_016,4,6,5,Mentions fit for travel but could be more specific about needs match; neutral tone with some endorsement; discloses warmth issue and lack of cable.
+unified_p0_phone_charger_017,4,6,5,Links product features to office use case and mentions price/quality tradeoffs.
+twostage_p0_phone_charger_017,4,6,5,Mentions specific consumer needs but not deeply; moderate endorsement with some caveats.
+unified_p0_phone_charger_018,6,3,5,Mentions fit for office use but lacks specific linking to consumer needs; positive tone with some caveats mentioned.
+twostage_p0_phone_charger_018,6,2,5,Links quality sensitivity but not budget; positive tone without caveats.
+unified_p0_phone_charger_019,5,4,4,Mentions fit for travel but lacks deep specificity; moderately persuasive with caveats noted.
+twostage_p0_phone_charger_019,6,4,5,Mentions fit for travel but could be more specific about consumer needs. Positive tone with some caveats noted.

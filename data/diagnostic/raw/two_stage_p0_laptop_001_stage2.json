@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_laptop_001_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 1,
+  "timestamp": "2026-05-14T11:36:33.352690+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20261525,
+  "stage": "writer",
+  "raw_response": "The MacBook Pro with the M4 Pro processor is an excellent choice for data analysis due to its powerful performance and long battery life. With 24GB of RAM and a stunning mini-LED XDR display, it excels in handling complex datasets and running demanding software smoothly. The macOS operating system offers robust security and integration with Apple's ecosystem, which can be beneficial for users familiar with the brand. Although the base storage is limited to 512GB and some enterprise tools may not be compatible, the overall quality and performance justify the higher price point.",
+  "parsed": {
+    "recommendation_text": "The MacBook Pro with the M4 Pro processor is an excellent choice for data analysis due to its powerful performance and long battery life. With 24GB of RAM and a stunning mini-LED XDR display, it excels in handling complex datasets and running demanding software smoothly. The macOS operating system offers robust security and integration with Apple's ecosystem, which can be beneficial for users familiar with the brand. Although the base storage is limited to 512GB and some enterprise tools may not be compatible, the overall quality and performance justify the higher price point."
+  },
+  "parse_success": true,
+  "latency_ms": 14274
+}

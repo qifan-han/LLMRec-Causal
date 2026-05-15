@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Large / generated project folders
+results/
+temp/
+tmp/
+cache/
+checkpoints/
+models/
+data/raw/
+data/intermediate/
+
+# Optional: uncomment if literature PDFs are large and should not be on GitHub
+# literature/
+# *.pdf

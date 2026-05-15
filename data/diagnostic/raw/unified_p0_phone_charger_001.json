@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_001",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 1,
+  "timestamp": "2026-05-14T12:03:58.106781+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20261514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_nano_67w\",\n  \"shortlist\": [\"charger_anker_nano_67w\", \"charger_belkin_25w\", \"charger_voltix_65w\"],\n  \"recommendation_text\": \"For travel, the Anker Nano 67W charger is highly recommended. It offers fast charging and a compact form factor ideal for on-the-go use. Despite warming up under full load, its GaN technology ensures efficiency and portability. The Belkin charger is too limited in wattage, while the Voltix model runs hot and has lower build quality.\",\n  \"selection_rationale\": \"Anker brand familiarity and high-quality rating make it the best choice.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_nano_67w",
+    "shortlist": [
+      "charger_anker_nano_67w",
+      "charger_belkin_25w",
+      "charger_voltix_65w"
+    ],
+    "recommendation_text": "For travel, the Anker Nano 67W charger is highly recommended. It offers fast charging and a compact form factor ideal for on-the-go use. Despite warming up under full load, its GaN technology ensures efficiency and portability. The Belkin charger is too limited in wattage, while the Voltix model runs hot and has lower build quality.",
+    "selection_rationale": "Anker brand familiarity and high-quality rating make it the best choice."
+  },
+  "parse_success": true,
+  "latency_ms": 28886
+}

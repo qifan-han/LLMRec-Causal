@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_phone_charger_014_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 14,
+  "timestamp": "2026-05-14T12:18:08.775942+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20274525,
+  "stage": "writer",
+  "raw_response": "Given your preference for Anker and moderate quality sensitivity, the Anker Prime 100W charger is an excellent choice. It offers high-speed charging with GaN technology, supporting both laptops and smartphones simultaneously. Though it's slightly pricier than other options, its robust build and compact form factor make it ideal for a desk setup. The premium features justify the cost, especially considering your brand familiarity and quality considerations.",
+  "parsed": {
+    "recommendation_text": "Given your preference for Anker and moderate quality sensitivity, the Anker Prime 100W charger is an excellent choice. It offers high-speed charging with GaN technology, supporting both laptops and smartphones simultaneously. Though it's slightly pricier than other options, its robust build and compact form factor make it ideal for a desk setup. The premium features justify the cost, especially considering your brand familiarity and quality considerations."
+  },
+  "parse_success": true,
+  "latency_ms": 10974
+}

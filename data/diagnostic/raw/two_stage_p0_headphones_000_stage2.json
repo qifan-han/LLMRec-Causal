@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_000_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 0,
+  "timestamp": "2026-05-14T11:09:47.742132+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20260525,
+  "stage": "writer",
+  "raw_response": "Given your quality sensitivity and brand familiarity with Sennheiser, the Sennheiser Momentum 4 Wireless headphones are a great choice despite being slightly above your budget. They offer exceptional sound quality, robust noise cancellation, and an impressive 60-hour battery life. While touch controls may have a learning curve, their wireless performance and audio fidelity make them worth considering for casual use.",
+  "parsed": {
+    "recommendation_text": "Given your quality sensitivity and brand familiarity with Sennheiser, the Sennheiser Momentum 4 Wireless headphones are a great choice despite being slightly above your budget. They offer exceptional sound quality, robust noise cancellation, and an impressive 60-hour battery life. While touch controls may have a learning curve, their wireless performance and audio fidelity make them worth considering for casual use."
+  },
+  "parse_success": true,
+  "latency_ms": 11013
+}

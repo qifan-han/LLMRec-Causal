@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_002_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 2,
+  "timestamp": "2026-05-14T11:12:30.017247+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20262525,
+  "stage": "writer",
+  "raw_response": "Given your quality sensitivity and brand familiarity with Sony, the WH-1000XM5 headphones are an excellent choice for office work. They offer industry-leading noise cancellation and a comfortable fit, ideal for long hours at your desk. With a battery life of up to 30 hours, you won't need frequent recharges. Though they are on the pricier side, their sound quality and wireless features justify the cost.",
+  "parsed": {
+    "recommendation_text": "Given your quality sensitivity and brand familiarity with Sony, the WH-1000XM5 headphones are an excellent choice for office work. They offer industry-leading noise cancellation and a comfortable fit, ideal for long hours at your desk. With a battery life of up to 30 hours, you won't need frequent recharges. Though they are on the pricier side, their sound quality and wireless features justify the cost."
+  },
+  "parse_success": true,
+  "latency_ms": 11660
+}

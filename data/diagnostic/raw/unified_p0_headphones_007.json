@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_headphones_007",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 7,
+  "timestamp": "2026-05-14T11:17:58.057788+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20267514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_jbl_tune770nc\",\n  \"shortlist\": [\"headphones_jbl_tune770nc\", \"headphones_edifier_stax\", \"headphones_soundcore_space_q45\"],\n  \"recommendation_text\": \"Given the budget constraints and price sensitivity, the JBL Tune 770NC offers excellent value with solid noise cancellation, decent battery life, and a balanced sound signature. It's an affordable option that meets basic needs without breaking the bank. The build quality is plastic-heavy but durable for casual use. While it lacks premium features like high-res codec support, its affordability makes it a practical choice.\",\n  \"selection_rationale\": \"Best value with solid noise cancellation and battery life.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_jbl_tune770nc",
+    "shortlist": [
+      "headphones_jbl_tune770nc",
+      "headphones_edifier_stax",
+      "headphones_soundcore_space_q45"
+    ],
+    "recommendation_text": "Given the budget constraints and price sensitivity, the JBL Tune 770NC offers excellent value with solid noise cancellation, decent battery life, and a balanced sound signature. It's an affordable option that meets basic needs without breaking the bank. The build quality is plastic-heavy but durable for casual use. While it lacks premium features like high-res codec support, its affordability makes it a practical choice.",
+    "selection_rationale": "Best value with solid noise cancellation and battery life."
+  },
+  "parse_success": true,
+  "latency_ms": 34843
+}

@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_015",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 15,
+  "timestamp": "2026-05-14T12:18:50.065941+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20275514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_baseus_65w\",\n  \"shortlist\": [\"charger_baseus_65w\", \"charger_voltix_65w\", \"charger_samsung_45w\"],\n  \"recommendation_text\": \"The Baseus 65W charger offers excellent value with dual GaN ports and PPS support. Despite some minor issues, its compact form factor and high wattage make it ideal for multi-device charging. The Voltix is cheaper but less reliable, while the Samsung charger lacks a second port.\",\n  \"selection_rationale\": \"Balances price and quality well; meets multi-device needs.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_baseus_65w",
+    "shortlist": [
+      "charger_baseus_65w",
+      "charger_voltix_65w",
+      "charger_samsung_45w"
+    ],
+    "recommendation_text": "The Baseus 65W charger offers excellent value with dual GaN ports and PPS support. Despite some minor issues, its compact form factor and high wattage make it ideal for multi-device charging. The Voltix is cheaper but less reliable, while the Samsung charger lacks a second port.",
+    "selection_rationale": "Balances price and quality well; meets multi-device needs."
+  },
+  "parse_success": false,
+  "latency_ms": 27186
+}

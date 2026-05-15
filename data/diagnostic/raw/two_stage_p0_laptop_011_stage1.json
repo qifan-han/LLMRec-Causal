@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_laptop_011_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 11,
+  "timestamp": "2026-05-14T11:50:34.404678+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20271524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_thinkpad_x1_carbon\",\n  \"shortlist\": [\"laptop_macbook_pro_m4\", \"laptop_lg_gram_14\", \"laptop_thinkpad_x1_carbon\"],\n  \"selection_rationale\": \"Balances quality, brand familiarity, and business travel needs.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_thinkpad_x1_carbon",
+    "shortlist": [
+      "laptop_macbook_pro_m4",
+      "laptop_lg_gram_14",
+      "laptop_thinkpad_x1_carbon"
+    ],
+    "selection_rationale": "Balances quality, brand familiarity, and business travel needs."
+  },
+  "parse_success": true,
+  "latency_ms": 30193
+}

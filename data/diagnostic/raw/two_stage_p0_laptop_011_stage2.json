@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_laptop_011_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 11,
+  "timestamp": "2026-05-14T11:50:46.506284+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20271525,
+  "stage": "writer",
+  "raw_response": "The Lenovo ThinkPad X1 Carbon is an excellent choice for business travel due to its lightweight design (1.09 kg) and impressive battery life of up to 12 hours. It features a high-quality OLED display and a robust Intel Core Ultra processor, making it ideal for productivity on the go. Although slightly over your budget at $1549, its durability and Windows Pro OS offer significant value for business use.",
+  "parsed": {
+    "recommendation_text": "The Lenovo ThinkPad X1 Carbon is an excellent choice for business travel due to its lightweight design (1.09 kg) and impressive battery life of up to 12 hours. It features a high-quality OLED display and a robust Intel Core Ultra processor, making it ideal for productivity on the go. Although slightly over your budget at $1549, its durability and Windows Pro OS offer significant value for business use."
+  },
+  "parse_success": true,
+  "latency_ms": 12100
+}

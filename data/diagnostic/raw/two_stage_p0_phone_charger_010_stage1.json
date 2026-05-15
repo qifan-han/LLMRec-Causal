@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_phone_charger_010_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 10,
+  "timestamp": "2026-05-14T12:13:48.112953+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20270524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_prime_100w\",\n  \"shortlist\": [\"charger_anker_prime_100w\", \"charger_baseus_65w\", \"charger_voltix_65w\"],\n  \"selection_rationale\": \"Best brand fit and quality for multi-device use.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_prime_100w",
+    "shortlist": [
+      "charger_anker_prime_100w",
+      "charger_baseus_65w",
+      "charger_voltix_65w"
+    ],
+    "selection_rationale": "Best brand fit and quality for multi-device use."
+  },
+  "parse_success": true,
+  "latency_ms": 19964
+}

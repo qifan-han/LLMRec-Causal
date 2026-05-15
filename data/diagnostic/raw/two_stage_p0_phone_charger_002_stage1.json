@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_phone_charger_002_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 2,
+  "timestamp": "2026-05-14T12:05:21.509568+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20262524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_apple_35w_duo\",\n  \"shortlist\": [\"charger_apple_35w_duo\", \"charger_samsung_45w\", \"charger_belkin_25w\"],\n  \"selection_rationale\": \"Apple brand preference; adequate for phone charging despite lower wattage.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_apple_35w_duo",
+    "shortlist": [
+      "charger_apple_35w_duo",
+      "charger_samsung_45w",
+      "charger_belkin_25w"
+    ],
+    "selection_rationale": "Apple brand preference; adequate for phone charging despite lower wattage."
+  },
+  "parse_success": true,
+  "latency_ms": 20364
+}

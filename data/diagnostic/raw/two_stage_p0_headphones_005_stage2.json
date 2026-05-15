@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_005_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 5,
+  "timestamp": "2026-05-14T11:16:11.360794+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20265525,
+  "stage": "writer",
+  "raw_response": "Given your audiophile leanings and preference for high-quality sound, the Sennheiser Momentum 4 Wireless headphones are an excellent choice. With a remarkable 60-hour battery life and top-tier audio codecs like aptX Adaptive, these over-ear headphones deliver exceptional sound quality. While touch controls may have a slight learning curve, their strong noise cancellation and comfortable design make them ideal for home use. Plus, your familiarity with Sennheiser enhances the appeal of this premium product.",
+  "parsed": {
+    "recommendation_text": "Given your audiophile leanings and preference for high-quality sound, the Sennheiser Momentum 4 Wireless headphones are an excellent choice. With a remarkable 60-hour battery life and top-tier audio codecs like aptX Adaptive, these over-ear headphones deliver exceptional sound quality. While touch controls may have a slight learning curve, their strong noise cancellation and comfortable design make them ideal for home use. Plus, your familiarity with Sennheiser enhances the appeal of this premium product."
+  },
+  "parse_success": true,
+  "latency_ms": 12637
+}

@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_007",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 7,
+  "timestamp": "2026-05-14T12:10:24.477235+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20267514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_apple_35w_duo\",\n  \"shortlist\": [\"charger_anker_nano_67w\", \"charger_samsung_45w\", \"charger_apple_35w_duo\"],\n  \"recommendation_text\": \"For travel, the Apple 35W Duo charger offers a sleek design and reliable performance for Apple devices. Despite its lower wattage, it's compact and efficient. The brand familiarity is high, ensuring peace of mind during trips. While pricier than alternatives, its quality aligns with your budget constraints.\",\n  \"selection_rationale\": \"Balances quality and brand recognition despite higher cost.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_apple_35w_duo",
+    "shortlist": [
+      "charger_anker_nano_67w",
+      "charger_samsung_45w",
+      "charger_apple_35w_duo"
+    ],
+    "recommendation_text": "For travel, the Apple 35W Duo charger offers a sleek design and reliable performance for Apple devices. Despite its lower wattage, it's compact and efficient. The brand familiarity is high, ensuring peace of mind during trips. While pricier than alternatives, its quality aligns with your budget constraints.",
+    "selection_rationale": "Balances quality and brand recognition despite higher cost."
+  },
+  "parse_success": false,
+  "latency_ms": 27757
+}

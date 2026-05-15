@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_headphones_016",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 16,
+  "timestamp": "2026-05-14T11:29:15.689474+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20276514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_jbl_tune770nc\",\n  \"shortlist\": [\"headphones_jbl_tune770nc\", \"headphones_edifier_stax\", \"headphones_soundcore_space_q45\"],\n  \"recommendation_text\": \"For commuting, the JBL Tune 770NC offers a solid balance of features and value. With basic noise cancellation, it provides decent sound isolation for your daily commute at an affordable price point. The 44-hour battery life ensures you won't need to recharge frequently during long commutes. While its build quality is plastic-heavy, the punchy JBL sound signature can be enjoyable on the go. Given your budget constraints and brand familiarity preferences, this model stands out as a practical choice.\",\n  \"selection_rationale\": \"Affordable price point with decent noise cancellation for commuting.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_jbl_tune770nc",
+    "shortlist": [
+      "headphones_jbl_tune770nc",
+      "headphones_edifier_stax",
+      "headphones_soundcore_space_q45"
+    ],
+    "recommendation_text": "For commuting, the JBL Tune 770NC offers a solid balance of features and value. With basic noise cancellation, it provides decent sound isolation for your daily commute at an affordable price point. The 44-hour battery life ensures you won't need to recharge frequently during long commutes. While its build quality is plastic-heavy, the punchy JBL sound signature can be enjoyable on the go. Given your budget constraints and brand familiarity preferences, this model stands out as a practical choice.",
+    "selection_rationale": "Affordable price point with decent noise cancellation for commuting."
+  },
+  "parse_success": true,
+  "latency_ms": 37068
+}

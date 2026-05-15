@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_laptop_006_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 6,
+  "timestamp": "2026-05-14T11:43:41.240328+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20266525,
+  "stage": "writer",
+  "raw_response": "The Acer Swift Go 14 is a great choice for budget-conscious students. It offers a balance of affordability and functionality with its AMD Ryzen 5 processor, 16GB RAM, and 512GB storage. The laptop's lightweight design (1.32 kg) makes it easy to carry around campus, and the 11-hour battery life ensures you can work all day without needing to recharge. While the display is somewhat dim and performance may lag under heavy use, its Windows 11 Home OS provides a familiar interface for managing documents, spreadsheets, and web browsing tasks efficiently.",
+  "parsed": {
+    "recommendation_text": "The Acer Swift Go 14 is a great choice for budget-conscious students. It offers a balance of affordability and functionality with its AMD Ryzen 5 processor, 16GB RAM, and 512GB storage. The laptop's lightweight design (1.32 kg) makes it easy to carry around campus, and the 11-hour battery life ensures you can work all day without needing to recharge. While the display is somewhat dim and performance may lag under heavy use, its Windows 11 Home OS provides a familiar interface for managing documents, spreadsheets, and web browsing tasks efficiently."
+  },
+  "parse_success": true,
+  "latency_ms": 15089
+}

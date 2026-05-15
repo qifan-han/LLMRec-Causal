@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_phone_charger_001_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 1,
+  "timestamp": "2026-05-14T12:04:18.594999+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20261524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_nano_67w\",\n  \"shortlist\": [\"charger_anker_nano_67w\", \"charger_belkin_25w\", \"charger_voltix_65w\"],\n  \"selection_rationale\": \"Anker balance quality, brand recognition, and travel suitability.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_nano_67w",
+    "shortlist": [
+      "charger_anker_nano_67w",
+      "charger_belkin_25w",
+      "charger_voltix_65w"
+    ],
+    "selection_rationale": "Anker balance quality, brand recognition, and travel suitability."
+  },
+  "parse_success": true,
+  "latency_ms": 20486
+}

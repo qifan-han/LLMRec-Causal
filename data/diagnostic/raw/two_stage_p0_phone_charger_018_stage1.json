@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_phone_charger_018_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 18,
+  "timestamp": "2026-05-14T12:22:11.752498+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20278524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_prime_100w\",\n  \"shortlist\": [\"charger_anker_prime_100w\", \"charger_apple_35w_duo\", \"charger_belkin_25w\"],\n  \"selection_rationale\": \"Best quality and brand recognition within budget.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_prime_100w",
+    "shortlist": [
+      "charger_anker_prime_100w",
+      "charger_apple_35w_duo",
+      "charger_belkin_25w"
+    ],
+    "selection_rationale": "Best quality and brand recognition within budget."
+  },
+  "parse_success": true,
+  "latency_ms": 20010
+}

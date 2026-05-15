@@ -1,0 +1,181 @@
+pair_id,category,consumer_id,cell_i,cell_j,cell_as_A,cell_as_B,swapped,raw_choice,choice_winner,preference_strength,better_fit,more_trustworthy,more_tradeoff_concern,rationale,demand_model
+headphones_000_00v10,headphones,0,00,10,00,10,0,B,10,3,10,tie,00,Sony headphones fit budget better and are still good quality.,gemma2:9b
+headphones_000_00v01,headphones,0,00,01,00,01,0,tie,tie,2,tie,tie,00,"Both packages recommend the same product, exceeding budget. Package B emphasizes user data, making it slightly more trustworthy.",gemma2:9b
+headphones_000_00v11,headphones,0,00,11,11,00,1,A,11,3,11,tie,00,Sony headphones fit budget better and have good reviews.,gemma2:9b
+headphones_000_10v01,headphones,0,10,01,10,01,0,A,10,4,10,tie,01,Sony headphones fit budget better and have good features for casual use.,gemma2:9b
+headphones_000_10v11,headphones,0,10,11,10,11,0,B,11,3,tie,11,10,"Package B's social proof (conversion rate, satisfaction) makes it more convincing.",gemma2:9b
+headphones_000_01v11,headphones,0,01,11,11,01,1,A,11,4,11,tie,01,Sony headphones fit budget better and have good reviews despite a bass-heavy sound.,gemma2:9b
+headphones_001_00v10,headphones,1,00,10,00,10,0,tie,tie,2,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+headphones_001_00v01,headphones,1,00,01,00,01,0,B,01,3,tie,01,00,"Package B's social proof (conversion rate, satisfaction) makes it more appealing.",gemma2:9b
+headphones_001_00v11,headphones,1,00,11,00,11,0,B,11,3,tie,11,00,"Package B's social proof (conversion rate, satisfaction) makes it more appealing.",gemma2:9b
+headphones_001_10v01,headphones,1,10,01,01,10,1,tie,tie,2,tie,tie,tie,Both packages recommend the same product with very similar wording.,gemma2:9b
+headphones_001_10v11,headphones,1,10,11,11,10,1,tie,tie,2,tie,tie,tie,Both packages recommend the same product with very similar wording.,gemma2:9b
+headphones_001_01v11,headphones,1,01,11,01,11,0,tie,tie,2,tie,tie,tie,Identical recommendations with same product and information.,gemma2:9b
+headphones_002_00v10,headphones,2,00,10,00,10,0,tie,tie,2,tie,tie,tie,Identical recommendations and products make for a tie.,gemma2:9b
+headphones_002_00v01,headphones,2,00,01,01,00,1,A,01,3,tie,01,00,Recommendation A is more concise and avoids potentially off-putting price emphasis.,gemma2:9b
+headphones_002_00v11,headphones,2,00,11,00,11,0,B,11,4,tie,11,00,Package B's user data and conversion rate add credibility.,gemma2:9b
+headphones_002_10v01,headphones,2,10,01,01,10,1,A,01,3,tie,01,10,Recommendation A is more concise and avoids potentially off-putting price emphasis.,gemma2:9b
+headphones_002_10v11,headphones,2,10,11,10,11,0,B,11,4,tie,11,10,Package B's user data and conversion rate add credibility.,gemma2:9b
+headphones_002_01v11,headphones,2,01,11,11,01,1,tie,tie,2,tie,tie,tie,Identical recommendations and products make for a tie.,gemma2:9b
+headphones_003_00v10,headphones,3,00,10,10,00,1,A,10,3,10,tie,00,Sony offers better quality and features despite a slightly higher price.,gemma2:9b
+headphones_003_00v01,headphones,3,00,01,01,00,1,tie,tie,2,tie,tie,tie,Both recommendations are very similar with identical product and price.,gemma2:9b
+headphones_003_00v11,headphones,3,00,11,00,11,0,A,00,3,tie,00,11,Package A is more budget-friendly and transparent about limitations.,gemma2:9b
+headphones_003_10v01,headphones,3,10,01,01,10,1,A,01,3,tie,01,10,JBL is cheaper and fits the budget better. Sony's recommendation feels less balanced.,gemma2:9b
+headphones_003_10v11,headphones,3,10,11,10,11,0,B,11,3,tie,11,10,"Package B's social proof (conversion rate, satisfaction) makes it more appealing.",gemma2:9b
+headphones_003_01v11,headphones,3,01,11,01,11,0,A,01,3,tie,01,11,Package A is more budget-friendly and trustworthy despite slightly lower quality.,gemma2:9b
+headphones_004_00v10,headphones,4,00,10,10,00,1,tie,tie,2,tie,tie,tie,Identical recommendations and products make for a tie.,gemma2:9b
+headphones_004_00v01,headphones,4,00,01,01,00,1,tie,tie,2,tie,tie,tie,Both recommendations are very similar and highlight the same strengths.,gemma2:9b
+headphones_004_00v11,headphones,4,00,11,00,11,0,B,11,3,tie,11,00,Package B's user data adds social proof and trustworthiness.,gemma2:9b
+headphones_004_10v01,headphones,4,10,01,10,01,0,B,01,3,tie,01,10,Package B's user data adds social proof and trustworthiness.,gemma2:9b
+headphones_004_10v11,headphones,4,10,11,11,10,1,tie,tie,2,tie,tie,tie,Both recommendations are very similar and highlight the same strengths.,gemma2:9b
+headphones_004_01v11,headphones,4,01,11,11,01,1,tie,tie,2,tie,tie,tie,Identical recommendations with no differentiating factors.,gemma2:9b
+headphones_005_00v10,headphones,5,00,10,10,00,1,tie,tie,2,tie,tie,tie,Identical recommendations with no differentiating factors.,gemma2:9b
+headphones_005_00v01,headphones,5,00,01,00,01,0,B,01,3,tie,01,00,"Package B's social proof (conversion rate, satisfaction) adds trust.",gemma2:9b
+headphones_005_00v11,headphones,5,00,11,00,11,0,B,11,3,tie,11,00,"Package B's social proof (conversion rate, satisfaction) makes it more trustworthy.",gemma2:9b
+headphones_005_10v01,headphones,5,10,01,10,01,0,B,01,3,tie,01,10,"Package B's social proof (conversion rate, satisfaction) makes it more trustworthy.",gemma2:9b
+headphones_005_10v11,headphones,5,10,11,11,10,1,tie,tie,2,tie,tie,tie,Both recommendations are very similar and highlight the same strengths.,gemma2:9b
+headphones_005_01v11,headphones,5,01,11,11,01,1,tie,tie,2,tie,tie,tie,"Both recommendations are identical, offering the same product and rationale.",gemma2:9b
+headphones_006_00v10,headphones,6,00,10,00,10,0,tie,tie,2,tie,tie,tie,Both recommendations are very similar in content and focus.,gemma2:9b
+headphones_006_00v01,headphones,6,00,01,01,00,1,tie,tie,2,tie,tie,00,Both packages are very similar. Package B mentions a tradeoff (build quality) more explicitly.,gemma2:9b
+headphones_006_00v11,headphones,6,00,11,00,11,0,B,11,3,tie,11,00,Package B adds social proof with conversion and satisfaction data.,gemma2:9b
+headphones_006_10v01,headphones,6,10,01,10,01,0,B,01,3,tie,01,10,Package B adds social proof with conversion and satisfaction data.,gemma2:9b
+headphones_006_10v11,headphones,6,10,11,10,11,0,B,11,3,tie,11,10,Package B adds social proof with conversion and satisfaction data.,gemma2:9b
+headphones_006_01v11,headphones,6,01,11,01,11,0,tie,tie,2,tie,tie,tie,Identical recommendations and product details.,gemma2:9b
+headphones_007_00v10,headphones,7,00,10,10,00,1,B,00,4,00,tie,10,JBL headphones fit budget better and offer good value for casual use.,gemma2:9b
+headphones_007_00v01,headphones,7,00,01,01,00,1,tie,tie,2,tie,tie,tie,"Both recommendations are identical, offering the same product and rationale.",gemma2:9b
+headphones_007_00v11,headphones,7,00,11,11,00,1,B,00,4,00,tie,11,JBL headphones fit budget better and are suitable for casual use.,gemma2:9b
+headphones_007_10v01,headphones,7,10,01,10,01,0,B,01,4,01,tie,10,JBL headphones are significantly cheaper and fit the budget better.,gemma2:9b
+headphones_007_10v11,headphones,7,10,11,10,11,0,B,11,3,tie,11,10,"Package B's social proof (conversion rate, satisfaction) makes it more appealing.",gemma2:9b
+headphones_007_01v11,headphones,7,01,11,11,01,1,B,01,4,01,tie,11,JBL headphones are significantly cheaper and still meet casual use needs.,gemma2:9b
+headphones_008_00v10,headphones,8,00,10,10,00,1,B,00,4,00,tie,10,"Sony's noise cancellation and sound quality are slightly better, outweighing the price difference.",gemma2:9b
+headphones_008_00v01,headphones,8,00,01,00,01,0,B,01,3,tie,01,00,Package B's social proof and focus on user satisfaction feel more trustworthy.,gemma2:9b
+headphones_008_00v11,headphones,8,00,11,00,11,0,B,11,4,11,tie,00,Longer battery life and lower price outweigh slightly weaker noise cancellation.,gemma2:9b
+headphones_008_10v01,headphones,8,10,01,10,01,0,B,01,4,tie,01,10,Sony's brand familiarity and higher quality score sway the choice.,gemma2:9b
+headphones_008_10v11,headphones,8,10,11,11,10,1,A,11,3,tie,11,10,Recommendation A is more balanced and highlights both pros and cons.,gemma2:9b
+headphones_008_01v11,headphones,8,01,11,11,01,1,B,01,4,01,tie,11,Sony's brand familiarity and superior noise cancellation outweigh Sennheiser's longer battery life.,gemma2:9b
+headphones_009_00v10,headphones,9,00,10,10,00,1,tie,tie,2,tie,tie,10,Identical products and recommendations; Package A slightly raises budget concern.,gemma2:9b
+headphones_009_00v01,headphones,9,00,01,01,00,1,tie,tie,2,tie,tie,01,"Both packages are very similar. Package A highlights value, while B focuses on quality.",gemma2:9b
+headphones_009_00v11,headphones,9,00,11,11,00,1,tie,tie,2,tie,tie,11,"Both packages are very similar. Package A highlights value, while B focuses on quality.",gemma2:9b
+headphones_009_10v01,headphones,9,10,01,01,10,1,tie,tie,2,tie,tie,01,"Both packages are very similar. Package A highlights value, while B focuses on quality.",gemma2:9b
+headphones_009_10v11,headphones,9,10,11,11,10,1,tie,tie,2,tie,tie,11,"Both packages are very similar. Package A highlights value, while B focuses on quality.",gemma2:9b
+headphones_009_01v11,headphones,9,01,11,11,01,1,tie,tie,1,tie,tie,tie,Identical recommendations and product details.,gemma2:9b
+laptop_000_00v10,laptop,0,00,10,00,10,0,tie,tie,2,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+laptop_000_00v01,laptop,0,00,01,01,00,1,tie,tie,2,tie,tie,00,Both packages recommend the same product with similar pros/cons.,gemma2:9b
+laptop_000_00v11,laptop,0,00,11,00,11,0,B,11,3,tie,11,00,Package B's social proof and conversion rate make it more convincing.,gemma2:9b
+laptop_000_10v01,laptop,0,10,01,10,01,0,B,01,3,tie,01,10,Package B's social proof and conversion rate make it more convincing.,gemma2:9b
+laptop_000_10v11,laptop,0,10,11,11,10,1,tie,tie,2,tie,tie,10,Both packages recommend the same product with similar pros/cons.,gemma2:9b
+laptop_000_01v11,laptop,0,01,11,01,11,0,tie,tie,1,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+laptop_001_00v10,laptop,1,00,10,00,10,0,tie,tie,2,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+laptop_001_00v01,laptop,1,00,01,01,00,1,tie,tie,2,tie,tie,00,"Both are strong options, but Package B's budget advice feels less tailored.",gemma2:9b
+laptop_001_00v11,laptop,1,00,11,11,00,1,tie,tie,2,tie,tie,00,"Both are strong options, but Package B's budget advice feels less tailored.",gemma2:9b
+laptop_001_10v01,laptop,1,10,01,10,01,0,tie,tie,3,tie,tie,01,Both are strong options. Package B's enterprise software mention is a slight concern.,gemma2:9b
+laptop_001_10v11,laptop,1,10,11,11,10,1,tie,tie,2,tie,tie,10,"Both are strong options, but Package B's budget advice feels less tailored.",gemma2:9b
+laptop_001_01v11,laptop,1,01,11,11,01,1,tie,tie,1,tie,tie,tie,Identical product and recommendation text.,gemma2:9b
+laptop_002_00v10,laptop,2,00,10,00,10,0,tie,tie,2,tie,tie,tie,Both recommendations are very similar with identical product details and pros/cons.,gemma2:9b
+laptop_002_00v01,laptop,2,00,01,01,00,1,tie,tie,2,tie,tie,00,Both are very similar. Package B's phrasing is slightly less positive.,gemma2:9b
+laptop_002_00v11,laptop,2,00,11,11,00,1,tie,tie,2,tie,tie,00,Both are very similar. Package B's phrasing is slightly less positive.,gemma2:9b
+laptop_002_10v01,laptop,2,10,01,01,10,1,tie,tie,2,tie,tie,tie,Both recommendations are very similar in content and tone.,gemma2:9b
+laptop_002_10v11,laptop,2,10,11,10,11,0,B,11,3,tie,11,10,Package B's data adds credibility and acknowledges tradeoffs.,gemma2:9b
+laptop_002_01v11,laptop,2,01,11,01,11,0,tie,tie,2,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+laptop_003_00v10,laptop,3,00,10,00,10,0,tie,tie,2,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+laptop_003_00v01,laptop,3,00,01,01,00,1,tie,tie,2,tie,tie,tie,"Both recommendations are very similar, focusing on the same laptop.",gemma2:9b
+laptop_003_00v11,laptop,3,00,11,00,11,0,B,11,3,tie,11,00,Package B feels more trustworthy with data on conversion and satisfaction.,gemma2:9b
+laptop_003_10v01,laptop,3,10,01,01,10,1,tie,tie,2,tie,tie,tie,"Both recommendations are very similar, focusing on the same laptop.",gemma2:9b
+laptop_003_10v11,laptop,3,10,11,11,10,1,tie,tie,2,tie,tie,tie,"Both recommendations are very similar, focusing on the same laptop.",gemma2:9b
+laptop_003_01v11,laptop,3,01,11,01,11,0,tie,tie,2,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+laptop_004_00v10,laptop,4,00,10,10,00,1,A,10,3,tie,tie,tie,Both recommendations are identical. Slight preference for A due to ordering.,gemma2:9b
+laptop_004_00v01,laptop,4,00,01,00,01,0,A,00,4,tie,00,01,"Recommendation A focuses on user needs, while B relies heavily on stats.",gemma2:9b
+laptop_004_00v11,laptop,4,00,11,00,11,0,A,00,4,tie,00,11,"Recommendation A focuses on user needs, while B relies heavily on stats.",gemma2:9b
+laptop_004_10v01,laptop,4,10,01,10,01,0,A,10,4,tie,10,01,"Recommendation A focuses on user needs, while B relies heavily on stats.",gemma2:9b
+laptop_004_10v11,laptop,4,10,11,11,10,1,tie,tie,3,tie,tie,11,"Both recommendations are very similar. Package A highlights user data, while B focuses on the consumer's priorities.",gemma2:9b
+laptop_004_01v11,laptop,4,01,11,01,11,0,tie,tie,2,tie,tie,tie,Identical recommendations with no differentiating factors.,gemma2:9b
+laptop_005_00v10,laptop,5,00,10,10,00,1,tie,tie,2,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+laptop_005_00v01,laptop,5,00,01,01,00,1,tie,tie,2,tie,tie,00,Both recommendations are very similar. Package B highlights tradeoffs more.,gemma2:9b
+laptop_005_00v11,laptop,5,00,11,11,00,1,tie,tie,2,tie,tie,00,Both recommendations are very similar. Package B highlights tradeoffs more.,gemma2:9b
+laptop_005_10v01,laptop,5,10,01,10,01,0,B,01,3,tie,01,10,Package B's social proof and market data feel more trustworthy.,gemma2:9b
+laptop_005_10v11,laptop,5,10,11,10,11,0,B,11,3,tie,11,10,Package B's social proof and market data feel more trustworthy.,gemma2:9b
+laptop_005_01v11,laptop,5,01,11,01,11,0,tie,tie,2,tie,tie,tie,Identical recommendations with no differentiating factors.,gemma2:9b
+laptop_006_00v10,laptop,6,00,10,10,00,1,tie,tie,2,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+laptop_006_00v01,laptop,6,00,01,01,00,1,tie,tie,2,tie,tie,tie,"Both recommendations are very similar, highlighting the same pros and cons.",gemma2:9b
+laptop_006_00v11,laptop,6,00,11,00,11,0,B,11,3,tie,11,00,Package B's data-driven approach and conversion rate feel more trustworthy.,gemma2:9b
+laptop_006_10v01,laptop,6,10,01,01,10,1,tie,tie,2,tie,tie,tie,"Both recommendations are very similar, highlighting the same pros and cons.",gemma2:9b
+laptop_006_10v11,laptop,6,10,11,10,11,0,B,11,3,tie,11,10,Package B's data-driven approach and conversion rate feel more trustworthy.,gemma2:9b
+laptop_006_01v11,laptop,6,01,11,11,01,1,tie,tie,2,tie,tie,tie,Identical product and recommendation text.,gemma2:9b
+laptop_007_00v10,laptop,7,00,10,00,10,0,tie,tie,2,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+laptop_007_00v01,laptop,7,00,01,01,00,1,tie,tie,2,tie,tie,tie,"Both recommendations are very similar, focusing on value and OLED display.",gemma2:9b
+laptop_007_00v11,laptop,7,00,11,00,11,0,B,11,3,tie,11,00,Package B's user data adds credibility and addresses potential concerns.,gemma2:9b
+laptop_007_10v01,laptop,7,10,01,10,01,0,B,01,3,tie,01,10,Package B's user data adds credibility and addresses potential concerns.,gemma2:9b
+laptop_007_10v11,laptop,7,10,11,11,10,1,tie,tie,2,tie,tie,tie,"Both recommendations are very similar, focusing on value and OLED display.",gemma2:9b
+laptop_007_01v11,laptop,7,01,11,11,01,1,tie,tie,1,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+laptop_008_00v10,laptop,8,00,10,10,00,1,B,00,4,00,tie,10,"MacBook Air aligns better with student needs (portability, battery) and brand preference.",gemma2:9b
+laptop_008_00v01,laptop,8,00,01,00,01,0,B,01,3,tie,01,00,Package B's social proof and focus on value make it more appealing.,gemma2:9b
+laptop_008_00v11,laptop,8,00,11,11,00,1,A,11,3,11,tie,00,ASUS laptop fits budget better and has comparable quality.,gemma2:9b
+laptop_008_10v01,laptop,8,10,01,10,01,0,B,01,4,01,tie,10,MacBook Air's battery life and performance better suit student needs.,gemma2:9b
+laptop_008_10v11,laptop,8,10,11,11,10,1,tie,tie,2,tie,tie,10,Both packages are very similar. Package B highlights a weakness (speakers) more directly.,gemma2:9b
+laptop_008_01v11,laptop,8,01,11,11,01,1,A,11,3,11,tie,01,ZenBook is cheaper and fits budget better. MacBook's limited storage is a concern.,gemma2:9b
+laptop_009_00v10,laptop,9,00,10,00,10,0,tie,tie,2,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+laptop_009_00v01,laptop,9,00,01,01,00,1,tie,tie,2,tie,tie,00,Both packages recommend the same laptop. Package B mentions limitations.,gemma2:9b
+laptop_009_00v11,laptop,9,00,11,11,00,1,tie,tie,2,tie,tie,00,Both packages recommend the same laptop. Package B mentions limitations.,gemma2:9b
+laptop_009_10v01,laptop,9,10,01,01,10,1,tie,tie,2,tie,tie,10,Both packages recommend the same laptop. Package B mentions limitations.,gemma2:9b
+laptop_009_10v11,laptop,9,10,11,10,11,0,B,11,3,tie,11,10,Package B's conversion rate and user satisfaction data feel more trustworthy.,gemma2:9b
+laptop_009_01v11,laptop,9,01,11,11,01,1,tie,tie,2,tie,tie,tie,"Identical products and recommendations, consumer indifferent.",gemma2:9b
+phone_charger_000_00v10,phone_charger,0,00,10,00,10,0,A,00,3,00,tie,10,Belkin charger fits budget better and meets fast charging needs.,gemma2:9b
+phone_charger_000_00v01,phone_charger,0,00,01,00,01,0,tie,tie,2,tie,tie,01,Both are similar. Package B's conversion rate/satisfaction feels less trustworthy.,gemma2:9b
+phone_charger_000_00v11,phone_charger,0,00,11,11,00,1,A,11,4,11,tie,00,Anker offers higher wattage and better quality despite a slightly higher price.,gemma2:9b
+phone_charger_000_10v01,phone_charger,0,10,01,01,10,1,B,10,4,10,tie,01,Anker's higher wattage and versatility outweigh Belkin's compactness at a slightly higher price.,gemma2:9b
+phone_charger_000_10v11,phone_charger,0,10,11,11,10,1,tie,tie,2,tie,tie,tie,Both recommendations are very similar and address the consumer's needs.,gemma2:9b
+phone_charger_000_01v11,phone_charger,0,01,11,01,11,0,A,01,3,01,tie,11,Belkin charger fits budget better and is sufficient for fast charging needs.,gemma2:9b
+phone_charger_001_00v10,phone_charger,1,00,10,00,10,0,A,00,3,00,00,10,Anker's higher quality and familiarity outweigh Voltix's price advantage.,gemma2:9b
+phone_charger_001_00v01,phone_charger,1,00,01,00,01,0,A,00,4,tie,00,01,Package A's recommendation feels more genuine and less focused on technical details.,gemma2:9b
+phone_charger_001_00v11,phone_charger,1,00,11,00,11,0,A,00,3,00,00,11,Anker's reputation and higher quality outweigh Voltix's lower price.,gemma2:9b
+phone_charger_001_10v01,phone_charger,1,10,01,01,10,1,A,01,3,01,01,10,"Anker is more trusted, and the Nano's quality outweighs Voltix's price advantage.",gemma2:9b
+phone_charger_001_10v11,phone_charger,1,10,11,10,11,0,B,11,3,tie,11,10,Package B feels more trustworthy with data on conversion and satisfaction.,gemma2:9b
+phone_charger_001_01v11,phone_charger,1,01,11,01,11,0,A,01,3,01,01,11,"Anker is more trusted, and the Nano's quality outweighs Voltix's price advantage.",gemma2:9b
+phone_charger_002_00v10,phone_charger,2,00,10,10,00,1,A,10,3,10,tie,00,Package A offers better value for a fast phone user with Samsung preference.,gemma2:9b
+phone_charger_002_00v01,phone_charger,2,00,01,00,01,0,B,01,3,tie,01,00,Package B's conversion rate and satisfaction data add trustworthiness.,gemma2:9b
+phone_charger_002_00v11,phone_charger,2,00,11,11,00,1,A,11,3,11,tie,00,Samsung charger is cheaper and fits budget better despite lower wattage.,gemma2:9b
+phone_charger_002_10v01,phone_charger,2,10,01,01,10,1,B,10,4,10,tie,01,"Samsung charger is cheaper, higher quality, and better wattage for the use case.",gemma2:9b
+phone_charger_002_10v11,phone_charger,2,10,11,11,10,1,tie,tie,2,tie,tie,tie,Both recommendations are very similar in content and appeal.,gemma2:9b
+phone_charger_002_01v11,phone_charger,2,01,11,11,01,1,A,11,3,11,tie,01,Samsung charger is cheaper and fits budget better despite lower wattage.,gemma2:9b
+phone_charger_003_00v10,phone_charger,3,00,10,00,10,0,tie,tie,2,tie,tie,tie,Identical recommendations with no differentiating factors.,gemma2:9b
+phone_charger_003_00v01,phone_charger,3,00,01,00,01,0,B,01,4,tie,01,00,Package B's social proof and conversion rate sway the choice.,gemma2:9b
+phone_charger_003_00v11,phone_charger,3,00,11,00,11,0,B,11,4,tie,11,00,Package B's social proof and conversion rate sway the choice.,gemma2:9b
+phone_charger_003_10v01,phone_charger,3,10,01,01,10,1,tie,tie,2,tie,tie,10,Both packages recommend the same product. Package B mentions a heavier weight as a tradeoff.,gemma2:9b
+phone_charger_003_10v11,phone_charger,3,10,11,10,11,0,B,11,4,tie,11,10,Package B's social proof and conversion rate sway the choice.,gemma2:9b
+phone_charger_003_01v11,phone_charger,3,01,11,11,01,1,tie,tie,2,tie,tie,tie,Identical product and recommendation text.,gemma2:9b
+phone_charger_004_00v10,phone_charger,4,00,10,10,00,1,tie,tie,2,tie,tie,tie,Identical recommendations with no differentiating factors.,gemma2:9b
+phone_charger_004_00v01,phone_charger,4,00,01,00,01,0,B,01,3,tie,01,00,Package B acknowledges trade-offs more transparently.,gemma2:9b
+phone_charger_004_00v11,phone_charger,4,00,11,11,00,1,tie,tie,2,tie,tie,11,Both are very similar. Package A's phrasing is slightly less positive.,gemma2:9b
+phone_charger_004_10v01,phone_charger,4,10,01,01,10,1,tie,tie,2,tie,tie,01,Both are very similar. Package A's phrasing is slightly less positive.,gemma2:9b
+phone_charger_004_10v11,phone_charger,4,10,11,10,11,0,B,11,3,tie,11,10,Package B acknowledges trade-offs more transparently.,gemma2:9b
+phone_charger_004_01v11,phone_charger,4,01,11,01,11,0,tie,tie,1,tie,tie,tie,Identical recommendations with no differentiating factors.,gemma2:9b
+phone_charger_005_00v10,phone_charger,5,00,10,10,00,1,tie,tie,2,tie,tie,tie,Identical recommendations and products make for a tie.,gemma2:9b
+phone_charger_005_00v01,phone_charger,5,00,01,00,01,0,B,01,3,tie,00,01,Package B acknowledges potential downsides more honestly.,gemma2:9b
+phone_charger_005_00v11,phone_charger,5,00,11,11,00,1,tie,tie,2,tie,tie,11,Both packages are very similar. Package A highlights potential downsides more.,gemma2:9b
+phone_charger_005_10v01,phone_charger,5,10,01,10,01,0,B,01,3,tie,10,01,Package B acknowledges potential downsides more honestly.,gemma2:9b
+phone_charger_005_10v11,phone_charger,5,10,11,11,10,1,tie,tie,2,tie,tie,11,Both packages are very similar. Package A highlights potential downsides more.,gemma2:9b
+phone_charger_005_01v11,phone_charger,5,01,11,11,01,1,tie,tie,2,tie,tie,tie,Identical recommendations with no differentiating factors.,gemma2:9b
+phone_charger_006_00v10,phone_charger,6,00,10,00,10,0,tie,tie,2,tie,tie,tie,Both recommendations are nearly identical.,gemma2:9b
+phone_charger_006_00v01,phone_charger,6,00,01,00,01,0,B,01,3,tie,01,00,"Package B's user data adds trustworthiness, while A focuses solely on features.",gemma2:9b
+phone_charger_006_00v11,phone_charger,6,00,11,00,11,0,B,11,3,tie,11,00,"Package B's user data adds trustworthiness, while A focuses solely on features.",gemma2:9b
+phone_charger_006_10v01,phone_charger,6,10,01,10,01,0,B,01,3,tie,01,10,"Package B's user data adds trustworthiness, while A focuses solely on features.",gemma2:9b
+phone_charger_006_10v11,phone_charger,6,10,11,11,10,1,tie,tie,2,tie,tie,tie,Both recommendations are very similar and address the consumer's needs.,gemma2:9b
+phone_charger_006_01v11,phone_charger,6,01,11,01,11,0,tie,tie,2,tie,tie,tie,"Both packages are identical, offering the same product and rationale.",gemma2:9b
+phone_charger_007_00v10,phone_charger,7,00,10,10,00,1,A,10,3,10,tie,00,"Baseus offers more power and ports at a lower price, despite Samsung's brand familiarity.",gemma2:9b
+phone_charger_007_00v01,phone_charger,7,00,01,00,01,0,B,01,3,tie,tie,00,"Package B's data points (conversion rate, satisfaction) sway the choice.",gemma2:9b
+phone_charger_007_00v11,phone_charger,7,00,11,11,00,1,A,11,3,11,tie,00,Baseus offers more power and ports at a slightly lower price.,gemma2:9b
+phone_charger_007_10v01,phone_charger,7,10,01,10,01,0,A,10,3,10,tie,01,"Baseus offers more power and features at a lower price, despite some user reports.",gemma2:9b
+phone_charger_007_10v11,phone_charger,7,10,11,11,10,1,B,10,3,tie,10,11,"Package B highlights savings and value, making it more appealing.",gemma2:9b
+phone_charger_007_01v11,phone_charger,7,01,11,11,01,1,A,11,3,11,tie,01,Baseus charger is more powerful and compact despite slightly lower quality.,gemma2:9b
+phone_charger_008_00v10,phone_charger,8,00,10,00,10,0,B,10,3,tie,00,10,"Baseus is cheaper and still meets needs, but has reported issues.",gemma2:9b
+phone_charger_008_00v01,phone_charger,8,00,01,00,01,0,B,01,3,tie,01,00,Package B's user data adds credibility and addresses potential warmth concerns.,gemma2:9b
+phone_charger_008_00v11,phone_charger,8,00,11,11,00,1,A,11,3,tie,11,00,Baseus is cheaper and the recommendation feels more balanced.,gemma2:9b
+phone_charger_008_10v01,phone_charger,8,10,01,01,10,1,B,10,3,tie,01,10,"Baseus is cheaper and fits the budget, but Anker has better reviews.",gemma2:9b
+phone_charger_008_10v11,phone_charger,8,10,11,10,11,0,B,11,3,tie,11,10,Package B's conversion data and user satisfaction feel more trustworthy.,gemma2:9b
+phone_charger_008_01v11,phone_charger,8,01,11,11,01,1,B,01,3,tie,01,11,"Anker is more trusted, and the Baseus has reported charging issues.",gemma2:9b
+phone_charger_009_00v10,phone_charger,9,00,10,00,10,0,tie,tie,2,tie,tie,tie,Identical recommendations with no differentiating factors.,gemma2:9b
+phone_charger_009_00v01,phone_charger,9,00,01,00,01,0,B,01,3,tie,01,00,Package B acknowledges potential compatibility issues while highlighting positive user data.,gemma2:9b
+phone_charger_009_00v11,phone_charger,9,00,11,11,00,1,tie,tie,2,tie,tie,00,Both packages are very similar. Package B mentions potential issues.,gemma2:9b
+phone_charger_009_10v01,phone_charger,9,10,01,01,10,1,tie,tie,2,tie,tie,10,Both packages are very similar. Package B mentions potential issues.,gemma2:9b
+phone_charger_009_10v11,phone_charger,9,10,11,10,11,0,B,11,3,tie,11,10,Package B acknowledges potential compatibility issues while highlighting positive user data.,gemma2:9b
+phone_charger_009_01v11,phone_charger,9,01,11,11,01,1,tie,tie,2,tie,tie,tie,"Both recommendations are identical, offering the same product and rationale.",gemma2:9b

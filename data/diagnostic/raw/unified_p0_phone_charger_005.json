@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_005",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 5,
+  "timestamp": "2026-05-14T12:08:06.797209+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20265514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_nano_67w\",\n  \"shortlist\": [\"charger_anker_nano_67w\", \"charger_voltix_65w\", \"charger_belkin_25w\"],\n  \"recommendation_text\": \"For fast phone charging, the Anker Nano 67W charger is highly recommended. It offers dual USB-C ports for simultaneous fast charging and supports PPS protocol for optimal Android device performance. Despite warming up under full load, its compact design makes it travel-friendly. The Voltix 65W charger is a budget option but has build quality concerns. The Belkin 25W charger, while ultra-compact, lacks the wattage needed for efficient phone charging.\",\n  \"selection_rationale\": \"Anker Nano's fast-charging capability and brand recognition outweigh its warmth issue.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_nano_67w",
+    "shortlist": [
+      "charger_anker_nano_67w",
+      "charger_voltix_65w",
+      "charger_belkin_25w"
+    ],
+    "recommendation_text": "For fast phone charging, the Anker Nano 67W charger is highly recommended. It offers dual USB-C ports for simultaneous fast charging and supports PPS protocol for optimal Android device performance. Despite warming up under full load, its compact design makes it travel-friendly. The Voltix 65W charger is a budget option but has build quality concerns. The Belkin 25W charger, while ultra-compact, lacks the wattage needed for efficient phone charging.",
+    "selection_rationale": "Anker Nano's fast-charging capability and brand recognition outweigh its warmth issue."
+  },
+  "parse_success": true,
+  "latency_ms": 31819
+}

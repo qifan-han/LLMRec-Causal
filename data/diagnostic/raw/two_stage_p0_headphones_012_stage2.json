@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_012_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 12,
+  "timestamp": "2026-05-14T11:25:02.340012+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20272525,
+  "stage": "writer",
+  "raw_response": "Given your price sensitivity and budget, the JBL Tune 770NC is an excellent choice for commuting. It offers solid noise cancellation and a generous battery life of 44 hours, making it convenient for long trips. The headphones are foldable and lightweight at just 225 grams, ensuring comfort during extended use. While the build quality is mostly plastic, the JBL sound signature delivers punchy audio that many enjoy. At $79.95, these headphones provide great value without breaking your budget.",
+  "parsed": {
+    "recommendation_text": "Given your price sensitivity and budget, the JBL Tune 770NC is an excellent choice for commuting. It offers solid noise cancellation and a generous battery life of 44 hours, making it convenient for long trips. The headphones are foldable and lightweight at just 225 grams, ensuring comfort during extended use. While the build quality is mostly plastic, the JBL sound signature delivers punchy audio that many enjoy. At $79.95, these headphones provide great value without breaking your budget."
+  },
+  "parse_success": true,
+  "latency_ms": 13322
+}

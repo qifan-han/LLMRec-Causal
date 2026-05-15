@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_005",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 5,
+  "timestamp": "2026-05-14T11:41:30.687971+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20265514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_asus_zenbook_14\",\n  \"shortlist\": [\"laptop_asus_zenbook_14\", \"laptop_acer_swift_go_14\", \"laptop_lg_gram_14\"],\n  \"recommendation_text\": \"The ASUS ZenBook 14 offers the best balance of performance and value for data analysis within your budget. Its OLED display provides excellent visual clarity, and it's lightweight at just over a kilogram. Despite its lower price point, it still delivers decent performance with an Intel Core Ultra 5 processor and 16GB RAM. The ZenBook also includes a full range of ports, including Thunderbolt 4, HDMI, USB-A, and USB-C for versatile connectivity options. While the processor is less powerful than some competitors', its OLED display and overall build quality make it a strong choice.\",\n  \"selection_rationale\": \"Best value with OLED display and adequate performance.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_asus_zenbook_14",
+    "shortlist": [
+      "laptop_asus_zenbook_14",
+      "laptop_acer_swift_go_14",
+      "laptop_lg_gram_14"
+    ],
+    "recommendation_text": "The ASUS ZenBook 14 offers the best balance of performance and value for data analysis within your budget. Its OLED display provides excellent visual clarity, and it's lightweight at just over a kilogram. Despite its lower price point, it still delivers decent performance with an Intel Core Ultra 5 processor and 16GB RAM. The ZenBook also includes a full range of ports, including Thunderbolt 4, HDMI, USB-A, and USB-C for versatile connectivity options. While the processor is less powerful than some competitors', its OLED display and overall build quality make it a strong choice.",
+    "selection_rationale": "Best value with OLED display and adequate performance."
+  },
+  "parse_success": true,
+  "latency_ms": 44204
+}

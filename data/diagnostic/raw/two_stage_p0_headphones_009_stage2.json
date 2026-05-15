@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_009_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 9,
+  "timestamp": "2026-05-14T11:21:02.475865+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20269525,
+  "stage": "writer",
+  "raw_response": "Given your budget and quality preferences, the Sony over-ear wireless headphones are a great choice for office work. They offer good noise cancellation and an impressive 50-hour battery life, making them convenient for long days at the desk. Though they have heavy bass tuning that might not suit everyone, their LDAC codec support ensures high-quality audio when you switch to clearer sound settings. The foldable design also makes them easy to store in your office drawer or bag.",
+  "parsed": {
+    "recommendation_text": "Given your budget and quality preferences, the Sony over-ear wireless headphones are a great choice for office work. They offer good noise cancellation and an impressive 50-hour battery life, making them convenient for long days at the desk. Though they have heavy bass tuning that might not suit everyone, their LDAC codec support ensures high-quality audio when you switch to clearer sound settings. The foldable design also makes them easy to store in your office drawer or bag."
+  },
+  "parse_success": true,
+  "latency_ms": 12219
+}

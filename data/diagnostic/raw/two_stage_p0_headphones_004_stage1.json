@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_headphones_004_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 4,
+  "timestamp": "2026-05-14T11:14:45.973872+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20264524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_sennheiser_momentum4\",\n  \"shortlist\": [\"headphones_sony_wh1000xm5\", \"headphones_sennheiser_momentum4\", \"headphones_jbl_tune770nc\"],\n  \"selection_rationale\": \"Balances quality and budget, offers best sound with long battery life.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_sennheiser_momentum4",
+    "shortlist": [
+      "headphones_sony_wh1000xm5",
+      "headphones_sennheiser_momentum4",
+      "headphones_jbl_tune770nc"
+    ],
+    "selection_rationale": "Balances quality and budget, offers best sound with long battery life."
+  },
+  "parse_success": true,
+  "latency_ms": 26301
+}

@@ -1,0 +1,22 @@
+{
+  "headphones": {
+    "method": "real_amazon_metadata",
+    "source_file": "/Users/qhan94/Library/CloudStorage/Dropbox/MarketingResearch/LLMRec-Causal/data/real_metadata/products_headphones.csv",
+    "dataset": "Amazon Reviews 2023 (McAuley Lab, NeurIPS 2024)",
+    "n_products": 30,
+    "n_brands": 21,
+    "price_range": [
+      13.99,
+      348.0
+    ],
+    "rating_count_range": [
+      32038,
+      300544
+    ],
+    "tier_distribution": {
+      "premium": 10,
+      "budget": 10,
+      "midrange": 10
+    }
+  }
+}

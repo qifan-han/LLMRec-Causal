@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_laptop_019_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 19,
+  "timestamp": "2026-05-14T12:02:26.103490+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20279525,
+  "stage": "writer",
+  "raw_response": "The Acer Swift Go 14 is an excellent budget-friendly option for office tasks like document editing and web browsing. At $699, it fits your price range comfortably while offering a solid 14-inch IPS display and 16GB of RAM. Though the display could be brighter and performance dips under heavy loads, its lightweight design and long battery life make it portable and convenient for daily use in an office setting.",
+  "parsed": {
+    "recommendation_text": "The Acer Swift Go 14 is an excellent budget-friendly option for office tasks like document editing and web browsing. At $699, it fits your price range comfortably while offering a solid 14-inch IPS display and 16GB of RAM. Though the display could be brighter and performance dips under heavy loads, its lightweight design and long battery life make it portable and convenient for daily use in an office setting."
+  },
+  "parse_success": true,
+  "latency_ms": 11777
+}

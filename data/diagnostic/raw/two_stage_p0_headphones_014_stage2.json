@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_014_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 14,
+  "timestamp": "2026-05-14T11:27:27.169213+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20274525,
+  "stage": "writer",
+  "raw_response": "Given your quality sensitivity and brand familiarity with Bose, the Bose QuietComfort Ultra headphones are an excellent choice for gym running. They offer outstanding noise cancellation and a comfortable over-ear design that stays secure during workouts. With a battery life of up to 24 hours, you won't need frequent recharges. Though they are pricey, their immersive audio and luxurious comfort make them worth the investment.",
+  "parsed": {
+    "recommendation_text": "Given your quality sensitivity and brand familiarity with Bose, the Bose QuietComfort Ultra headphones are an excellent choice for gym running. They offer outstanding noise cancellation and a comfortable over-ear design that stays secure during workouts. With a battery life of up to 24 hours, you won't need frequent recharges. Though they are pricey, their immersive audio and luxurious comfort make them worth the investment."
+  },
+  "parse_success": true,
+  "latency_ms": 10875
+}

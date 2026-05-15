@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_laptop_018_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 18,
+  "timestamp": "2026-05-14T12:01:03.531583+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20278525,
+  "stage": "writer",
+  "raw_response": "The MacBook Pro with the M4 Pro processor is an excellent choice for your creative media needs. Its powerful performance and long battery life make it ideal for demanding tasks like video editing and graphic design. The mini-LED XDR display offers stunning visuals, enhancing your workflow. While the price is high and macOS may limit some enterprise software compatibility, the quality and features justify the cost given your budget and low price sensitivity.",
+  "parsed": {
+    "recommendation_text": "The MacBook Pro with the M4 Pro processor is an excellent choice for your creative media needs. Its powerful performance and long battery life make it ideal for demanding tasks like video editing and graphic design. The mini-LED XDR display offers stunning visuals, enhancing your workflow. While the price is high and macOS may limit some enterprise software compatibility, the quality and features justify the cost given your budget and low price sensitivity."
+  },
+  "parse_success": true,
+  "latency_ms": 11620
+}

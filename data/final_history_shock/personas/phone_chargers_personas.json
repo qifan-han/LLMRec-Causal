@@ -1,0 +1,1382 @@
+[
+  {
+    "persona_id": "phone_chargers_001",
+    "category": "phone_chargers",
+    "age_range": "35-44",
+    "purchase_context": "Her child's school requested a dedicated charger to stay in their backpack.",
+    "budget": "$10-$20",
+    "technical_knowledge": "low",
+    "primary_use_case": "Backup charger for a child's school bag",
+    "secondary_use_case": "Occasional home use",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "durable cable",
+      "basic safety certification"
+    ],
+    "features_to_avoid": [
+      "fast charging claims that seem exaggerated"
+    ],
+    "prior_experience": "Has bought cheap chargers before that frayed quickly",
+    "one_paragraph_description": "A parent of a middle schooler who needs a reliable but affordable charger to leave in a backpack. She\u2019s wary of very cheap options after past breakages but doesn\u2019t want to overspend since kids tend to lose things. She values durability and safety over speed or brand name."
+  },
+  {
+    "persona_id": "phone_chargers_002",
+    "category": "phone_chargers",
+    "age_range": "25-34",
+    "purchase_context": "He forgot to pack a charger while traveling for a wedding and needs one immediately.",
+    "budget": "$15-$35",
+    "technical_knowledge": "high",
+    "primary_use_case": "Emergency travel replacement charger",
+    "secondary_use_case": "Future travel backup",
+    "brand_preference": "recognizes Anker but open",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "fast charging support",
+      "USB-C compatibility"
+    ],
+    "features_to_avoid": [
+      "bulky wall adapters"
+    ],
+    "prior_experience": "Uses mid-range accessories but doesn\u2019t research deeply",
+    "one_paragraph_description": "A young professional caught without a charger during a busy travel weekend. He needs something quickly from a nearby store that works reliably with his phone and charges reasonably fast. Convenience matters more than perfect specs, but he avoids anything that looks flimsy."
+  },
+  {
+    "persona_id": "phone_chargers_003",
+    "category": "phone_chargers",
+    "age_range": "65+",
+    "purchase_context": "Her old charger stopped working and she needs a simple replacement.",
+    "budget": "$20-$40",
+    "technical_knowledge": "low",
+    "primary_use_case": "Daily bedside charging",
+    "secondary_use_case": "None",
+    "brand_preference": "prefers well-known brands like Apple or Samsung",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "easy-to-plug cable",
+      "reliable connection"
+    ],
+    "features_to_avoid": [
+      "multi-port complexity"
+    ],
+    "prior_experience": "Has only used the charger that came with her phone",
+    "one_paragraph_description": "An older adult who wants a straightforward, dependable charger without confusing features. She values ease of use and trusts recognizable brands, even if they cost more. She is cautious about compatibility and prefers something that just works every time."
+  },
+  {
+    "persona_id": "phone_chargers_004",
+    "category": "phone_chargers",
+    "age_range": "45-54",
+    "purchase_context": "He is outfitting a small office with shared charging stations.",
+    "budget": "$50-$100",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Multi-device charging station for employees",
+    "secondary_use_case": "Charging tablets occasionally",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "multiple ports",
+      "overcurrent protection"
+    ],
+    "features_to_avoid": [
+      "cheap unbranded bulk packs"
+    ],
+    "prior_experience": "Has purchased office electronics but not chargers in bulk",
+    "one_paragraph_description": "An office manager responsible for keeping shared spaces functional and safe. He needs chargers that can handle multiple devices without causing clutter or safety concerns. Reliability and durability matter more than cutting costs to the lowest possible level."
+  },
+  {
+    "persona_id": "phone_chargers_005",
+    "category": "phone_chargers",
+    "age_range": "18-24",
+    "purchase_context": "Her dorm room needs a longer charger to reach from bed to outlet.",
+    "budget": "$12-$25",
+    "technical_knowledge": "low",
+    "primary_use_case": "Long cable for dorm room convenience",
+    "secondary_use_case": "Light travel use",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "extra-long cable",
+      "tangle resistance"
+    ],
+    "features_to_avoid": [
+      "short cables"
+    ],
+    "prior_experience": "Mostly uses whatever is cheapest online",
+    "one_paragraph_description": "A college student who prioritizes convenience and affordability. She mainly wants a charger that reaches comfortably while using her phone in bed. She\u2019s willing to take some risk on lesser-known brands if the price is right."
+  },
+  {
+    "persona_id": "phone_chargers_006",
+    "category": "phone_chargers",
+    "age_range": "55-64",
+    "purchase_context": "He recently bought his first smartphone and needs a compatible charger for work and home.",
+    "budget": "$25-$50",
+    "technical_knowledge": "low",
+    "primary_use_case": "Primary charger for first-time smartphone use",
+    "secondary_use_case": "Backup for car",
+    "brand_preference": "relies on store recommendations",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "clear compatibility labeling",
+      "reliable charging"
+    ],
+    "features_to_avoid": [
+      "wireless charging (confusing)"
+    ],
+    "prior_experience": "No prior experience with smartphone accessories",
+    "one_paragraph_description": "A late adopter to smartphones who wants something simple and dependable. He is unsure about technical specs and prefers guidance from sales staff or packaging. He is willing to pay a bit more to avoid making a mistake."
+  },
+  {
+    "persona_id": "phone_chargers_007",
+    "category": "phone_chargers",
+    "age_range": "25-34",
+    "purchase_context": "She is buying a small add-on gift to accompany a new phone for her partner.",
+    "budget": "$30-$60",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Gift-worthy premium charger",
+    "secondary_use_case": "None",
+    "brand_preference": "prefers stylish brands or Apple/Samsung",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "sleek design",
+      "fast charging"
+    ],
+    "features_to_avoid": [
+      "plain generic look"
+    ],
+    "prior_experience": "Occasionally buys tech accessories as gifts",
+    "one_paragraph_description": "A thoughtful gift buyer who wants something that feels a bit more premium than a standard charger. She cares about aesthetics and presentation as well as performance. Price matters less than giving something that looks intentional and useful."
+  },
+  {
+    "persona_id": "phone_chargers_008",
+    "category": "phone_chargers",
+    "age_range": "35-44",
+    "purchase_context": "His car charger stopped working and he relies on his phone for navigation daily.",
+    "budget": "$15-$30",
+    "technical_knowledge": "medium",
+    "primary_use_case": "In-car charging during commuting",
+    "secondary_use_case": "Occasional passenger use",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "fast car charging",
+      "secure fit in socket"
+    ],
+    "features_to_avoid": [
+      "loose adapters"
+    ],
+    "prior_experience": "Has replaced car chargers multiple times due to wear",
+    "one_paragraph_description": "A daily commuter who depends on GPS and streaming during drives. He needs a charger that won\u2019t disconnect or charge slowly while in use. He\u2019s experienced enough to recognize poor build quality and wants something dependable without overspending."
+  },
+  {
+    "persona_id": "phone_chargers_009",
+    "category": "phone_chargers",
+    "age_range": "45-54",
+    "purchase_context": "She is preparing for a long international flight and wants a compact travel charger.",
+    "budget": "$40-$80",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Compact multi-port travel charging",
+    "secondary_use_case": "Hotel room use",
+    "brand_preference": "open but avoids unknown brands",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "compact size",
+      "multiple device support"
+    ],
+    "features_to_avoid": [
+      "heavy or bulky units"
+    ],
+    "prior_experience": "Has used travel adapters but wants a cleaner solution",
+    "one_paragraph_description": "A frequent traveler who wants to minimize clutter while keeping devices powered abroad. She\u2019s willing to invest in a well-designed charger that handles multiple devices efficiently. Reliability and portability are top priorities."
+  },
+  {
+    "persona_id": "phone_chargers_010",
+    "category": "phone_chargers",
+    "age_range": "18-24",
+    "purchase_context": "His previous charger overheated and he is concerned about safety.",
+    "budget": "$20-$45",
+    "technical_knowledge": "low",
+    "primary_use_case": "Safe everyday charging at home",
+    "secondary_use_case": "Occasional overnight charging",
+    "brand_preference": "avoids unknown brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "certified safety standards",
+      "temperature control"
+    ],
+    "features_to_avoid": [
+      "very cheap chargers"
+    ],
+    "prior_experience": "Had a negative experience with a low-cost charger overheating",
+    "one_paragraph_description": "A cautious buyer who became concerned after a bad experience with a cheap charger. He now prioritizes safety certifications and build quality over price. He is still budget-conscious but unwilling to risk another unsafe product."
+  },
+  {
+    "persona_id": "phone_chargers_011",
+    "category": "phone_chargers",
+    "age_range": "35-44",
+    "purchase_context": "Her child lost their charger at school and needs a replacement by tomorrow.",
+    "budget": "$10-$18",
+    "technical_knowledge": "low",
+    "primary_use_case": "Basic home charging for a child's phone",
+    "secondary_use_case": "Backup charger for travel",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "durable cable",
+      "compatible with child's phone model"
+    ],
+    "features_to_avoid": [
+      "expensive fast-charging claims"
+    ],
+    "prior_experience": "Has bought cheap chargers before, some broke quickly",
+    "one_paragraph_description": "A busy parent trying to quickly replace a lost charger without spending much. She wants something that won't break in a week but isn't interested in premium features. Convenience and availability matter more than performance specs."
+  },
+  {
+    "persona_id": "phone_chargers_012",
+    "category": "phone_chargers",
+    "age_range": "65+",
+    "purchase_context": "His old charger stopped working and he needs a simple replacement.",
+    "budget": "$15-$25",
+    "technical_knowledge": "low",
+    "primary_use_case": "Charging a smartphone overnight at home",
+    "secondary_use_case": "None",
+    "brand_preference": "avoids unknown brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "easy-to-plug connector",
+      "reliable brand"
+    ],
+    "features_to_avoid": [
+      "complex multi-port chargers"
+    ],
+    "prior_experience": "Relies on family recommendations and has used the same charger for years",
+    "one_paragraph_description": "An older adult who values simplicity and reliability over everything else. He prefers a recognizable brand and avoids anything that looks complicated or unfamiliar. He wants a charger that just works without any fuss."
+  },
+  {
+    "persona_id": "phone_chargers_013",
+    "category": "phone_chargers",
+    "age_range": "25-34",
+    "purchase_context": "She needs multiple chargers to stock a small office for employees.",
+    "budget": "$60-$120",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Shared office charging stations for various devices",
+    "secondary_use_case": "Backup chargers for meeting rooms",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "multi-port hubs",
+      "universal compatibility"
+    ],
+    "features_to_avoid": [
+      "single-port chargers"
+    ],
+    "prior_experience": "Has previously purchased bulk office electronics",
+    "one_paragraph_description": "An office manager tasked with keeping shared spaces functional. She needs chargers that can handle multiple devices and reduce clutter, while still staying within a reasonable budget. Reliability matters because employees depend on them daily."
+  },
+  {
+    "persona_id": "phone_chargers_014",
+    "category": "phone_chargers",
+    "age_range": "18-24",
+    "purchase_context": "His charger cable frayed and stopped working during finals week.",
+    "budget": "$12-$20",
+    "technical_knowledge": "high",
+    "primary_use_case": "Dorm room daily charging",
+    "secondary_use_case": "Charging while using phone in bed",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "long cable",
+      "fast charging support"
+    ],
+    "features_to_avoid": [
+      "short cables"
+    ],
+    "prior_experience": "Frequently replaces worn-out cables",
+    "one_paragraph_description": "A college student who relies heavily on his phone and tends to wear out chargers quickly. He wants something affordable but slightly better than the cheapest option, especially a longer cable for convenience. Speed matters, but price still dominates his decision."
+  },
+  {
+    "persona_id": "phone_chargers_015",
+    "category": "phone_chargers",
+    "age_range": "45-54",
+    "purchase_context": "She is buying a charger as part of a birthday gift bundle.",
+    "budget": "$20-$35",
+    "technical_knowledge": "low",
+    "primary_use_case": "Gift for a friend with a new phone",
+    "secondary_use_case": "None",
+    "brand_preference": "recognizable brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "attractive packaging",
+      "reliable brand"
+    ],
+    "features_to_avoid": [
+      "generic-looking products"
+    ],
+    "prior_experience": "Occasionally buys tech gifts but doesn\u2019t follow specs closely",
+    "one_paragraph_description": "A casual gift buyer who wants something that feels thoughtful and dependable. She leans toward known brands to avoid giving something that might fail. Presentation and perceived quality matter more than technical details."
+  },
+  {
+    "persona_id": "phone_chargers_016",
+    "category": "phone_chargers",
+    "age_range": "55-64",
+    "purchase_context": "He just bought his first smartphone and needs a compatible charger.",
+    "budget": "$18-$30",
+    "technical_knowledge": "low",
+    "primary_use_case": "Daily home charging for a new smartphone",
+    "secondary_use_case": "Occasional travel use",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "clear compatibility labeling",
+      "simple setup"
+    ],
+    "features_to_avoid": [
+      "multi-device complexity"
+    ],
+    "prior_experience": "Very limited experience with smartphone accessories",
+    "one_paragraph_description": "A first-time smartphone owner who finds accessories confusing and wants something straightforward. He is cautious about buying the wrong product and values clear labeling and ease of use. He\u2019s willing to spend a bit more for peace of mind."
+  },
+  {
+    "persona_id": "phone_chargers_017",
+    "category": "phone_chargers",
+    "age_range": "25-34",
+    "purchase_context": "Her car charger stopped working and she relies on navigation daily.",
+    "budget": "$15-$28",
+    "technical_knowledge": "high",
+    "primary_use_case": "Charging phone in the car during commutes",
+    "secondary_use_case": "Emergency backup charging",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "fast car charging",
+      "compact design"
+    ],
+    "features_to_avoid": [
+      "bulky adapters"
+    ],
+    "prior_experience": "Has used a few car chargers with inconsistent performance",
+    "one_paragraph_description": "A daily commuter who depends on her phone for navigation and music. She needs a reliable car charger that keeps up with heavy usage and doesn't clutter her dashboard. Past frustrations make her more selective about quality."
+  },
+  {
+    "persona_id": "phone_chargers_018",
+    "category": "phone_chargers",
+    "age_range": "35-44",
+    "purchase_context": "He needs a rugged charger for frequent outdoor work trips.",
+    "budget": "$25-$45",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Durable charging during outdoor or field work",
+    "secondary_use_case": "Travel backup",
+    "brand_preference": "no preference",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "reinforced cable",
+      "weather-resistant build"
+    ],
+    "features_to_avoid": [
+      "fragile cables"
+    ],
+    "prior_experience": "Has broken multiple chargers in rough conditions",
+    "one_paragraph_description": "A field worker who needs gear that can withstand tough environments. He\u2019s willing to pay more for durability after going through several flimsy chargers. Reliability in unpredictable conditions is his top priority."
+  },
+  {
+    "persona_id": "phone_chargers_019",
+    "category": "phone_chargers",
+    "age_range": "18-24",
+    "purchase_context": "She wants a stylish charger to match her room aesthetic.",
+    "budget": "$18-$40",
+    "technical_knowledge": "low",
+    "primary_use_case": "Aesthetic bedside charging setup",
+    "secondary_use_case": "Occasional travel",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "color or design options",
+      "compact form"
+    ],
+    "features_to_avoid": [
+      "plain industrial designs"
+    ],
+    "prior_experience": "Has bought trendy accessories before, sometimes sacrificing durability",
+    "one_paragraph_description": "A style-conscious student who treats accessories as part of her personal space. She cares about how the charger looks as much as how it works. While not deeply technical, she still expects decent performance."
+  },
+  {
+    "persona_id": "phone_chargers_020",
+    "category": "phone_chargers",
+    "age_range": "45-54",
+    "purchase_context": "He needs a reliable fast charger for business travel after forgetting his last one at a hotel.",
+    "budget": "$30-$60",
+    "technical_knowledge": "high",
+    "primary_use_case": "Fast charging during business trips",
+    "secondary_use_case": "Charging multiple devices in hotel rooms",
+    "brand_preference": "recognizable brands",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "fast charging capability",
+      "multi-device support"
+    ],
+    "features_to_avoid": [
+      "cheap unbranded chargers"
+    ],
+    "prior_experience": "Frequently buys replacements due to travel mishaps",
+    "one_paragraph_description": "A frequent business traveler who depends on quick, reliable charging between meetings. He prefers trusted brands and values performance over cost. Losing chargers often has made him prioritize dependable replacements he can grab quickly."
+  },
+  {
+    "persona_id": "phone_chargers_021",
+    "category": "phone_chargers",
+    "age_range": "35-44",
+    "purchase_context": "Their child just got their first smartphone and needs a safe, durable charger.",
+    "budget": "$15-25",
+    "technical_knowledge": "low",
+    "primary_use_case": "Charging a child's phone safely at home",
+    "secondary_use_case": "Travel backup",
+    "brand_preference": "Anker",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "overcharge protection",
+      "durable cable"
+    ],
+    "features_to_avoid": [
+      "cheap unbranded products"
+    ],
+    "prior_experience": "Has bought chargers that frayed quickly and stopped working",
+    "one_paragraph_description": "A cautious parent who prioritizes safety and durability over price, especially for their child\u2019s first device. They\u2019ve had bad experiences with flimsy cables and want something reliable that won\u2019t overheat or break easily. They are not tech-savvy but rely on recognizable brands and simple product descriptions."
+  },
+  {
+    "persona_id": "phone_chargers_022",
+    "category": "phone_chargers",
+    "age_range": "65+",
+    "purchase_context": "Their old charger stopped working and they need a simple replacement.",
+    "budget": "$10-18",
+    "technical_knowledge": "low",
+    "primary_use_case": "Basic home charging",
+    "secondary_use_case": "None",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "easy-to-plug connector",
+      "clear labeling"
+    ],
+    "features_to_avoid": [
+      "complex multi-port chargers"
+    ],
+    "prior_experience": "Uses whatever came with the phone and rarely upgrades accessories",
+    "one_paragraph_description": "An older adult who wants something straightforward and familiar, without confusing features or setup. They value simplicity and reliability and tend to stick with what works, often buying in-store rather than online. Price matters, but avoiding frustration matters more."
+  },
+  {
+    "persona_id": "phone_chargers_023",
+    "category": "phone_chargers",
+    "age_range": "25-34",
+    "purchase_context": "They need a last-minute gift for a friend who travels frequently.",
+    "budget": "$20-40",
+    "technical_knowledge": "high",
+    "primary_use_case": "Gift for frequent traveler",
+    "secondary_use_case": "None",
+    "brand_preference": "Belkin",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "compact design",
+      "dual voltage support"
+    ],
+    "features_to_avoid": [
+      "bulky chargers"
+    ],
+    "prior_experience": "Has bought small tech gifts before but doesn\u2019t research deeply",
+    "one_paragraph_description": "A young professional picking out a practical but thoughtful gift, aiming for something compact and reliable. They want it to feel like a quality purchase without overspending. They rely on recognizable brands and positive packaging cues rather than deep technical specs."
+  },
+  {
+    "persona_id": "phone_chargers_024",
+    "category": "phone_chargers",
+    "age_range": "45-54",
+    "purchase_context": "Their office needs replacement chargers for shared workspaces.",
+    "budget": "$50-100",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Multi-device charging in an office",
+    "secondary_use_case": "Conference room use",
+    "brand_preference": "Anker",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "multiple ports",
+      "fast charging"
+    ],
+    "features_to_avoid": [
+      "single-port chargers"
+    ],
+    "prior_experience": "Has managed office supply purchases including electronics",
+    "one_paragraph_description": "An office manager responsible for practical, durable equipment that multiple people will use daily. They prioritize reliability and versatility, aiming to reduce clutter and complaints from staff. They are willing to spend more upfront to avoid frequent replacements."
+  },
+  {
+    "persona_id": "phone_chargers_025",
+    "category": "phone_chargers",
+    "age_range": "18-24",
+    "purchase_context": "They lost their charger during a move and need a quick, cheap replacement.",
+    "budget": "$8-15",
+    "technical_knowledge": "low",
+    "primary_use_case": "Emergency replacement",
+    "secondary_use_case": "Dorm use",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "low",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "immediate availability",
+      "low cost"
+    ],
+    "features_to_avoid": [
+      "expensive bundles"
+    ],
+    "prior_experience": "Frequently buys low-cost accessories and replaces them often",
+    "one_paragraph_description": "A college student focused on convenience and price over longevity. They\u2019re used to replacing chargers periodically and don\u2019t want to overthink the purchase. Speed and affordability matter more than brand or long-term durability."
+  },
+  {
+    "persona_id": "phone_chargers_026",
+    "category": "phone_chargers",
+    "age_range": "55-64",
+    "purchase_context": "They just upgraded to a new phone that requires a different charging cable.",
+    "budget": "$25-45",
+    "technical_knowledge": "high",
+    "primary_use_case": "Compatible charging for new phone",
+    "secondary_use_case": "Backup charger for car",
+    "brand_preference": "Apple",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "official compatibility",
+      "reliable connector"
+    ],
+    "features_to_avoid": [
+      "third-party uncertified cables"
+    ],
+    "prior_experience": "Prefers manufacturer-approved accessories after past compatibility issues",
+    "one_paragraph_description": "A cautious buyer adjusting to a new device ecosystem and wary of incompatibility issues. They prefer official or certified accessories to avoid frustration. While not highly technical, they pay attention to packaging and compatibility labels."
+  },
+  {
+    "persona_id": "phone_chargers_027",
+    "category": "phone_chargers",
+    "age_range": "25-34",
+    "purchase_context": "They need a charger that can handle both their phone and tablet while commuting.",
+    "budget": "$30-60",
+    "technical_knowledge": "high",
+    "primary_use_case": "Charging multiple devices on the go",
+    "secondary_use_case": "Travel use",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "fast charging",
+      "dual ports"
+    ],
+    "features_to_avoid": [
+      "slow charging outputs"
+    ],
+    "prior_experience": "Has used basic chargers but is upgrading for convenience",
+    "one_paragraph_description": "A commuter who juggles multiple devices and wants to minimize downtime. They\u2019re willing to invest in something more capable if it simplifies their daily routine. They compare features but don\u2019t dive deeply into technical specs."
+  },
+  {
+    "persona_id": "phone_chargers_028",
+    "category": "phone_chargers",
+    "age_range": "35-44",
+    "purchase_context": "They need a rugged charger for outdoor and camping trips.",
+    "budget": "$40-80",
+    "technical_knowledge": "low",
+    "primary_use_case": "Outdoor and travel charging",
+    "secondary_use_case": "Emergency backup",
+    "brand_preference": "avoids unknown brands",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "durability",
+      "weather resistance"
+    ],
+    "features_to_avoid": [
+      "fragile cables"
+    ],
+    "prior_experience": "Has had chargers fail during trips, causing inconvenience",
+    "one_paragraph_description": "An outdoor enthusiast who values reliability in unpredictable conditions. They prioritize durability and are willing to pay more for something that won\u2019t fail during a trip. They prefer trusted brands and simple, rugged designs."
+  },
+  {
+    "persona_id": "phone_chargers_029",
+    "category": "phone_chargers",
+    "age_range": "45-54",
+    "purchase_context": "They want a charger for their car after realizing their battery often runs low on long drives.",
+    "budget": "$12-25",
+    "technical_knowledge": "low",
+    "primary_use_case": "In-car charging",
+    "secondary_use_case": "None",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "car compatibility",
+      "stable connection"
+    ],
+    "features_to_avoid": [
+      "loose-fitting adapters"
+    ],
+    "prior_experience": "Has used outdated car chargers with inconsistent performance",
+    "one_paragraph_description": "A driver who spends significant time on the road and wants a dependable charging solution in their vehicle. They are frustrated by unreliable past purchases and want something that just works. They\u2019re not interested in premium features, just consistency."
+  },
+  {
+    "persona_id": "phone_chargers_030",
+    "category": "phone_chargers",
+    "age_range": "18-24",
+    "purchase_context": "They are buying their first smartphone and need all essential accessories.",
+    "budget": "$20-35",
+    "technical_knowledge": "low",
+    "primary_use_case": "First-time phone charging setup",
+    "secondary_use_case": "None",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "complete set (cable + adapter)",
+      "simple instructions"
+    ],
+    "features_to_avoid": [
+      "separate component purchases"
+    ],
+    "prior_experience": "No prior experience buying phone accessories independently",
+    "one_paragraph_description": "A first-time buyer navigating phone accessories without much prior knowledge. They prefer bundled solutions that are easy to understand and use. Their decision is influenced by clarity, packaging, and perceived completeness rather than technical details."
+  },
+  {
+    "persona_id": "phone_chargers_031",
+    "category": "phone_chargers",
+    "age_range": "35-44",
+    "purchase_context": "Needs a durable charger after their child repeatedly broke previous ones.",
+    "budget": "$15-$30",
+    "technical_knowledge": "low",
+    "primary_use_case": "Daily home charging for a child's phone",
+    "secondary_use_case": "Travel backup",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "reinforced cable",
+      "fast charging support"
+    ],
+    "features_to_avoid": [
+      "detachable magnetic tips"
+    ],
+    "prior_experience": "Has gone through several cheap chargers that frayed or stopped working",
+    "one_paragraph_description": "A parent focused on practicality, they are tired of replacing flimsy chargers every few months. They want something sturdy that can survive rough handling and still charge quickly. They are willing to pay a bit more if it means fewer replacements."
+  },
+  {
+    "persona_id": "phone_chargers_032",
+    "category": "phone_chargers",
+    "age_range": "25-34",
+    "purchase_context": "Buying a charger as part of a last-minute birthday gift bundle.",
+    "budget": "$10-$25",
+    "technical_knowledge": "high",
+    "primary_use_case": "Gift item bundled with a phone accessory set",
+    "secondary_use_case": "Occasional personal backup use",
+    "brand_preference": "recognizable brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "universal compatibility",
+      "clean packaging"
+    ],
+    "features_to_avoid": [
+      "off-brand packaging"
+    ],
+    "prior_experience": "Occasionally buys accessories as gifts but not deeply knowledgeable",
+    "one_paragraph_description": "This buyer wants something that looks presentable and reliable enough not to embarrass them as a gift. They aren't deeply technical but recognize a few trusted brands and avoid anything that looks cheap. Convenience and appearance matter as much as function."
+  },
+  {
+    "persona_id": "phone_chargers_033",
+    "category": "phone_chargers",
+    "age_range": "55-64",
+    "purchase_context": "Replacing a lost charger while traveling.",
+    "budget": "$20-$40",
+    "technical_knowledge": "low",
+    "primary_use_case": "Hotel and travel charging",
+    "secondary_use_case": "Emergency use at home",
+    "brand_preference": "no preference",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "simple plug-and-play",
+      "clear labeling for compatibility"
+    ],
+    "features_to_avoid": [
+      "multi-port complexity"
+    ],
+    "prior_experience": "Relies on whatever charger came with the phone originally",
+    "one_paragraph_description": "An older traveler who prioritizes simplicity and reliability, they want a charger that just works without confusion. They are wary of complicated multi-port devices and prefer something straightforward. Price matters less than avoiding frustration during a trip."
+  },
+  {
+    "persona_id": "phone_chargers_034",
+    "category": "phone_chargers",
+    "age_range": "18-24",
+    "purchase_context": "Needs an extra charger for dorm life after constantly forgetting theirs.",
+    "budget": "$8-$18",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Dorm room and campus charging",
+    "secondary_use_case": "Sharing with roommates",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "long cable",
+      "affordable price"
+    ],
+    "features_to_avoid": [
+      "short cables"
+    ],
+    "prior_experience": "Frequently buys low-cost chargers and replaces them often",
+    "one_paragraph_description": "A college student juggling classes and social life, they mainly want something cheap and convenient. Durability is nice but not essential since chargers tend to get lost or borrowed. They prioritize length and price over brand or advanced features."
+  },
+  {
+    "persona_id": "phone_chargers_035",
+    "category": "phone_chargers",
+    "age_range": "45-54",
+    "purchase_context": "Outfitting a small office with shared charging stations.",
+    "budget": "$50-$100",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Multi-device office charging hub",
+    "secondary_use_case": "Visitor convenience",
+    "brand_preference": "trusted office supply brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "multiple ports",
+      "surge protection"
+    ],
+    "features_to_avoid": [
+      "single-port chargers"
+    ],
+    "prior_experience": "Has purchased bulk office electronics before with mixed reliability",
+    "one_paragraph_description": "An office manager looking for a tidy, reliable charging solution for employees and guests. They want to minimize clutter and ensure safety, especially with multiple devices plugged in. They are willing to invest in something durable that reduces complaints."
+  },
+  {
+    "persona_id": "phone_chargers_036",
+    "category": "phone_chargers",
+    "age_range": "65+",
+    "purchase_context": "First time buying a replacement charger after their original stopped working.",
+    "budget": "$15-$25",
+    "technical_knowledge": "low",
+    "primary_use_case": "Simple home phone charging",
+    "secondary_use_case": "None",
+    "brand_preference": "prefers same phone brand",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "exact compatibility with phone",
+      "clear instructions"
+    ],
+    "features_to_avoid": [
+      "fast charging jargon"
+    ],
+    "prior_experience": "Has only used the charger that came with their phone",
+    "one_paragraph_description": "An elderly buyer who values clarity and reassurance, they want a charger that matches their phone exactly. Technical specifications are confusing, so they look for familiar branding or explicit compatibility. Reliability and ease of use are top priorities."
+  },
+  {
+    "persona_id": "phone_chargers_037",
+    "category": "phone_chargers",
+    "age_range": "25-34",
+    "purchase_context": "Needs a fast charger after starting a job with long commuting hours.",
+    "budget": "$25-$60",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Quick top-ups during short breaks",
+    "secondary_use_case": "Car charging",
+    "brand_preference": "known fast-charging brands",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "fast charging (PD or equivalent)",
+      "compact design"
+    ],
+    "features_to_avoid": [
+      "bulky adapters"
+    ],
+    "prior_experience": "Previously used standard chargers and found them too slow",
+    "one_paragraph_description": "A busy professional who depends heavily on their phone throughout the day, they need rapid charging in limited time windows. They are willing to spend more for noticeable speed improvements. Portability also matters due to commuting."
+  },
+  {
+    "persona_id": "phone_chargers_038",
+    "category": "phone_chargers",
+    "age_range": "35-44",
+    "purchase_context": "Replacing a charger after a minor electrical scare at home.",
+    "budget": "$30-$70",
+    "technical_knowledge": "low",
+    "primary_use_case": "Safe overnight charging",
+    "secondary_use_case": "Family shared use",
+    "brand_preference": "avoids unknown brands",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "certified safety standards",
+      "temperature control"
+    ],
+    "features_to_avoid": [
+      "cheap unbranded units"
+    ],
+    "prior_experience": "Had a charger overheat or spark previously",
+    "one_paragraph_description": "This buyer is highly cautious after a negative experience with a faulty charger. Safety certifications and build quality are their main concerns, even over price. They prefer established brands and clear safety assurances."
+  },
+  {
+    "persona_id": "phone_chargers_039",
+    "category": "phone_chargers",
+    "age_range": "18-24",
+    "purchase_context": "Buying a stylish charger to match their aesthetic desk setup.",
+    "budget": "$20-$45",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Desk and aesthetic workspace charging",
+    "secondary_use_case": "Social media content setup",
+    "brand_preference": "design-focused brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "sleek design",
+      "color options"
+    ],
+    "features_to_avoid": [
+      "plain bulky designs"
+    ],
+    "prior_experience": "Has bought accessories based on appearance before",
+    "one_paragraph_description": "A style-conscious student or creator who cares about how their setup looks on camera or in photos. Function matters, but visual appeal is a major factor in their decision. They are open to newer brands if the design stands out."
+  },
+  {
+    "persona_id": "phone_chargers_040",
+    "category": "phone_chargers",
+    "age_range": "45-54",
+    "purchase_context": "Needs a backup charger to keep in an emergency kit.",
+    "budget": "$12-$20",
+    "technical_knowledge": "low",
+    "primary_use_case": "Emergency preparedness kit",
+    "secondary_use_case": "Occasional travel use",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "reliable basic charging",
+      "durable cable"
+    ],
+    "features_to_avoid": [
+      "high-end unnecessary features"
+    ],
+    "prior_experience": "Rarely buys chargers unless needed",
+    "one_paragraph_description": "A practical planner who wants a dependable charger stored for emergencies like power outages or travel disruptions. They don't need advanced features, just something that works when needed. Affordability and basic durability are enough."
+  },
+  {
+    "persona_id": "phone_chargers_041",
+    "category": "phone_chargers",
+    "age_range": "35-44",
+    "purchase_context": "Needs durable chargers after her kids keep breaking theirs",
+    "budget": "$10-$20",
+    "technical_knowledge": "low",
+    "primary_use_case": "Replacing kids' frequently damaged chargers",
+    "secondary_use_case": "Keeping extras in the car",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "reinforced cable",
+      "affordable multipack"
+    ],
+    "features_to_avoid": [
+      "expensive premium branding"
+    ],
+    "prior_experience": "Has bought cheap chargers that fray within weeks",
+    "one_paragraph_description": "A busy parent managing multiple devices in the household, she prioritizes affordability but is tired of constantly replacing broken cables. She wants something sturdier than the cheapest options but still cost-effective enough to buy in bulk. Convenience and durability matter more than brand names."
+  },
+  {
+    "persona_id": "phone_chargers_042",
+    "category": "phone_chargers",
+    "age_range": "65+",
+    "purchase_context": "Lost his only charger while traveling and needs a simple replacement",
+    "budget": "$15-$30",
+    "technical_knowledge": "low",
+    "primary_use_case": "Charging phone at home overnight",
+    "secondary_use_case": "Occasional travel use",
+    "brand_preference": "prefers well-known brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "easy plug-and-play",
+      "clear labeling"
+    ],
+    "features_to_avoid": [
+      "complex multi-port hubs"
+    ],
+    "prior_experience": "Limited understanding of charger specs, relies on store staff recommendations",
+    "one_paragraph_description": "A retired individual who uses his phone mainly for calls and photos, he wants a straightforward, reliable charger without confusing options. He prefers recognizable brands and clear packaging to avoid making a mistake. Simplicity and trustworthiness outweigh any advanced features."
+  },
+  {
+    "persona_id": "phone_chargers_043",
+    "category": "phone_chargers",
+    "age_range": "25-34",
+    "purchase_context": "Buying a small gift for a coworker\u2019s birthday",
+    "budget": "$20-$40",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Gift giving",
+    "secondary_use_case": "None",
+    "brand_preference": "recognizable mid-tier brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "attractive packaging",
+      "universal compatibility"
+    ],
+    "features_to_avoid": [
+      "off-brand unknown labels"
+    ],
+    "prior_experience": "Has purchased accessories as gifts before but not deeply researched",
+    "one_paragraph_description": "This buyer wants a practical yet thoughtful gift that won\u2019t feel too generic. They\u2019re looking for something that appears high quality and works across devices without requiring deep technical knowledge. Presentation and perceived value matter almost as much as functionality."
+  },
+  {
+    "persona_id": "phone_chargers_044",
+    "category": "phone_chargers",
+    "age_range": "45-54",
+    "purchase_context": "Outfitting a small office with shared charging stations",
+    "budget": "$50-$100",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Charging multiple employee devices in a shared workspace",
+    "secondary_use_case": "Visitor charging access",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "multi-port capability",
+      "safety certifications"
+    ],
+    "features_to_avoid": [
+      "cheap unverified products"
+    ],
+    "prior_experience": "Has dealt with unreliable office equipment purchases in the past",
+    "one_paragraph_description": "An office manager responsible for practical purchasing decisions, they need chargers that can handle daily shared use without becoming a safety risk. Reliability and certification matter more than cutting costs. They aim to avoid future complaints from staff by choosing dependable equipment."
+  },
+  {
+    "persona_id": "phone_chargers_045",
+    "category": "phone_chargers",
+    "age_range": "18-24",
+    "purchase_context": "Dorm room setup after moving into college housing",
+    "budget": "$15-$35",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Charging phone in a dorm with limited outlets",
+    "secondary_use_case": "Charging earbuds or small devices",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "multiple ports",
+      "compact size"
+    ],
+    "features_to_avoid": [
+      "bulky wall adapters"
+    ],
+    "prior_experience": "Used basic chargers but now needs something more versatile",
+    "one_paragraph_description": "A college student dealing with limited outlet space, they want a compact charger that can power multiple devices at once. Budget constraints are real, but they still want something that won\u2019t fail during busy school days. Convenience and space-saving design are key."
+  },
+  {
+    "persona_id": "phone_chargers_046",
+    "category": "phone_chargers",
+    "age_range": "55-64",
+    "purchase_context": "Replacing a charger that stopped working after years of use",
+    "budget": "$20-$45",
+    "technical_knowledge": "low",
+    "primary_use_case": "Daily home charging",
+    "secondary_use_case": "Backup charger for travel",
+    "brand_preference": "prefers trusted electronics brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "durability",
+      "warranty"
+    ],
+    "features_to_avoid": [
+      "unknown brands"
+    ],
+    "prior_experience": "Had one long-lasting charger and wants similar reliability",
+    "one_paragraph_description": "This buyer values longevity and dependability over trendy features. After having a charger that lasted years, they want a replacement that offers similar peace of mind. They are cautious about trying unfamiliar brands and prefer something with a warranty."
+  },
+  {
+    "persona_id": "phone_chargers_047",
+    "category": "phone_chargers",
+    "age_range": "25-34",
+    "purchase_context": "Needs a fast charger for frequent rideshare driving shifts",
+    "budget": "$25-$60",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Keeping phone charged continuously during long driving hours",
+    "secondary_use_case": "Charging passenger devices occasionally",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "fast charging",
+      "car compatibility"
+    ],
+    "features_to_avoid": [
+      "slow charging outputs"
+    ],
+    "prior_experience": "Has used basic car chargers that couldn\u2019t keep up with usage",
+    "one_paragraph_description": "A rideshare driver who depends on their phone for income, they need a charger that can keep up with constant GPS and app usage. Slow charging is not acceptable, as downtime affects earnings. Reliability and speed are critical for their daily work routine."
+  },
+  {
+    "persona_id": "phone_chargers_048",
+    "category": "phone_chargers",
+    "age_range": "35-44",
+    "purchase_context": "Buying a first charger for a newly purchased smartphone",
+    "budget": "$10-$25",
+    "technical_knowledge": "low",
+    "primary_use_case": "Basic phone charging at home",
+    "secondary_use_case": "None",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "compatibility with device",
+      "simple setup"
+    ],
+    "features_to_avoid": [
+      "overly advanced features"
+    ],
+    "prior_experience": "First-time smartphone owner with minimal accessory experience",
+    "one_paragraph_description": "New to smartphones, this buyer is navigating accessories for the first time and wants something straightforward and affordable. They are unsure about technical specs and rely on clear compatibility information. Their goal is simply to get a reliable charger without overthinking the purchase."
+  },
+  {
+    "persona_id": "phone_chargers_049",
+    "category": "phone_chargers",
+    "age_range": "45-54",
+    "purchase_context": "Preparing for an upcoming international trip",
+    "budget": "$30-$70",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Charging devices across different countries",
+    "secondary_use_case": "Charging multiple devices in hotel rooms",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "universal voltage support",
+      "interchangeable plugs"
+    ],
+    "features_to_avoid": [
+      "region-locked chargers"
+    ],
+    "prior_experience": "Previously struggled with incompatible chargers abroad",
+    "one_paragraph_description": "A traveler who has learned from past inconveniences, they want a charger that works seamlessly across countries. Avoiding compatibility issues is a top priority, even if it costs more. They value versatility and reliability during travel."
+  },
+  {
+    "persona_id": "phone_chargers_050",
+    "category": "phone_chargers",
+    "age_range": "18-24",
+    "purchase_context": "Replacing a charger lost during a music festival",
+    "budget": "$15-$30",
+    "technical_knowledge": "low",
+    "primary_use_case": "Portable daily charging",
+    "secondary_use_case": "Occasional outdoor events",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "low",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "quick availability",
+      "basic reliability"
+    ],
+    "features_to_avoid": [
+      "expensive premium options"
+    ],
+    "prior_experience": "Frequently loses or misplaces accessories",
+    "one_paragraph_description": "This buyer prioritizes convenience and speed of purchase over long-term durability. After losing a charger at an event, they just need a quick and affordable replacement to get back up and running. They are not concerned with premium features or brand reputation."
+  },
+  {
+    "persona_id": "phone_chargers_051",
+    "category": "phone_chargers",
+    "age_range": "35-44",
+    "purchase_context": "Her child's charger stopped working before a school trip.",
+    "budget": "$10-20",
+    "technical_knowledge": "low",
+    "primary_use_case": "Durable home charger for a child",
+    "secondary_use_case": "Travel backup",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "reinforced cable",
+      "basic safety certification"
+    ],
+    "features_to_avoid": [
+      "expensive fast charging claims"
+    ],
+    "prior_experience": "Has bought several cheap chargers that frayed quickly",
+    "one_paragraph_description": "A parent focused on reliability and safety rather than performance. She wants something that won't break easily in a kid's backpack and won't overheat, but she's not interested in premium pricing or technical specs."
+  },
+  {
+    "persona_id": "phone_chargers_052",
+    "category": "phone_chargers",
+    "age_range": "25-34",
+    "purchase_context": "Needs a last-minute birthday gift for a friend who just got a new phone.",
+    "budget": "$20-40",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Giftable stylish charger",
+    "secondary_use_case": "None",
+    "brand_preference": "Anker",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "attractive design",
+      "fast charging support"
+    ],
+    "features_to_avoid": [
+      "generic unbranded items"
+    ],
+    "prior_experience": "Has purchased accessories before but not deeply researched",
+    "one_paragraph_description": "This buyer wants something that feels like a thoughtful, useful gift rather than a cheap add-on. They care about brand reputation and presentation, but aren't diving deep into specs beyond knowing it should work well with newer phones."
+  },
+  {
+    "persona_id": "phone_chargers_053",
+    "category": "phone_chargers",
+    "age_range": "45-54",
+    "purchase_context": "Replacing a charger that suddenly stopped working during a business trip.",
+    "budget": "$15-30",
+    "technical_knowledge": "low",
+    "primary_use_case": "Reliable hotel/travel charger",
+    "secondary_use_case": "Office backup",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "universal compatibility",
+      "compact design"
+    ],
+    "features_to_avoid": [
+      "bulky multi-port hubs"
+    ],
+    "prior_experience": "Typically buys whatever is available at airports or hotels",
+    "one_paragraph_description": "Often traveling for work, this buyer just wants something dependable and easy to pack. They\u2019ve had chargers fail at inconvenient times, so they lean toward safer, well-built options without needing advanced features."
+  },
+  {
+    "persona_id": "phone_chargers_054",
+    "category": "phone_chargers",
+    "age_range": "18-24",
+    "purchase_context": "Buying their first charger separately after getting a hand-me-down phone.",
+    "budget": "$8-15",
+    "technical_knowledge": "low",
+    "primary_use_case": "Basic daily charging in a dorm",
+    "secondary_use_case": "None",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "compatible connector",
+      "long cable"
+    ],
+    "features_to_avoid": [
+      "premium-priced brands"
+    ],
+    "prior_experience": "No prior independent purchases of phone accessories",
+    "one_paragraph_description": "A student on a tight budget who just needs something that works. They aren\u2019t familiar with charging speeds or brands, but want a cable long enough to reach from awkward dorm outlets to their bed."
+  },
+  {
+    "persona_id": "phone_chargers_055",
+    "category": "phone_chargers",
+    "age_range": "65+",
+    "purchase_context": "Needs a replacement after misplacing their only charger.",
+    "budget": "$15-25",
+    "technical_knowledge": "low",
+    "primary_use_case": "Simple bedside charging",
+    "secondary_use_case": "None",
+    "brand_preference": "avoids unfamiliar brands",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "easy-to-plug connector",
+      "clear labeling"
+    ],
+    "features_to_avoid": [
+      "complex multi-device chargers"
+    ],
+    "prior_experience": "Relies on family recommendations for tech purchases",
+    "one_paragraph_description": "An older adult who values simplicity and clarity over features. They want something easy to use without confusion, and are cautious about buying products that might not be safe or compatible."
+  },
+  {
+    "persona_id": "phone_chargers_056",
+    "category": "phone_chargers",
+    "age_range": "35-44",
+    "purchase_context": "Outfitting a small office with shared charging stations.",
+    "budget": "$40-80",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Multi-device office charging hub",
+    "secondary_use_case": "Conference room use",
+    "brand_preference": "Belkin",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "multiple ports",
+      "overload protection"
+    ],
+    "features_to_avoid": [
+      "cheap plastic builds"
+    ],
+    "prior_experience": "Has purchased office equipment and accessories before",
+    "one_paragraph_description": "An office manager trying to reduce clutter and complaints about dead phones. They need something reliable that can handle multiple devices safely, and prefer established brands to avoid workplace issues."
+  },
+  {
+    "persona_id": "phone_chargers_057",
+    "category": "phone_chargers",
+    "age_range": "25-34",
+    "purchase_context": "Looking for a charger to use during long daily commutes.",
+    "budget": "$15-35",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Car charging",
+    "secondary_use_case": "Occasional travel use",
+    "brand_preference": "no preference",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "fast car charging",
+      "compact adapter"
+    ],
+    "features_to_avoid": [
+      "loose-fitting connectors"
+    ],
+    "prior_experience": "Has used low-cost car chargers that disconnected easily",
+    "one_paragraph_description": "A commuter who depends on their phone for navigation and music. They need a charger that works reliably in the car without constant reconnecting, but don\u2019t want to overspend."
+  },
+  {
+    "persona_id": "phone_chargers_058",
+    "category": "phone_chargers",
+    "age_range": "45-54",
+    "purchase_context": "Buying a backup charger to keep at a vacation home.",
+    "budget": "$20-50",
+    "technical_knowledge": "low",
+    "primary_use_case": "Occasional-use backup charger",
+    "secondary_use_case": "Guest use",
+    "brand_preference": "no preference",
+    "price_sensitivity": "low",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "medium",
+    "must_have_features": [
+      "universal compatibility",
+      "durability over time"
+    ],
+    "features_to_avoid": [
+      "overly specialized connectors"
+    ],
+    "prior_experience": "Has lost or forgotten chargers during trips before",
+    "one_paragraph_description": "This buyer is planning ahead to avoid inconvenience during trips. They want something that will just be there and work when needed, even if it sits unused for long periods."
+  },
+  {
+    "persona_id": "phone_chargers_059",
+    "category": "phone_chargers",
+    "age_range": "18-24",
+    "purchase_context": "Needs a charger that works in shared campus spaces without being stolen easily.",
+    "budget": "$10-25",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Public/shared space charging",
+    "secondary_use_case": "Dorm use",
+    "brand_preference": "no preference",
+    "price_sensitivity": "high",
+    "quality_sensitivity": "medium",
+    "risk_aversion": "low",
+    "must_have_features": [
+      "distinctive color",
+      "affordable replaceability"
+    ],
+    "features_to_avoid": [
+      "expensive premium chargers"
+    ],
+    "prior_experience": "Has had chargers taken or mixed up in shared areas",
+    "one_paragraph_description": "A college student dealing with crowded libraries and shared outlets. They prioritize affordability and easy identification over longevity, expecting that chargers may get lost or borrowed indefinitely."
+  },
+  {
+    "persona_id": "phone_chargers_060",
+    "category": "phone_chargers",
+    "age_range": "55-64",
+    "purchase_context": "Upgrading to match a new phone that supports faster charging.",
+    "budget": "$25-60",
+    "technical_knowledge": "medium",
+    "primary_use_case": "Faster home charging",
+    "secondary_use_case": "Tablet charging",
+    "brand_preference": "Samsung",
+    "price_sensitivity": "medium",
+    "quality_sensitivity": "high",
+    "risk_aversion": "high",
+    "must_have_features": [
+      "official compatibility",
+      "fast charging support"
+    ],
+    "features_to_avoid": [
+      "off-brand accessories"
+    ],
+    "prior_experience": "Previously used basic chargers without fast charging",
+    "one_paragraph_description": "Recently upgraded their phone and wants to take advantage of improved charging speeds. They prefer sticking with known brands to ensure compatibility and avoid damaging an expensive device."
+  }
+]

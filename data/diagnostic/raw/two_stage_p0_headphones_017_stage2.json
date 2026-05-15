@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_017_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 17,
+  "timestamp": "2026-05-14T11:31:06.409688+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20277525,
+  "stage": "writer",
+  "raw_response": "Given your budget and price sensitivity, the Sony over-ear wireless headphones offer excellent value at $198. They provide good noise cancellation and a generous 50-hour battery life, making them ideal for casual use. Though they have heavy bass tuning that might not suit everyone, their LDAC codec support ensures high-quality audio. The foldable design adds convenience, and while the build quality is slightly less premium than Sony's top models like the XM5, it still meets your brand familiarity preference for Sony.",
+  "parsed": {
+    "recommendation_text": "Given your budget and price sensitivity, the Sony over-ear wireless headphones offer excellent value at $198. They provide good noise cancellation and a generous 50-hour battery life, making them ideal for casual use. Though they have heavy bass tuning that might not suit everyone, their LDAC codec support ensures high-quality audio. The foldable design adds convenience, and while the build quality is slightly less premium than Sony's top models like the XM5, it still meets your brand familiarity preference for Sony."
+  },
+  "parse_success": true,
+  "latency_ms": 13099
+}

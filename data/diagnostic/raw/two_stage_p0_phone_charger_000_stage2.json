@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_phone_charger_000_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 0,
+  "timestamp": "2026-05-14T12:03:29.218293+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20260525,
+  "stage": "writer",
+  "raw_response": "Given your preference for a fast phone charger and moderate price sensitivity, the Belkin ultra-compact USB-C charger is an excellent choice. It offers PPS support for efficient charging and its small size makes it easy to carry or use bedside. While it lacks GaN technology and has only 25W output, which limits its versatility for larger devices, it fits well within your budget and aligns with your brand familiarity preference for Belkin.",
+  "parsed": {
+    "recommendation_text": "Given your preference for a fast phone charger and moderate price sensitivity, the Belkin ultra-compact USB-C charger is an excellent choice. It offers PPS support for efficient charging and its small size makes it easy to carry or use bedside. While it lacks GaN technology and has only 25W output, which limits its versatility for larger devices, it fits well within your budget and aligns with your brand familiarity preference for Belkin."
+  },
+  "parse_success": true,
+  "latency_ms": 11289
+}

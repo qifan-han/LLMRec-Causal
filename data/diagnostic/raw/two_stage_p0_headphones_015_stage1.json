@@ -1,0 +1,23 @@
+{
+  "row_id": "twostage_p0_headphones_015_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 15,
+  "timestamp": "2026-05-14T11:28:26.091877+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20275524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_sony_wh1000xm5\",\n  \"shortlist\": [\"headphones_sony_ult_wear\", \"headphones_bose_qc_ultra\"],\n  \"selection_rationale\": \"Best balance of quality and brand familiarity within budget.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_sony_wh1000xm5",
+    "shortlist": [
+      "headphones_sony_ult_wear",
+      "headphones_bose_qc_ultra"
+    ],
+    "selection_rationale": "Best balance of quality and brand familiarity within budget."
+  },
+  "parse_success": true,
+  "latency_ms": 24338
+}

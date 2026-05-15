@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_laptop_004_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 4,
+  "timestamp": "2026-05-14T11:40:34.126039+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20264524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_macbook_air_m4\",\n  \"shortlist\": [\"laptop_macbook_air_m4\", \"laptop_thinkpad_x1_carbon\", \"laptop_lg_gram_14\"],\n  \"selection_rationale\": \"Balances price, quality, and brand preference for frequent travelers.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_macbook_air_m4",
+    "shortlist": [
+      "laptop_macbook_air_m4",
+      "laptop_thinkpad_x1_carbon",
+      "laptop_lg_gram_14"
+    ],
+    "selection_rationale": "Balances price, quality, and brand preference for frequent travelers."
+  },
+  "parse_success": true,
+  "latency_ms": 30228
+}

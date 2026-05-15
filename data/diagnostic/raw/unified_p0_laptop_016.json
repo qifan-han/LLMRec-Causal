@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_016",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 16,
+  "timestamp": "2026-05-14T11:57:02.441621+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20276514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_macbook_air_m4\",\n  \"shortlist\": [\"laptop_macbook_air_m4\", \"laptop_thinkpad_x1_carbon\", \"laptop_hp_elitebook_845\"],\n  \"recommendation_text\": \"The MacBook Air M4 is the best choice for a student due to its ultralight design, all-day battery life, and macOS ecosystem. It offers excellent performance for everyday tasks and light creative work, making it ideal for coursework and projects. The 13.6-inch Liquid Retina display provides sharp visuals, while the fanless design ensures quiet operation. Although the base storage is limited to 256GB, expandable options are available. With a quality score of 87/100 and a price point under $1100, it offers great value for its performance.\",\n  \"selection_rationale\": \"Balances quality, portability, and affordability.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_macbook_air_m4",
+    "shortlist": [
+      "laptop_macbook_air_m4",
+      "laptop_thinkpad_x1_carbon",
+      "laptop_hp_elitebook_845"
+    ],
+    "recommendation_text": "The MacBook Air M4 is the best choice for a student due to its ultralight design, all-day battery life, and macOS ecosystem. It offers excellent performance for everyday tasks and light creative work, making it ideal for coursework and projects. The 13.6-inch Liquid Retina display provides sharp visuals, while the fanless design ensures quiet operation. Although the base storage is limited to 256GB, expandable options are available. With a quality score of 87/100 and a price point under $1100, it offers great value for its performance.",
+    "selection_rationale": "Balances quality, portability, and affordability."
+  },
+  "parse_success": true,
+  "latency_ms": 43725
+}

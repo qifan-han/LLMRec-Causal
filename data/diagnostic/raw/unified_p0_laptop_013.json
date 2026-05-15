@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_013",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 13,
+  "timestamp": "2026-05-14T11:52:50.446861+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20273514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_macbook_pro_m4\",\n  \"shortlist\": [\"laptop_macbook_air_m4\", \"laptop_thinkpad_x1_carbon\", \"laptop_dell_xps_14\"],\n  \"recommendation_text\": \"For creative media work, the MacBook Pro M4 is unparalleled. Its Apple M4 Pro processor and 24GB RAM ensure smooth performance for data analysis, video editing, and development tasks. The mini-LED XDR display offers stunning visuals with exceptional color accuracy and contrast. With a battery life of up to 17 hours, it provides all-day productivity without needing frequent recharges. Although the macOS limits some enterprise software compatibility and the RAM is non-upgradeable, its overall quality and performance make it an excellent choice for creative professionals.\",\n  \"selection_rationale\": \"Best display and processor for creative tasks.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_macbook_pro_m4",
+    "shortlist": [
+      "laptop_macbook_air_m4",
+      "laptop_thinkpad_x1_carbon",
+      "laptop_dell_xps_14"
+    ],
+    "recommendation_text": "For creative media work, the MacBook Pro M4 is unparalleled. Its Apple M4 Pro processor and 24GB RAM ensure smooth performance for data analysis, video editing, and development tasks. The mini-LED XDR display offers stunning visuals with exceptional color accuracy and contrast. With a battery life of up to 17 hours, it provides all-day productivity without needing frequent recharges. Although the macOS limits some enterprise software compatibility and the RAM is non-upgradeable, its overall quality and performance make it an excellent choice for creative professionals.",
+    "selection_rationale": "Best display and processor for creative tasks."
+  },
+  "parse_success": true,
+  "latency_ms": 42170
+}

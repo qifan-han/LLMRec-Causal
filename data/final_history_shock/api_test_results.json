@@ -1,0 +1,102 @@
+[
+  {
+    "i": 0,
+    "prompt": "Return exactly this JSON and nothing else: {\"ok\": true}",
+    "output_text": "{\"ok\": true}",
+    "usage": {
+      "input_tokens": 19,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 28,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 47
+    },
+    "model": "gpt-5.3-chat-latest",
+    "elapsed_s": 5.6,
+    "timestamp": 1778781364.765117,
+    "error": null
+  },
+  {
+    "i": 1,
+    "prompt": "In one sentence, explain why over-ear headphones differ from earbuds.",
+    "output_text": "Over-ear headphones enclose your ears to create a fuller, more immersive sound and better isolation, while earbuds sit in or just outside the ear canal and typically offer a lighter, more portable but less immersive listening experience.",
+    "usage": {
+      "input_tokens": 19,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 47,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 66
+    },
+    "model": "gpt-5.3-chat-latest",
+    "elapsed_s": 3.4,
+    "timestamp": 1778781368.160741,
+    "error": null
+  },
+  {
+    "i": 2,
+    "prompt": "A student on a tight budget is choosing between Product A ($29, decent sound, wired) and Product B ($89, noise cancelling, wireless). Recommend one. Return JSON: {\"product_id\": \"A\" or \"B\", \"reason\": \"...\"}",
+    "output_text": "{\"product_id\": \"A\", \"reason\": \"On a tight budget, Product A delivers decent sound at a much lower cost, making it the more practical and cost-effective choice despite lacking wireless and noise-cancelling features.\"}",
+    "usage": {
+      "input_tokens": 58,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 69,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 127
+    },
+    "model": "gpt-5.3-chat-latest",
+    "elapsed_s": 2.61,
+    "timestamp": 1778781370.772867,
+    "error": null
+  },
+  {
+    "i": 3,
+    "prompt": "You are comparing two product recommendations for the same consumer.\nRecommendation A: 'The Sony WH-1000XM5 offers excellent noise cancellation for your commute.'\nRecommendation B: 'The Bose QC45 is a solid choice with long battery life.'\nWhich is better for a daily commuter? Return JSON: {\"winner\": \"A\", \"B\", or \"tie\", \"reason\": \"...\"}",
+    "output_text": "{\"winner\": \"A\", \"reason\": \"For a daily commute, stronger noise cancellation is usually more valuable than extra battery life, and the Sony WH-1000XM5 excels in that area.\"}",
+    "usage": {
+      "input_tokens": 83,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 75,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 158
+    },
+    "model": "gpt-5.3-chat-latest",
+    "elapsed_s": 2.3,
+    "timestamp": 1778781373.0704849,
+    "error": null
+  },
+  {
+    "i": 4,
+    "prompt": "Return JSON: {\"test\": \"usage\", \"model_check\": true}",
+    "output_text": "{\"test\": \"usage\", \"model_check\": true}",
+    "usage": {
+      "input_tokens": 21,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 33,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 54
+    },
+    "model": "gpt-5.3-chat-latest",
+    "elapsed_s": 5.29,
+    "timestamp": 1778781378.359252,
+    "error": null
+  }
+]

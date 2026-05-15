@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_004",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 4,
+  "timestamp": "2026-05-14T12:07:04.385777+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20264514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_voltix_65w\",\n  \"shortlist\": [\"charger_baseus_65w\", \"charger_voltix_65w\", \"charger_belkin_25w\"],\n  \"recommendation_text\": \"For a multi-device setup within the budget, Voltix's 65W charger is an excellent choice. It offers two USB-C ports and one USB-A port for simultaneous charging of various devices at a low price point. Despite its lower brand recognition, it includes a cable and supports PPS for fast-charging Android phones. While some users report coil whine issues, the overall value proposition makes it a strong contender.\",\n  \"selection_rationale\": \"Balances multi-device needs with budget constraints.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_voltix_65w",
+    "shortlist": [
+      "charger_baseus_65w",
+      "charger_voltix_65w",
+      "charger_belkin_25w"
+    ],
+    "recommendation_text": "For a multi-device setup within the budget, Voltix's 65W charger is an excellent choice. It offers two USB-C ports and one USB-A port for simultaneous charging of various devices at a low price point. Despite its lower brand recognition, it includes a cable and supports PPS for fast-charging Android phones. While some users report coil whine issues, the overall value proposition makes it a strong contender.",
+    "selection_rationale": "Balances multi-device needs with budget constraints."
+  },
+  "parse_success": true,
+  "latency_ms": 29474
+}

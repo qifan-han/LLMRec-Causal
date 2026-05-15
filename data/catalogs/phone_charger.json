@@ -1,0 +1,232 @@
+{
+  "category": "phone_charger",
+  "category_display_name": "Phone Chargers",
+  "complexity": "low",
+  "focal_brand": "Anker",
+  "sponsored_product": "charger_voltix_65w",
+  "use_cases": [
+    "travel",
+    "office_desk",
+    "bedside",
+    "fast_phone_only",
+    "multi_device"
+  ],
+  "products": [
+    {
+      "product_id": "charger_anker_nano_67w",
+      "brand_name": "Anker",
+      "brand_status": "incumbent",
+      "price": 35.99,
+      "quality_score": 88,
+      "attributes": {
+        "wattage": 67,
+        "ports": "2 USB-C, 1 USB-A",
+        "form_factor": "compact_foldable",
+        "weight_grams": 113,
+        "gan_technology": true,
+        "pps_support": true,
+        "cable_included": false
+      },
+      "review_summary": "Compact GaN charger widely praised for fast charging and pocket-friendly size. Some users note it gets warm under full load and the USB-A port is slower than expected.",
+      "use_case_fit": {
+        "travel": 0.9,
+        "office_desk": 0.8,
+        "bedside": 0.55,
+        "fast_phone_only": 0.75,
+        "multi_device": 0.85
+      },
+      "weakness": "Gets warm under sustained full-power output; no cable included.",
+      "margin_tier": "medium",
+      "focal_brand": true
+    },
+    {
+      "product_id": "charger_anker_prime_100w",
+      "brand_name": "Anker",
+      "brand_status": "incumbent",
+      "price": 59.99,
+      "quality_score": 91,
+      "attributes": {
+        "wattage": 100,
+        "ports": "2 USB-C, 1 USB-A",
+        "form_factor": "compact_brick",
+        "weight_grams": 177,
+        "gan_technology": true,
+        "pps_support": true,
+        "cable_included": false
+      },
+      "review_summary": "High-powered GaN charger that can charge a laptop and phone simultaneously. Build quality is excellent but it is noticeably heavier and pricier than 65W alternatives.",
+      "use_case_fit": {
+        "travel": 0.6,
+        "office_desk": 0.9,
+        "bedside": 0.3,
+        "fast_phone_only": 0.4,
+        "multi_device": 0.9
+      },
+      "weakness": "Premium price; heavier than most pocket chargers; overkill for phone-only charging.",
+      "margin_tier": "high",
+      "focal_brand": true
+    },
+    {
+      "product_id": "charger_apple_35w_duo",
+      "brand_name": "Apple",
+      "brand_status": "incumbent",
+      "price": 59.0,
+      "quality_score": 78,
+      "attributes": {
+        "wattage": 35,
+        "ports": "2 USB-C",
+        "form_factor": "compact_foldable",
+        "weight_grams": 105,
+        "gan_technology": false,
+        "pps_support": false,
+        "cable_included": false
+      },
+      "review_summary": "Sleek dual-port charger from Apple with signature minimalist design. Charges Apple devices well but the 35W total output is low for the price, and it lacks PPS for fast-charging many Android phones.",
+      "use_case_fit": {
+        "travel": 0.85,
+        "office_desk": 0.6,
+        "bedside": 0.7,
+        "fast_phone_only": 0.5,
+        "multi_device": 0.55
+      },
+      "weakness": "Only 35W total; expensive for the wattage; no PPS support for non-Apple devices.",
+      "margin_tier": "high",
+      "focal_brand": false
+    },
+    {
+      "product_id": "charger_samsung_45w",
+      "brand_name": "Samsung",
+      "brand_status": "incumbent",
+      "price": 29.99,
+      "quality_score": 82,
+      "attributes": {
+        "wattage": 45,
+        "ports": "1 USB-C",
+        "form_factor": "compact_brick",
+        "weight_grams": 95,
+        "gan_technology": false,
+        "pps_support": true,
+        "cable_included": true
+      },
+      "review_summary": "Official Samsung charger with PPS support for full-speed Galaxy charging. Simple and reliable but has only a single port and the design feels dated compared to GaN competitors.",
+      "use_case_fit": {
+        "travel": 0.65,
+        "office_desk": 0.55,
+        "bedside": 0.7,
+        "fast_phone_only": 0.9,
+        "multi_device": 0.2
+      },
+      "weakness": "Single port only; no GaN \u2014 less efficient and slightly bulkier than rivals at this wattage.",
+      "margin_tier": "medium",
+      "focal_brand": false
+    },
+    {
+      "product_id": "charger_baseus_65w",
+      "brand_name": "Baseus",
+      "brand_status": "entrant",
+      "price": 25.99,
+      "quality_score": 79,
+      "attributes": {
+        "wattage": 65,
+        "ports": "2 USB-C, 1 USB-A",
+        "form_factor": "compact_foldable",
+        "weight_grams": 120,
+        "gan_technology": true,
+        "pps_support": true,
+        "cable_included": false
+      },
+      "review_summary": "Aggressive value play with 65W GaN output at a budget price. Most users are satisfied but some report inconsistent fast-charging handshake with certain laptops and a faint coil whine.",
+      "use_case_fit": {
+        "travel": 0.85,
+        "office_desk": 0.75,
+        "bedside": 0.55,
+        "fast_phone_only": 0.7,
+        "multi_device": 0.8
+      },
+      "weakness": "Occasional charging negotiation issues with some laptops; faint coil whine reported by some users.",
+      "margin_tier": "low",
+      "focal_brand": false
+    },
+    {
+      "product_id": "charger_voltix_65w",
+      "brand_name": "Voltix",
+      "brand_status": "entrant",
+      "price": 22.99,
+      "quality_score": 72,
+      "attributes": {
+        "wattage": 65,
+        "ports": "1 USB-C, 1 USB-A",
+        "form_factor": "standard_brick",
+        "weight_grams": 140,
+        "gan_technology": true,
+        "pps_support": true,
+        "cable_included": true
+      },
+      "review_summary": "Budget GaN charger that delivers good wattage at the lowest price in its class. Cable included is a plus, but the build quality feels cheap and it runs hotter than name-brand alternatives.",
+      "use_case_fit": {
+        "travel": 0.6,
+        "office_desk": 0.65,
+        "bedside": 0.5,
+        "fast_phone_only": 0.75,
+        "multi_device": 0.5
+      },
+      "weakness": "Plasticky build; runs hot; lesser-known brand with limited warranty support.",
+      "margin_tier": "low",
+      "focal_brand": false
+    },
+    {
+      "product_id": "charger_ugreen_100w",
+      "brand_name": "UGREEN",
+      "brand_status": "entrant",
+      "price": 44.99,
+      "quality_score": 85,
+      "attributes": {
+        "wattage": 100,
+        "ports": "3 USB-C, 1 USB-A",
+        "form_factor": "desktop_brick",
+        "weight_grams": 240,
+        "gan_technology": true,
+        "pps_support": true,
+        "cable_included": false
+      },
+      "review_summary": "4-port 100W desktop charger that undercuts Anker on price while matching specs. Excellent for powering multiple devices but too large for travel and the brand is less recognized.",
+      "use_case_fit": {
+        "travel": 0.25,
+        "office_desk": 0.95,
+        "bedside": 0.3,
+        "fast_phone_only": 0.45,
+        "multi_device": 0.95
+      },
+      "weakness": "Too large and heavy for travel; lesser-known brand; no cable included.",
+      "margin_tier": "medium",
+      "focal_brand": false
+    },
+    {
+      "product_id": "charger_belkin_25w",
+      "brand_name": "Belkin",
+      "brand_status": "incumbent",
+      "price": 19.99,
+      "quality_score": 75,
+      "attributes": {
+        "wattage": 25,
+        "ports": "1 USB-C",
+        "form_factor": "ultra_compact",
+        "weight_grams": 58,
+        "gan_technology": false,
+        "pps_support": true,
+        "cable_included": false
+      },
+      "review_summary": "The smallest and lightest charger in this roundup, ideal for bedside or tossing in a bag. Limited to 25W and a single port, so it cannot charge laptops or multiple devices.",
+      "use_case_fit": {
+        "travel": 0.75,
+        "office_desk": 0.35,
+        "bedside": 0.95,
+        "fast_phone_only": 0.85,
+        "multi_device": 0.1
+      },
+      "weakness": "Only 25W \u2014 too slow for laptops; single port; no GaN technology.",
+      "margin_tier": "medium",
+      "focal_brand": false
+    }
+  ]
+}

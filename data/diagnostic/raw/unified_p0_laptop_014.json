@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_014",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 14,
+  "timestamp": "2026-05-14T11:54:11.305319+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20274514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_asus_zenbook_14\",\n  \"shortlist\": [\"laptop_macbook_air_m4\", \"laptop_asus_zenbook_14\", \"laptop_acer_swift_go_14\"],\n  \"recommendation_text\": \"The ASUS ZenBook 14 offers remarkable value with an OLED display, lightweight design, and decent performance for under $900. It's ideal for budget-conscious students who want a quality screen for documents, spreadsheets, and web browsing. The Intel Core Ultra 5 processor is less powerful than competitors' Core Ultra 7 or Ryzen 7 but still delivers solid performance.\",\n  \"selection_rationale\": \"Balances price and quality well; OLED display adds value.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_asus_zenbook_14",
+    "shortlist": [
+      "laptop_macbook_air_m4",
+      "laptop_asus_zenbook_14",
+      "laptop_acer_swift_go_14"
+    ],
+    "recommendation_text": "The ASUS ZenBook 14 offers remarkable value with an OLED display, lightweight design, and decent performance for under $900. It's ideal for budget-conscious students who want a quality screen for documents, spreadsheets, and web browsing. The Intel Core Ultra 5 processor is less powerful than competitors' Core Ultra 7 or Ryzen 7 but still delivers solid performance.",
+    "selection_rationale": "Balances price and quality well; OLED display adds value."
+  },
+  "parse_success": true,
+  "latency_ms": 39726
+}

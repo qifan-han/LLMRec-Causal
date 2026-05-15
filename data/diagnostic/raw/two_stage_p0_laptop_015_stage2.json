@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_laptop_015_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 15,
+  "timestamp": "2026-05-14T11:56:18.714511+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20275525,
+  "stage": "writer",
+  "raw_response": "The HP EliteBook 845 is an excellent choice for your budget office needs. With its powerful AMD Ryzen 7 PRO processor and 32GB of RAM, it excels in enterprise workloads. The laptop offers a full range of ports, including USB-C and HDMI, ensuring versatile connectivity. Its Windows 11 Pro OS and integrated Radeon GPU support both productivity and light creative tasks. While the IPS display is adequate but not exceptional, its security features and robust build make it a reliable office companion within your budget constraints.",
+  "parsed": {
+    "recommendation_text": "The HP EliteBook 845 is an excellent choice for your budget office needs. With its powerful AMD Ryzen 7 PRO processor and 32GB of RAM, it excels in enterprise workloads. The laptop offers a full range of ports, including USB-C and HDMI, ensuring versatile connectivity. Its Windows 11 Pro OS and integrated Radeon GPU support both productivity and light creative tasks. While the IPS display is adequate but not exceptional, its security features and robust build make it a reliable office companion within your budget constraints."
+  },
+  "parse_success": true,
+  "latency_ms": 13946
+}

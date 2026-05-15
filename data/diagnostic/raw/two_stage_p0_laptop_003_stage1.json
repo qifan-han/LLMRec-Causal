@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_laptop_003_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 3,
+  "timestamp": "2026-05-14T11:39:09.379181+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20263524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_acer_swift_go_14\",\n  \"shortlist\": [\"laptop_asus_zenbook_14\", \"laptop_lg_gram_14\", \"laptop_system76_lemur\"],\n  \"selection_rationale\": \"Balances price and quality; meets student needs.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_acer_swift_go_14",
+    "shortlist": [
+      "laptop_asus_zenbook_14",
+      "laptop_lg_gram_14",
+      "laptop_system76_lemur"
+    ],
+    "selection_rationale": "Balances price and quality; meets student needs."
+  },
+  "parse_success": true,
+  "latency_ms": 30456
+}

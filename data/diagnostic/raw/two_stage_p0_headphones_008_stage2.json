@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_008_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 8,
+  "timestamp": "2026-05-14T11:19:51.765925+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20268525,
+  "stage": "writer",
+  "raw_response": "Given your high quality sensitivity and moderate brand familiarity with Sony, the WH-1000XM5 headphones are an excellent choice for gaming. They offer industry-leading noise cancellation, ensuring you're fully immersed in game audio without distractions. With a battery life of up to 30 hours, you can play uninterrupted for long sessions. Though they aren't foldable and have average call microphone quality, their sound clarity and wireless connectivity make them ideal for gaming.",
+  "parsed": {
+    "recommendation_text": "Given your high quality sensitivity and moderate brand familiarity with Sony, the WH-1000XM5 headphones are an excellent choice for gaming. They offer industry-leading noise cancellation, ensuring you're fully immersed in game audio without distractions. With a battery life of up to 30 hours, you can play uninterrupted for long sessions. Though they aren't foldable and have average call microphone quality, their sound clarity and wireless connectivity make them ideal for gaming."
+  },
+  "parse_success": true,
+  "latency_ms": 12050
+}

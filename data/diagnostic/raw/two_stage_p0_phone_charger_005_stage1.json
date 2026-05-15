@@ -1,0 +1,23 @@
+{
+  "row_id": "twostage_p0_phone_charger_005_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 5,
+  "timestamp": "2026-05-14T12:08:26.244033+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20265524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_voltix_65w\",\n  \"shortlist\": [\"charger_voltix_65w\", \"charger_baseus_65w\"],\n  \"selection_rationale\": \"Lowest price with GaN tech; meets fast phone charging needs.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_voltix_65w",
+    "shortlist": [
+      "charger_voltix_65w",
+      "charger_baseus_65w"
+    ],
+    "selection_rationale": "Lowest price with GaN tech; meets fast phone charging needs."
+  },
+  "parse_success": true,
+  "latency_ms": 19444
+}

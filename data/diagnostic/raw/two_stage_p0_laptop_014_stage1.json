@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_laptop_014_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 14,
+  "timestamp": "2026-05-14T11:54:41.451219+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20274524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_asus_zenbook_14\",\n  \"shortlist\": [\"laptop_asus_zenbook_14\", \"laptop_macbook_air_m4\", \"laptop_lg_gram_14\"],\n  \"selection_rationale\": \"Balances quality and affordability; OLED screen stands out.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_asus_zenbook_14",
+    "shortlist": [
+      "laptop_asus_zenbook_14",
+      "laptop_macbook_air_m4",
+      "laptop_lg_gram_14"
+    ],
+    "selection_rationale": "Balances quality and affordability; OLED screen stands out."
+  },
+  "parse_success": true,
+  "latency_ms": 30144
+}

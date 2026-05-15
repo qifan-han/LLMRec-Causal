@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_016_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 16,
+  "timestamp": "2026-05-14T11:29:52.506520+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20276525,
+  "stage": "writer",
+  "raw_response": "Given your price sensitivity and budget constraints, the JBL Tune 770NC is a great choice for commuting. It offers solid noise cancellation and up to 44 hours of battery life at an affordable price point. The over-ear design provides comfort during long commutes, and its multipoint connection lets you switch between devices easily. While it may not match premium brands in build quality or sound detail, the JBL Tune 770NC delivers good value for your budget.",
+  "parsed": {
+    "recommendation_text": "Given your price sensitivity and budget constraints, the JBL Tune 770NC is a great choice for commuting. It offers solid noise cancellation and up to 44 hours of battery life at an affordable price point. The over-ear design provides comfort during long commutes, and its multipoint connection lets you switch between devices easily. While it may not match premium brands in build quality or sound detail, the JBL Tune 770NC delivers good value for your budget."
+  },
+  "parse_success": true,
+  "latency_ms": 12712
+}

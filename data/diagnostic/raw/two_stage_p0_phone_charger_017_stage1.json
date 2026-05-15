@@ -1,0 +1,23 @@
+{
+  "row_id": "twostage_p0_phone_charger_017_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 17,
+  "timestamp": "2026-05-14T12:21:09.386534+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20277524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_voltix_65w\",\n  \"shortlist\": [\"charger_baseus_65w\", \"charger_voltix_65w\"],\n  \"selection_rationale\": \"Balances price and quality; adequate for desk use despite brand unfamiliarity.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_voltix_65w",
+    "shortlist": [
+      "charger_baseus_65w",
+      "charger_voltix_65w"
+    ],
+    "selection_rationale": "Balances price and quality; adequate for desk use despite brand unfamiliarity."
+  },
+  "parse_success": true,
+  "latency_ms": 19396
+}

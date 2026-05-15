@@ -1,0 +1,24 @@
+{
+  "row_id": "unified_p0_phone_charger_013",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 13,
+  "timestamp": "2026-05-14T12:16:36.613016+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20273514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_belkin_25w\",\n  \"shortlist\": [\"charger_belkin_25w\", \"charger_apple_35w_duo\"],\n  \"recommendation_text\": \"For a bedside charger, the Belkin 25W is an excellent choice. It's ultra-compact and lightweight at just 58 grams, making it perfect for minimalistic setups. Despite its small size, it supports PPS for fast charging of compatible devices. The single USB-C port ensures simplicity without sacrificing functionality. At $19.99, it fits within your budget while offering a reliable performance that aligns with your quality and brand familiarity preferences.\",\n  \"selection_rationale\": \"Compact design; affordable price; Belkin's strong brand recognition.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_belkin_25w",
+    "shortlist": [
+      "charger_belkin_25w",
+      "charger_apple_35w_duo"
+    ],
+    "recommendation_text": "For a bedside charger, the Belkin 25W is an excellent choice. It's ultra-compact and lightweight at just 58 grams, making it perfect for minimalistic setups. Despite its small size, it supports PPS for fast charging of compatible devices. The single USB-C port ensures simplicity without sacrificing functionality. At $19.99, it fits within your budget while offering a reliable performance that aligns with your quality and brand familiarity preferences.",
+    "selection_rationale": "Compact design; affordable price; Belkin's strong brand recognition."
+  },
+  "parse_success": true,
+  "latency_ms": 29785
+}

@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_017",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 17,
+  "timestamp": "2026-05-14T12:20:49.988311+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20277514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_voltix_65w\",\n  \"shortlist\": [\"charger_baseus_65w\", \"charger_voltix_65w\", \"charger_belkin_25w\"],\n  \"recommendation_text\": \"For an office desk setup, the Voltix 65W charger offers a balance of power and affordability. It supports both USB-C and USB-A ports with GaN technology for efficient charging. Though it runs slightly warm, its compact form factor makes it ideal for desktop use. The included cable is a plus, but be aware that build quality may feel plasticky compared to higher-end brands.\",\n  \"selection_rationale\": \"Offers good power at low cost; includes cable; suitable for desk use.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_voltix_65w",
+    "shortlist": [
+      "charger_baseus_65w",
+      "charger_voltix_65w",
+      "charger_belkin_25w"
+    ],
+    "recommendation_text": "For an office desk setup, the Voltix 65W charger offers a balance of power and affordability. It supports both USB-C and USB-A ports with GaN technology for efficient charging. Though it runs slightly warm, its compact form factor makes it ideal for desktop use. The included cable is a plus, but be aware that build quality may feel plasticky compared to higher-end brands.",
+    "selection_rationale": "Offers good power at low cost; includes cable; suitable for desk use."
+  },
+  "parse_success": true,
+  "latency_ms": 29408
+}

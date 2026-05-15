@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_000",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 0,
+  "timestamp": "2026-05-14T12:02:58.938977+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20260514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_nano_67w\",\n  \"shortlist\": [\"charger_anker_nano_67w\", \"charger_belkin_25w\", \"charger_samsung_45w\"],\n  \"recommendation_text\": \"For fast phone charging, the Anker Nano 67W charger is highly recommended. It offers dual USB-C ports for simultaneous charging and supports GaN technology for compactness and efficiency. Despite warming up under full load, its fast-charging capabilities make it a top choice. The Belkin charger is also an option due to its ultra-compact size and PPS support, but the single port limits its utility. Samsung's 45W charger provides reliable charging with PPS support but lacks dual ports.\",\n  \"selection_rationale\": \"Anker Nano 67W offers best balance of power, efficiency, and brand recognition.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_nano_67w",
+    "shortlist": [
+      "charger_anker_nano_67w",
+      "charger_belkin_25w",
+      "charger_samsung_45w"
+    ],
+    "recommendation_text": "For fast phone charging, the Anker Nano 67W charger is highly recommended. It offers dual USB-C ports for simultaneous charging and supports GaN technology for compactness and efficiency. Despite warming up under full load, its fast-charging capabilities make it a top choice. The Belkin charger is also an option due to its ultra-compact size and PPS support, but the single port limits its utility. Samsung's 45W charger provides reliable charging with PPS support but lacks dual ports.",
+    "selection_rationale": "Anker Nano 67W offers best balance of power, efficiency, and brand recognition."
+  },
+  "parse_success": true,
+  "latency_ms": 32815
+}

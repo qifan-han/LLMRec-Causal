@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_headphones_008_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 8,
+  "timestamp": "2026-05-14T11:19:39.714170+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20268524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_sony_wh1000xm5\",\n  \"shortlist\": [\"headphones_sony_wh1000xm5\", \"headphones_bose_qc_ultra\", \"headphones_apple_airpods_max\"],\n  \"selection_rationale\": \"Sony XM5 offers best balance of quality, brand familiarity and gaming suitability.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_sony_wh1000xm5",
+    "shortlist": [
+      "headphones_sony_wh1000xm5",
+      "headphones_bose_qc_ultra",
+      "headphones_apple_airpods_max"
+    ],
+    "selection_rationale": "Sony XM5 offers best balance of quality, brand familiarity and gaming suitability."
+  },
+  "parse_success": true,
+  "latency_ms": 26156
+}

@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_003",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 3,
+  "timestamp": "2026-05-14T12:06:03.795656+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20263514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_prime_100w\",\n  \"shortlist\": [\"charger_anker_nano_67w\", \"charger_apple_35w_duo\", \"charger_belkin_25w\"],\n  \"recommendation_text\": \"For multi-device charging, the Anker Prime 100W charger is highly recommended. It offers dual USB-C ports and a USB-A port for versatile connectivity, making it ideal for simultaneous laptop and phone charging. Despite its premium price, it excels in build quality and efficiency due to GaN technology. The compact brick form factor ensures portability while delivering robust performance. Although slightly heavier than alternatives, the 100W output justifies the cost for power users needing fast, reliable charging.\",\n  \"selection_rationale\": \"Balances multi-device needs with high-quality Anker brand.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_prime_100w",
+    "shortlist": [
+      "charger_anker_nano_67w",
+      "charger_apple_35w_duo",
+      "charger_belkin_25w"
+    ],
+    "recommendation_text": "For multi-device charging, the Anker Prime 100W charger is highly recommended. It offers dual USB-C ports and a USB-A port for versatile connectivity, making it ideal for simultaneous laptop and phone charging. Despite its premium price, it excels in build quality and efficiency due to GaN technology. The compact brick form factor ensures portability while delivering robust performance. Although slightly heavier than alternatives, the 100W output justifies the cost for power users needing fast, reliable charging.",
+    "selection_rationale": "Balances multi-device needs with high-quality Anker brand."
+  },
+  "parse_success": true,
+  "latency_ms": 31744
+}

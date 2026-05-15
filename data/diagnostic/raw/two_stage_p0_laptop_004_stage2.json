@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_laptop_004_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 4,
+  "timestamp": "2026-05-14T11:40:46.481006+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20264525,
+  "stage": "writer",
+  "raw_response": "Given your high brand familiarity with Apple and moderate price sensitivity, the MacBook Air M1 is an excellent choice for business travel. It offers a lightweight design, all-day battery life, and powerful performance for everyday tasks and light creativity. With 16GB RAM and macOS, it ensures smooth multitasking and productivity on the go. Although the base storage of 256GB might be limiting, its integrated GPU and Thunderbolt ports provide versatile connectivity options.",
+  "parsed": {
+    "recommendation_text": "Given your high brand familiarity with Apple and moderate price sensitivity, the MacBook Air M1 is an excellent choice for business travel. It offers a lightweight design, all-day battery life, and powerful performance for everyday tasks and light creativity. With 16GB RAM and macOS, it ensures smooth multitasking and productivity on the go. Although the base storage of 256GB might be limiting, its integrated GPU and Thunderbolt ports provide versatile connectivity options."
+  },
+  "parse_success": true,
+  "latency_ms": 12352
+}

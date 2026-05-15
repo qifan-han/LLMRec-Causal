@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_018",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 18,
+  "timestamp": "2026-05-14T12:21:51.740752+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20278514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_prime_100w\",\n  \"shortlist\": [\"charger_apple_35w_duo\", \"charger_samsung_45w\", \"charger_anker_nano_67w\"],\n  \"recommendation_text\": \"For an office desk setup, the Anker Prime 100W charger offers excellent quality and high wattage for simultaneous device charging. Despite its higher price, it is compact enough to fit on a desk and supports fast-charging with GaN technology. The build quality is top-notch, making it a reliable choice despite being heavier than alternatives. While the lack of included cables adds cost, the premium features justify the expense for those prioritizing performance over budget.\",\n  \"selection_rationale\": \"Offers best balance of power, quality, and brand recognition.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_prime_100w",
+    "shortlist": [
+      "charger_apple_35w_duo",
+      "charger_samsung_45w",
+      "charger_anker_nano_67w"
+    ],
+    "recommendation_text": "For an office desk setup, the Anker Prime 100W charger offers excellent quality and high wattage for simultaneous device charging. Despite its higher price, it is compact enough to fit on a desk and supports fast-charging with GaN technology. The build quality is top-notch, making it a reliable choice despite being heavier than alternatives. While the lack of included cables adds cost, the premium features justify the expense for those prioritizing performance over budget.",
+    "selection_rationale": "Offers best balance of power, quality, and brand recognition."
+  },
+  "parse_success": true,
+  "latency_ms": 31315
+}

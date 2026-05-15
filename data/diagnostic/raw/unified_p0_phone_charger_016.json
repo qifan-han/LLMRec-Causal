@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_016",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 16,
+  "timestamp": "2026-05-14T12:19:49.007270+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20276514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_baseus_65w\",\n  \"shortlist\": [\"charger_anker_nano_67w\", \"charger_apple_35w_duo\", \"charger_baseus_65w\"],\n  \"recommendation_text\": \"For travel, the Baseus 65W charger offers a great balance of portability and power. At $25.99, it's within your budget and includes GaN technology for efficient charging. Despite some minor issues with laptop compatibility, its dual ports and compact form factor make it ideal for on-the-go use. The included cable is an added convenience.\",\n  \"selection_rationale\": \"Offers good value and meets travel needs.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_baseus_65w",
+    "shortlist": [
+      "charger_anker_nano_67w",
+      "charger_apple_35w_duo",
+      "charger_baseus_65w"
+    ],
+    "recommendation_text": "For travel, the Baseus 65W charger offers a great balance of portability and power. At $25.99, it's within your budget and includes GaN technology for efficient charging. Despite some minor issues with laptop compatibility, its dual ports and compact form factor make it ideal for on-the-go use. The included cable is an added convenience.",
+    "selection_rationale": "Offers good value and meets travel needs."
+  },
+  "parse_success": true,
+  "latency_ms": 28747
+}

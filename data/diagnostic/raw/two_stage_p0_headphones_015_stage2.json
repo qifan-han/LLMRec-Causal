@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_015_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 15,
+  "timestamp": "2026-05-14T11:28:38.620019+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20275525,
+  "stage": "writer",
+  "raw_response": "The Sony WH-1000XM5 headphones are an excellent choice for office work due to their industry-leading noise cancellation and comfortable over-ear design. With a battery life of up to 30 hours, you won't need frequent recharges during long workdays. The LDAC codec ensures high-quality sound, enhancing your audio experience. Although they are slightly more expensive, the superior quality justifies the price for those who value top-tier performance and comfort in their headphones.",
+  "parsed": {
+    "recommendation_text": "The Sony WH-1000XM5 headphones are an excellent choice for office work due to their industry-leading noise cancellation and comfortable over-ear design. With a battery life of up to 30 hours, you won't need frequent recharges during long workdays. The LDAC codec ensures high-quality sound, enhancing your audio experience. Although they are slightly more expensive, the superior quality justifies the price for those who value top-tier performance and comfort in their headphones."
+  },
+  "parse_success": true,
+  "latency_ms": 12526
+}

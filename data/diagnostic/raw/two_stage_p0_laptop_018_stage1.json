@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_laptop_018_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 18,
+  "timestamp": "2026-05-14T12:00:51.909987+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20278524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_macbook_pro_m4\",\n  \"shortlist\": [\"laptop_macbook_pro_m4\", \"laptop_thinkpad_x1_carbon\", \"laptop_dell_xps_14\"],\n  \"selection_rationale\": \"Best display and performance for creative work, despite high price.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_macbook_pro_m4",
+    "shortlist": [
+      "laptop_macbook_pro_m4",
+      "laptop_thinkpad_x1_carbon",
+      "laptop_dell_xps_14"
+    ],
+    "selection_rationale": "Best display and performance for creative work, despite high price."
+  },
+  "parse_success": true,
+  "latency_ms": 29979
+}

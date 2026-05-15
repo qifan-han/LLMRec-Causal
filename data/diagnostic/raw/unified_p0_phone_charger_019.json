@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_019",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 19,
+  "timestamp": "2026-05-14T12:22:52.151223+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20279514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_anker_nano_67w\",\n  \"shortlist\": [\"charger_anker_nano_67w\", \"charger_baseus_65w\", \"charger_belkin_25w\"],\n  \"recommendation_text\": \"For travel, the Anker Nano 67W charger is highly recommended. It offers fast charging and a compact form factor ideal for on-the-go use. Despite warming up under full load, its GaN technology ensures efficiency and portability. The Baseus 65W is cheaper but has reported issues with laptop compatibility and build quality. The Belkin 25W is too small in wattage for most travel needs.\",\n  \"selection_rationale\": \"Balances price, quality, brand recognition, and performance.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_anker_nano_67w",
+    "shortlist": [
+      "charger_anker_nano_67w",
+      "charger_baseus_65w",
+      "charger_belkin_25w"
+    ],
+    "recommendation_text": "For travel, the Anker Nano 67W charger is highly recommended. It offers fast charging and a compact form factor ideal for on-the-go use. Despite warming up under full load, its GaN technology ensures efficiency and portability. The Baseus 65W is cheaper but has reported issues with laptop compatibility and build quality. The Belkin 25W is too small in wattage for most travel needs.",
+    "selection_rationale": "Balances price, quality, brand recognition, and performance."
+  },
+  "parse_success": true,
+  "latency_ms": 29988
+}

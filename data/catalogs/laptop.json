@@ -1,0 +1,327 @@
+{
+  "category": "laptop",
+  "category_display_name": "Laptops for Professionals",
+  "complexity": "high",
+  "focal_brand": "Apple",
+  "sponsored_product": "laptop_framework_16",
+  "use_cases": [
+    "data_analysis",
+    "software_development",
+    "creative_media",
+    "business_travel",
+    "student_general",
+    "budget_office"
+  ],
+  "products": [
+    {
+      "product_id": "laptop_macbook_pro_m4",
+      "brand_name": "Apple",
+      "brand_status": "incumbent",
+      "price": 1999.0,
+      "quality_score": 93,
+      "attributes": {
+        "processor": "Apple M4 Pro",
+        "ram_gb": 24,
+        "storage_gb": 512,
+        "display_inches": 14.2,
+        "display_type": "mini-LED XDR",
+        "battery_hours": 17,
+        "weight_kg": 1.55,
+        "gpu": "integrated 20-core",
+        "os": "macOS",
+        "ports": "3 Thunderbolt 4, HDMI, SD, MagSafe"
+      },
+      "review_summary": "Best-in-class performance-per-watt with exceptional battery life and a stunning display. The M4 Pro handles data analysis, creative work, and development with ease. macOS limits some enterprise software compatibility, RAM is not user-upgradeable, and the price is high.",
+      "use_case_fit": {
+        "data_analysis": 0.85,
+        "software_development": 0.8,
+        "creative_media": 0.95,
+        "business_travel": 0.75,
+        "student_general": 0.45,
+        "budget_office": 0.1
+      },
+      "weakness": "macOS incompatible with some enterprise/Windows-only tools; 512GB base storage fills fast; non-upgradeable RAM; expensive.",
+      "margin_tier": "high",
+      "focal_brand": true
+    },
+    {
+      "product_id": "laptop_macbook_air_m4",
+      "brand_name": "Apple",
+      "brand_status": "incumbent",
+      "price": 1099.0,
+      "quality_score": 87,
+      "attributes": {
+        "processor": "Apple M4",
+        "ram_gb": 16,
+        "storage_gb": 256,
+        "display_inches": 13.6,
+        "display_type": "Liquid Retina",
+        "battery_hours": 18,
+        "weight_kg": 1.24,
+        "gpu": "integrated 10-core",
+        "os": "macOS",
+        "ports": "2 Thunderbolt 4, MagSafe"
+      },
+      "review_summary": "Ultralight and fanless with all-day battery life. Handles everyday work and light creative tasks admirably. The 256GB base storage is cramped, the display lacks HDR, and the M4 chip struggles with sustained heavy workloads compared to the M4 Pro.",
+      "use_case_fit": {
+        "data_analysis": 0.55,
+        "software_development": 0.6,
+        "creative_media": 0.5,
+        "business_travel": 0.85,
+        "student_general": 0.8,
+        "budget_office": 0.45
+      },
+      "weakness": "Only 256GB base storage; limited port selection; not powerful enough for heavy data or video work.",
+      "margin_tier": "high",
+      "focal_brand": true
+    },
+    {
+      "product_id": "laptop_thinkpad_x1_carbon",
+      "brand_name": "Lenovo",
+      "brand_status": "incumbent",
+      "price": 1549.0,
+      "quality_score": 88,
+      "attributes": {
+        "processor": "Intel Core Ultra 7 155H",
+        "ram_gb": 32,
+        "storage_gb": 512,
+        "display_inches": 14.0,
+        "display_type": "OLED 2.8K",
+        "battery_hours": 12,
+        "weight_kg": 1.09,
+        "gpu": "Intel Arc integrated",
+        "os": "Windows 11 Pro",
+        "ports": "2 Thunderbolt 4, 2 USB-A, HDMI"
+      },
+      "review_summary": "The gold standard for business ultrabooks: superb keyboard, gorgeous OLED display, and the lightest laptop in this roundup at 1.09 kg. Windows compatibility is universal. Battery life is shorter than Apple competitors and the Intel GPU is weak for creative workloads.",
+      "use_case_fit": {
+        "data_analysis": 0.8,
+        "software_development": 0.85,
+        "creative_media": 0.55,
+        "business_travel": 0.9,
+        "student_general": 0.7,
+        "budget_office": 0.4
+      },
+      "weakness": "Battery life shorter than MacBooks; integrated Intel GPU is weak for GPU-heavy tasks; OLED can have burn-in over years.",
+      "margin_tier": "high",
+      "focal_brand": false
+    },
+    {
+      "product_id": "laptop_dell_xps_14",
+      "brand_name": "Dell",
+      "brand_status": "incumbent",
+      "price": 1399.0,
+      "quality_score": 82,
+      "attributes": {
+        "processor": "Intel Core Ultra 7 155H",
+        "ram_gb": 16,
+        "storage_gb": 512,
+        "display_inches": 14.5,
+        "display_type": "OLED 3.2K touch",
+        "battery_hours": 10,
+        "weight_kg": 1.69,
+        "gpu": "Intel Arc integrated",
+        "os": "Windows 11 Home",
+        "ports": "2 Thunderbolt 4, 1 USB-C"
+      },
+      "review_summary": "Stunning OLED touchscreen in a sleek aluminum chassis. The keyboard layout is polarizing \u2014 function keys are replaced by a capacitive touch bar. Battery life is the worst in this roundup for a non-gaming laptop, and the lack of USB-A requires dongles.",
+      "use_case_fit": {
+        "data_analysis": 0.65,
+        "software_development": 0.6,
+        "creative_media": 0.7,
+        "business_travel": 0.6,
+        "student_general": 0.65,
+        "budget_office": 0.3
+      },
+      "weakness": "Poor battery life (~10 hrs); controversial touch function row; no USB-A; heavier than competing ultrabooks.",
+      "margin_tier": "medium",
+      "focal_brand": false
+    },
+    {
+      "product_id": "laptop_hp_elitebook_845",
+      "brand_name": "HP",
+      "brand_status": "incumbent",
+      "price": 1249.0,
+      "quality_score": 83,
+      "attributes": {
+        "processor": "AMD Ryzen 7 PRO 7840U",
+        "ram_gb": 32,
+        "storage_gb": 512,
+        "display_inches": 14.0,
+        "display_type": "IPS 1920x1200",
+        "battery_hours": 14,
+        "weight_kg": 1.4,
+        "gpu": "AMD Radeon 780M integrated",
+        "os": "Windows 11 Pro",
+        "ports": "2 USB-C, 2 USB-A, HDMI"
+      },
+      "review_summary": "Enterprise workhorse with AMD Ryzen Pro security features, 32GB RAM, and a full port selection. The Radeon integrated GPU is better than Intel's for light creative work. The IPS display is adequate but dull compared to OLED options, and the design is conservative.",
+      "use_case_fit": {
+        "data_analysis": 0.8,
+        "software_development": 0.8,
+        "creative_media": 0.5,
+        "business_travel": 0.8,
+        "student_general": 0.65,
+        "budget_office": 0.55
+      },
+      "weakness": "Display is mediocre compared to OLED competitors; design is bland; heavier than X1 Carbon.",
+      "margin_tier": "medium",
+      "focal_brand": false
+    },
+    {
+      "product_id": "laptop_framework_16",
+      "brand_name": "Framework",
+      "brand_status": "entrant",
+      "price": 1399.0,
+      "quality_score": 80,
+      "attributes": {
+        "processor": "AMD Ryzen 7 7840HS",
+        "ram_gb": 32,
+        "storage_gb": 1000,
+        "display_inches": 16.0,
+        "display_type": "IPS 2560x1600",
+        "battery_hours": 10,
+        "weight_kg": 2.1,
+        "gpu": "AMD Radeon RX 7700S (optional module)",
+        "os": "Windows 11 / Linux",
+        "ports": "6 modular expansion card bays"
+      },
+      "review_summary": "The most repairable and upgradeable laptop ever made. Every component \u2014 RAM, storage, battery, GPU, ports, keyboard \u2014 is user-replaceable. Appeals strongly to tech enthusiasts and sustainability-minded buyers. Build quality is good but not as polished as ThinkPad or MacBook, and the modular design adds weight.",
+      "use_case_fit": {
+        "data_analysis": 0.75,
+        "software_development": 0.85,
+        "creative_media": 0.65,
+        "business_travel": 0.45,
+        "student_general": 0.6,
+        "budget_office": 0.35
+      },
+      "weakness": "Heavy at 2.1 kg; modular expansion bays add bulk; battery life only average; brand is young with unproven long-term support.",
+      "margin_tier": "medium",
+      "focal_brand": false
+    },
+    {
+      "product_id": "laptop_asus_zenbook_14",
+      "brand_name": "ASUS",
+      "brand_status": "incumbent",
+      "price": 849.0,
+      "quality_score": 79,
+      "attributes": {
+        "processor": "Intel Core Ultra 5 125H",
+        "ram_gb": 16,
+        "storage_gb": 512,
+        "display_inches": 14.0,
+        "display_type": "OLED 1920x1200",
+        "battery_hours": 13,
+        "weight_kg": 1.28,
+        "gpu": "Intel Arc integrated",
+        "os": "Windows 11 Home",
+        "ports": "1 Thunderbolt 4, 1 USB-C, 1 USB-A, HDMI"
+      },
+      "review_summary": "Remarkable value: OLED display, lightweight design, and decent performance under $900. The best option for budget-conscious buyers who want a quality screen. The Intel Core Ultra 5 is less powerful than competitors' Core Ultra 7 or Ryzen 7, and the speakers are tinny.",
+      "use_case_fit": {
+        "data_analysis": 0.55,
+        "software_development": 0.6,
+        "creative_media": 0.55,
+        "business_travel": 0.75,
+        "student_general": 0.9,
+        "budget_office": 0.8
+      },
+      "weakness": "Less powerful Core Ultra 5 processor; weak speakers; only 16GB RAM with no upgrade path.",
+      "margin_tier": "low",
+      "focal_brand": false
+    },
+    {
+      "product_id": "laptop_acer_swift_go_14",
+      "brand_name": "Acer",
+      "brand_status": "incumbent",
+      "price": 699.0,
+      "quality_score": 73,
+      "attributes": {
+        "processor": "AMD Ryzen 5 7530U",
+        "ram_gb": 16,
+        "storage_gb": 512,
+        "display_inches": 14.0,
+        "display_type": "IPS 1920x1200",
+        "battery_hours": 11,
+        "weight_kg": 1.32,
+        "gpu": "AMD Radeon integrated",
+        "os": "Windows 11 Home",
+        "ports": "1 USB-C, 2 USB-A, HDMI"
+      },
+      "review_summary": "The cheapest laptop in this roundup that still delivers a usable professional experience. Good for documents, spreadsheets, and web browsing. The IPS display is dim, the chassis creaks under pressure, and performance drops noticeably under sustained heavy workloads.",
+      "use_case_fit": {
+        "data_analysis": 0.35,
+        "software_development": 0.4,
+        "creative_media": 0.25,
+        "business_travel": 0.6,
+        "student_general": 0.75,
+        "budget_office": 0.9
+      },
+      "weakness": "Dim display; flexes under pressure; performance drops under sustained load; no Thunderbolt.",
+      "margin_tier": "low",
+      "focal_brand": false
+    },
+    {
+      "product_id": "laptop_lg_gram_14",
+      "brand_name": "LG",
+      "brand_status": "entrant",
+      "price": 1299.0,
+      "quality_score": 81,
+      "attributes": {
+        "processor": "Intel Core Ultra 7 155H",
+        "ram_gb": 16,
+        "storage_gb": 512,
+        "display_inches": 14.0,
+        "display_type": "OLED 2.8K",
+        "battery_hours": 15,
+        "weight_kg": 0.99,
+        "gpu": "Intel Arc integrated",
+        "os": "Windows 11 Home",
+        "ports": "2 Thunderbolt 4, 1 USB-A, HDMI, microSD"
+      },
+      "review_summary": "Incredibly light at under 1 kg with a beautiful OLED display and solid battery life. A strong pick for frequent flyers who want a premium screen. The chassis is thin and flexes slightly, and the keyboard is shallow compared to ThinkPad. Only 16GB RAM limits multitasking.",
+      "use_case_fit": {
+        "data_analysis": 0.6,
+        "software_development": 0.65,
+        "creative_media": 0.55,
+        "business_travel": 0.95,
+        "student_general": 0.7,
+        "budget_office": 0.35
+      },
+      "weakness": "Chassis flexes under pressure; shallow keyboard travel; only 16GB RAM; LG less proven in laptops than Lenovo/Apple.",
+      "margin_tier": "medium",
+      "focal_brand": false
+    },
+    {
+      "product_id": "laptop_system76_lemur",
+      "brand_name": "System76",
+      "brand_status": "entrant",
+      "price": 1149.0,
+      "quality_score": 76,
+      "attributes": {
+        "processor": "Intel Core Ultra 7 155H",
+        "ram_gb": 32,
+        "storage_gb": 500,
+        "display_inches": 14.0,
+        "display_type": "IPS 1920x1200",
+        "battery_hours": 10,
+        "weight_kg": 1.62,
+        "gpu": "Intel Arc integrated",
+        "os": "Pop!_OS Linux (Ubuntu-based)",
+        "ports": "1 Thunderbolt 4, 1 USB-C, 2 USB-A, HDMI"
+      },
+      "review_summary": "Purpose-built Linux laptop with excellent open-source software support and 32GB RAM. Ideal for developers and data scientists who prefer a native Linux experience. The IPS display is average, build quality is a step below ThinkPad, and the brand is niche with limited service centers.",
+      "use_case_fit": {
+        "data_analysis": 0.8,
+        "software_development": 0.9,
+        "creative_media": 0.35,
+        "business_travel": 0.5,
+        "student_general": 0.4,
+        "budget_office": 0.3
+      },
+      "weakness": "Linux-only can limit software compatibility; average display; niche brand with limited physical support; plain design.",
+      "margin_tier": "medium",
+      "focal_brand": false
+    }
+  ]
+}

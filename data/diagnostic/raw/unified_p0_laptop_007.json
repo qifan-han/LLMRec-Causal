@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_007",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 7,
+  "timestamp": "2026-05-14T11:44:24.583643+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20267514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_asus_zenbook_14\",\n  \"shortlist\": [\"laptop_asus_zenbook_14\", \"laptop_macbook_air_m4\", \"laptop_hp_elitebook_845\"],\n  \"recommendation_text\": \"The ASUS ZenBook 14 offers a balance of performance and affordability for data analysis tasks. With an OLED display, it provides excellent visual clarity and is lightweight at 1.28 kg. Despite its lower price point, it still delivers decent performance with 16GB RAM and a powerful AMD Ryzen processor. The battery life of up to 13 hours ensures you can work throughout the day without needing to recharge. Although the Intel Arc integrated GPU may not be ideal for heavy creative tasks, it is sufficient for data analysis and general productivity.\",\n  \"selection_rationale\": \"Balances price and performance well; suitable for data analysis.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_asus_zenbook_14",
+    "shortlist": [
+      "laptop_asus_zenbook_14",
+      "laptop_macbook_air_m4",
+      "laptop_hp_elitebook_845"
+    ],
+    "recommendation_text": "The ASUS ZenBook 14 offers a balance of performance and affordability for data analysis tasks. With an OLED display, it provides excellent visual clarity and is lightweight at 1.28 kg. Despite its lower price point, it still delivers decent performance with 16GB RAM and a powerful AMD Ryzen processor. The battery life of up to 13 hours ensures you can work throughout the day without needing to recharge. Although the Intel Arc integrated GPU may not be ideal for heavy creative tasks, it is sufficient for data analysis and general productivity.",
+    "selection_rationale": "Balances price and performance well; suitable for data analysis."
+  },
+  "parse_success": true,
+  "latency_ms": 43341
+}

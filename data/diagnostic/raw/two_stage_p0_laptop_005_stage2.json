@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_laptop_005_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 5,
+  "timestamp": "2026-05-14T11:42:11.981275+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20265525,
+  "stage": "writer",
+  "raw_response": "Given your high quality sensitivity and moderate price sensitivity, the ASUS ZenBook 14 offers excellent value with its OLED display and lightweight design, ideal for data analysis tasks. Though it falls slightly above your budget at $849, its Intel Core Ultra 5 processor, 16GB RAM, and Windows 11 OS provide solid performance. The integrated GPU and ample battery life also support extended use.",
+  "parsed": {
+    "recommendation_text": "Given your high quality sensitivity and moderate price sensitivity, the ASUS ZenBook 14 offers excellent value with its OLED display and lightweight design, ideal for data analysis tasks. Though it falls slightly above your budget at $849, its Intel Core Ultra 5 processor, 16GB RAM, and Windows 11 OS provide solid performance. The integrated GPU and ample battery life also support extended use."
+  },
+  "parse_success": true,
+  "latency_ms": 11859
+}

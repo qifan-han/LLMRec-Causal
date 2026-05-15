@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_phone_charger_012",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 12,
+  "timestamp": "2026-05-14T12:15:33.452135+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20272514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_baseus_65w\",\n  \"shortlist\": [\"charger_baseus_65w\", \"charger_apple_35w_duo\", \"charger_belkin_25w\"],\n  \"recommendation_text\": \"For an office desk setup, the Baseus 65W charger offers a balanced mix of power and portability. It supports two USB-C ports with GaN technology for efficient charging, making it ideal for multiple devices. Despite some minor issues like inconsistent fast-charging handshake with laptops and coil whine, its budget-friendly price point makes it an attractive option. The Apple 35W charger is sleek but underpowered at this price range, while the Belkin 25W charger lacks necessary wattage.\",\n  \"selection_rationale\": \"Balances power output, port count, and cost effectively.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_baseus_65w",
+    "shortlist": [
+      "charger_baseus_65w",
+      "charger_apple_35w_duo",
+      "charger_belkin_25w"
+    ],
+    "recommendation_text": "For an office desk setup, the Baseus 65W charger offers a balanced mix of power and portability. It supports two USB-C ports with GaN technology for efficient charging, making it ideal for multiple devices. Despite some minor issues like inconsistent fast-charging handshake with laptops and coil whine, its budget-friendly price point makes it an attractive option. The Apple 35W charger is sleek but underpowered at this price range, while the Belkin 25W charger lacks necessary wattage.",
+    "selection_rationale": "Balances power output, port count, and cost effectively."
+  },
+  "parse_success": true,
+  "latency_ms": 31704
+}

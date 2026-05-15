@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_004",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 4,
+  "timestamp": "2026-05-14T11:40:03.896344+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20264514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_macbook_air_m4\",\n  \"shortlist\": [\"laptop_macbook_air_m4\", \"laptop_thinkpad_x1_carbon\", \"laptop_lg_gram_14\"],\n  \"recommendation_text\": \"For business travel, the MacBook Air M4 is an excellent choice. It offers ultralight weight and all-day battery life, ideal for frequent flyers. Despite its lower price point of $1099, it maintains high quality with a Liquid Retina display and macOS ecosystem. The ThinkPad X1 Carbon and LG Gram 14 are also strong contenders but the MacBook Air's balance of portability, performance, and brand familiarity makes it stand out.\",\n  \"selection_rationale\": \"Balances price, quality, and brand preference.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_macbook_air_m4",
+    "shortlist": [
+      "laptop_macbook_air_m4",
+      "laptop_thinkpad_x1_carbon",
+      "laptop_lg_gram_14"
+    ],
+    "recommendation_text": "For business travel, the MacBook Air M4 is an excellent choice. It offers ultralight weight and all-day battery life, ideal for frequent flyers. Despite its lower price point of $1099, it maintains high quality with a Liquid Retina display and macOS ecosystem. The ThinkPad X1 Carbon and LG Gram 14 are also strong contenders but the MacBook Air's balance of portability, performance, and brand familiarity makes it stand out.",
+    "selection_rationale": "Balances price, quality, and brand preference."
+  },
+  "parse_success": true,
+  "latency_ms": 41117
+}

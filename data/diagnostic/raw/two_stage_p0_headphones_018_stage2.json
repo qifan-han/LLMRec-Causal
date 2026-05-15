@@ -1,0 +1,18 @@
+{
+  "row_id": "twostage_p0_headphones_018_stage2",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 18,
+  "timestamp": "2026-05-14T11:32:22.935768+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20278525,
+  "stage": "writer",
+  "raw_response": "Given your price sensitivity and budget, the JBL Tune 770NC is a great value for commuting. It offers solid noise cancellation, long battery life (up to 44 hours), and the signature punchy JBL sound. The headphones are foldable and lightweight, making them convenient for daily use. While the build quality is mostly plastic and lacks high-res codec support, they provide good performance at an affordable price point within your budget.",
+  "parsed": {
+    "recommendation_text": "Given your price sensitivity and budget, the JBL Tune 770NC is a great value for commuting. It offers solid noise cancellation, long battery life (up to 44 hours), and the signature punchy JBL sound. The headphones are foldable and lightweight, making them convenient for daily use. While the build quality is mostly plastic and lacks high-res codec support, they provide good performance at an affordable price point within your budget."
+  },
+  "parse_success": true,
+  "latency_ms": 11981
+}

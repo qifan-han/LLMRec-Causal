@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_headphones_019",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "headphones",
+  "consumer_id": 19,
+  "timestamp": "2026-05-14T11:33:01.601002+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20279514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"headphones_sennheiser_momentum4\",\n  \"shortlist\": [\"headphones_sennheiser_momentum4\", \"headphones_jbl_tune770nc\", \"headphones_edifier_stax\"],\n  \"recommendation_text\": \"For an audiophile at home, the Sennheiser Momentum 4 offers exceptional sound quality and a remarkable 60-hour battery life. It supports high-quality codecs like aptX Adaptive for superior audio fidelity. While it's slightly over budget, its audiophile-leaning tuning and build quality make it worth considering. The JBL Tune 770NC is an excellent value with punchy sound but lacks the premium feel of Sennheiser. Edifier STAX offers LDAC support at a lower price point but may lack brand trust.\",\n  \"selection_rationale\": \"Sennheiser's superior audio quality and long battery life make it stand out.\"\n}",
+  "parsed": {
+    "selected_product_id": "headphones_sennheiser_momentum4",
+    "shortlist": [
+      "headphones_sennheiser_momentum4",
+      "headphones_jbl_tune770nc",
+      "headphones_edifier_stax"
+    ],
+    "recommendation_text": "For an audiophile at home, the Sennheiser Momentum 4 offers exceptional sound quality and a remarkable 60-hour battery life. It supports high-quality codecs like aptX Adaptive for superior audio fidelity. While it's slightly over budget, its audiophile-leaning tuning and build quality make it worth considering. The JBL Tune 770NC is an excellent value with punchy sound but lacks the premium feel of Sennheiser. Edifier STAX offers LDAC support at a lower price point but may lack brand trust.",
+    "selection_rationale": "Sennheiser's superior audio quality and long battery life make it stand out."
+  },
+  "parse_success": true,
+  "latency_ms": 38663
+}

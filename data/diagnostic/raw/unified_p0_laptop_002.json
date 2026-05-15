@@ -1,0 +1,25 @@
+{
+  "row_id": "unified_p0_laptop_002",
+  "architecture": "unified",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 2,
+  "timestamp": "2026-05-14T11:37:15.422598+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20262514,
+  "stage": "unified",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_acer_swift_go_14\",\n  \"shortlist\": [\"laptop_acer_swift_go_14\", \"laptop_asus_zenbook_14\", \"laptop_lg_gram_14\"],\n  \"recommendation_text\": \"The Acer Swift Go 14 is the best value for a student within budget constraints. It offers an IPS display, lightweight design, and decent performance at $699. While it lacks the premium features of higher-end models like OLED displays or longer battery life, its price point makes it highly accessible. The Intel Core Ultra 5 processor may be less powerful than competitors' CPUs but is sufficient for basic tasks such as document editing, web browsing, and light multimedia use.\",\n  \"selection_rationale\": \"Balances quality and budget; suitable for student needs.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_acer_swift_go_14",
+    "shortlist": [
+      "laptop_acer_swift_go_14",
+      "laptop_asus_zenbook_14",
+      "laptop_lg_gram_14"
+    ],
+    "recommendation_text": "The Acer Swift Go 14 is the best value for a student within budget constraints. It offers an IPS display, lightweight design, and decent performance at $699. While it lacks the premium features of higher-end models like OLED displays or longer battery life, its price point makes it highly accessible. The Intel Core Ultra 5 processor may be less powerful than competitors' CPUs but is sufficient for basic tasks such as document editing, web browsing, and light multimedia use.",
+    "selection_rationale": "Balances quality and budget; suitable for student needs."
+  },
+  "parse_success": true,
+  "latency_ms": 42068
+}

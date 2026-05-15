@@ -1,0 +1,24 @@
+{
+  "row_id": "twostage_p0_laptop_015_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "laptop",
+  "consumer_id": 15,
+  "timestamp": "2026-05-14T11:56:04.765494+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20275524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"laptop_hp_elitebook_845\",\n  \"shortlist\": [\"laptop_hp_elitebook_845\", \"laptop_thinkpad_x1_carbon\", \"laptop_asus_zenbook_14\"],\n  \"selection_rationale\": \"Balances cost, quality, and brand recognition well.\"\n}",
+  "parsed": {
+    "selected_product_id": "laptop_hp_elitebook_845",
+    "shortlist": [
+      "laptop_hp_elitebook_845",
+      "laptop_thinkpad_x1_carbon",
+      "laptop_asus_zenbook_14"
+    ],
+    "selection_rationale": "Balances cost, quality, and brand recognition well."
+  },
+  "parse_success": true,
+  "latency_ms": 30525
+}

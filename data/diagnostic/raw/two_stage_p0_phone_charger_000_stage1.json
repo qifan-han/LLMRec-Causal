@@ -1,0 +1,23 @@
+{
+  "row_id": "twostage_p0_phone_charger_000_stage1",
+  "architecture": "two_stage",
+  "policy": "p0",
+  "category": "phone_charger",
+  "consumer_id": 0,
+  "timestamp": "2026-05-14T12:03:17.926251+00:00",
+  "model": "qwen2.5:14b",
+  "temperature": 0.0,
+  "seed": 20260524,
+  "stage": "selector",
+  "raw_response": "{\n  \"selected_product_id\": \"charger_belkin_25w\",\n  \"shortlist\": [\"charger_belkin_25w\", \"charger_apple_35w_duo\"],\n  \"selection_rationale\": \"Belkin offers best price and fast charging for phones.\"\n}",
+  "parsed": {
+    "selected_product_id": "charger_belkin_25w",
+    "shortlist": [
+      "charger_belkin_25w",
+      "charger_apple_35w_duo"
+    ],
+    "selection_rationale": "Belkin offers best price and fast charging for phones."
+  },
+  "parse_success": true,
+  "latency_ms": 18985
+}
