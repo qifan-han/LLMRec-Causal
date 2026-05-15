@@ -86,108 +86,196 @@ Our findings provide at least threefold insights for marketing research and prac
 \section{Related Literature}\label{section:lit}
 %-------------------------------------------------------------------------
 
-This paper connects four strands of existing literature: causal recommendation and counterfactual policy learning, two-stage and LLM-based recommender systems, persuasive/explanatory recommendation language, and causal inference with text and generative AI.
+This paper relates to research on causal recommendation, LLM-based recommender systems, and causal inference with generated text.
 
-\paragraph{Causal effects of recommendations and counterfactual policy learning.}
-A growing literature treats recommendation as a causal action rather than merely a prediction problem. \citet{swaminathan2015batch} study learning from logged bandit feedback and develop counterfactual risk minimization for stochastic policy learning in online systems such as recommendation, advertising, and search. \citet{schnabel2016recommendations} explicitly frame recommendations as treatments and use propensity-based methods to debias learning and evaluation under self-selection and recommender-induced selection bias. \citet{sharma2015estimating} estimate the causal impact of recommender systems from observational data, emphasizing the distinction between observed recommendation-driven activity and incremental behavior. \citet{sato2020unbiased} propose learning to rank items by the causal effect of recommendation rather than by predicted purchase probability, and \citet{sato2021online} develop online interleaving methods for evaluating recommendation models by causal effects. This work shares the premise that recommendations are interventions, but differs in the object of decomposition: existing work typically studies the causal effect of item exposure or recommendation policies, whereas we decompose an LLM recommendation into experimentally manipulable retrieval and expression components.
+A first literature treats recommendation as an intervention rather than only a prediction problem. Work on logged bandit feedback and counterfactual policy learning develops methods for learning and evaluating recommendation policies under non-random exposure \citep{swaminathan2015counterfactual,schnabel2016recommendations}. Related work estimates the incremental effect of recommendations and ranks items by causal lift rather than predicted engagement \citep{sharma2015estimating,sato2020unbiased,sato2021online}. This literature is closest in its causal view of recommendation: a recommended item is not merely a prediction but a treatment that may change user behavior. Our object is different. In LLM-mediated recommendation, the consumer is exposed not only to an item but to a product-text pair. We therefore ask how to decompose the effect of a recommender treatment into retrieval, expression, and their interaction.
 
-\paragraph{Two-stage and LLM-based recommender systems.}
-Modern recommender systems often separate candidate generation, retrieval, ranking, and presentation. \citet{ma2020off} develop off-policy learning methods for two-stage recommender systems and show that ignoring interactions between stages can lead to suboptimal policies. \citet{hron2021component} further show that two-stage recommenders cannot generally be understood as the sum of independently optimized components because interactions between nominators and rankers affect overall performance. Recent work brings large language models into this pipeline. \citet{hou2023bridging} introduce BLaIR, a family of language-item representation models for retrieval and recommendation, together with the Amazon Reviews 2023 dataset used in our empirical exercise. \citet{hou2024large} show that LLMs can serve as zero-shot rankers for recommender systems, while also documenting limitations related to history order, item position, and popularity. \citet{lichtenberg2024llm} study popularity bias in LLM-based recommender systems and the role of prompt tuning, and \citet{deldjoo2024} examine provider fairness, temporal stability, recency, and prompt-design effects in ChatGPT-based recommender systems. This literature establishes that LLM recommenders can select, rank, and bias product exposure, but it does not provide a causal experiment that separates product selection from generated expression.
+Second, we contribute to studies of multi-stage and LLM-based recommender systems. Modern recommenders often separate candidate generation, retrieval, ranking, and presentation, and prior work shows that interactions across stages can affect policy performance \citep{ma2020off,hron2021component}. Recent work brings LLMs into this pipeline, showing that language models can support retrieval, ranking, explanation, and recommendation, while also exhibiting sensitivity to prompts, position, popularity, and other design choices \citep{hou2024bridging,hou2024large,lichtenberg2024llm,deldjoo2024understanding,ma2024xrec}. Related work on recommendation explanations further shows that natural-language explanations can affect user choices \citep{rahman2025persuasive}. These papers establish that LLM recommenders can change both product exposure and the language surrounding that exposure. We contribute a causal design for separating these two roles: the treatment can be applied to product selection, text generation, or both.
 
-\paragraph{Recommendation explanations and persuasive expression.}
-A separate literature studies the language that accompanies recommendations. \citet{xrec2024} introduce an LLM-based framework for generating comprehensive natural-language explanations of recommendations by connecting collaborative signals to language generation. \citet{rahman2026persuasive} show that persuasive natural-language explanations can influence users' choices among recommended options. More broadly, \citet{reisenbichler2022nlg} show that natural-language generation can support content marketing, while \citet{costello2024persuasion} provide evidence that personalized AI dialogue can durably shift beliefs in a noncommercial setting. In marketing theory, \citet{shin2024messenger} model advertising content and messenger choice as a Bayesian-persuasion problem in which communication changes consumers' information environment. These papers motivate the expression side of our framework: generated recommendation text is not a passive explanation of a fixed product choice, but an economically meaningful component that may affect consumer outcomes.
+Our paper also speaks to the rapidly growing literature of causal inference with text and generative AI. \citet{egami2022causal} develop a framework for causal inference when text-derived measures are used as treatments or outcomes. More recently, \citet{feldman2026latent} study latent textual treatments generated and steered by LLMs, and show why naive text-as-treatment estimates can be biased when text mixes treatment and covariate information. \citet{imai2024causal} use generative AI representations to improve causal estimation with text treatments. We share this concern with identifying the causal effect of generated language, but our setting is more specific: an LLM recommender jointly determines what product is shown and how it is described. Rather than estimating the effect of realized text features after the fact, we randomize the recommender treatment at the retrieval and expression stages before the recommendation is generated.
 
-\paragraph{Causal inference with text and generative AI.}
-Our design also relates to work on text as treatment, text as outcome, and generative AI as an experimental tool. \citet{egami2018causal} introduce a split-sample workflow for making causal inferences using discovered text measures as treatments or outcomes, and \citet{feder2022causal} survey the broader role of causal inference in NLP. Most closely related methodologically, \citet{feldman2026latent} develop a pipeline for estimating effects of latent textual treatments, combining LLM-based generation and steering with robust causal estimation, and show why naive text-as-treatment estimates can be biased when text mixes treatment and covariate information. \citet{nakamura2025gpi} use generative AI representations to improve causal representation learning for text-as-treatment problems. \citet{gui2024causal} caution that LLM-simulated subjects can violate experimental unconfoundedness when treatment prompts unintentionally change unspecified covariates, and \citet{angelopoulos2024causal} show how A/B-test evidence can be used to causally align language-model outputs with downstream marketing outcomes. Relative to this literature, our contribution is not a general method for arbitrary textual treatments. We define a specific marketing decomposition --- retrieval versus expression in LLM-mediated recommendation --- and show how a modular factorial design identifies the corresponding component effects without relying on post hoc mediation through realized text features.
-
-Finally, our estimands draw on the language of mediation and factorial experiments. Classical mediation work formalizes direct, indirect, and interaction-related decompositions \citep{robins1992mediation, pearl2001direct, imai2010identification, vanderweele2014three}. Factorial-experiment methods characterize main and interaction effects when multiple randomized factors are crossed \citep{egami2019causal, muralidharan2025factorial}. We use these tools in a policy-component experiment: the retrieval policy and expression policy are directly randomized, so the main empirical objects are cell-mean contrasts rather than text-as-mediator estimands. The design is not a post hoc mediation analysis of realized text. It is a factorial experiment over policy components: retrieval policy and expression policy are assigned by the experimenter before recommendation generation.
-
-The remainder of the paper is structured as follows. Section~\ref{section:framework} introduces the setting, notation, estimands, and identification. Section~\ref{section:design} describes the modular $2 \times 2$ experiment. Section~\ref{section:empirics} presents the empirical design and data. Section~\ref{section:results} reports the results. Section~\ref{section:conclusion} concludes.
+The remainder of the paper is structured as follows. Section~\ref{section:model} introduces the setting, notation, estimands, and identification. Section~\ref{section:design} describes the modular $2 \times 2$ experiment. Section~\ref{section:empirics} presents the empirical design and data. Section~\ref{section:results} reports the results. Section~\ref{section:conclusion} concludes.
 
 %-------------------------------------------------------------------------
-\section{Framework}\label{section:framework}
+\section{Model}\label{section:model}
 %-------------------------------------------------------------------------
 
-\subsection{Setting}
+\subsection{The recommendation problem}
 
-A consumer-session indexed by $i$ arrives at an LLM-mediated shopping interface, submits a query, and receives a natural-language recommendation. The interface returns a tuple $(\J_i, \E_i)$ --- a selected product $\J_i \in \catalog_i$ and an expression state $\E_i$ --- and the consumer takes an action $\Y_i \in \{0, 1\}$ (click, purchase, or search-continuation).\footnote{We use binary outcomes for tractability; the framework applies to any scalar outcome.} A backend policy controls both layers of the interface. We treat each consumer-session as an independent unit, and our object of interest is the average causal effect of changing the backend policy.
+We consider an e-commerce platform that uses an AI agent to generate product recommendations. In each consumer session $i$, the consumer submits a query, the platform has a set of available products $\catalog_i$, and the AI agent uses a backend LLM to produce a recommendation. Unlike a standard recommender that only selects an item, an LLM recommender produces two outputs at the same time: it selects a product and writes a natural-language explanation for why that product is appropriate.
 
-\subsection{Random variables and potential outcomes}
+This distinction is important because many changes to an AI recommender can affect both parts of the recommendation. A platform may give the model access to additional marketplace information, change the system prompt, fine-tune the model on transaction data, alter the retrieval module, add sponsored-content instructions, or replace a generic model with one trained for the platform's product domain. Each change may improve or harm consumer outcomes, but the effect is typically bundled. The system may recommend different products, describe the same products differently, or change the match between the selected product and the generated explanation.
 
-We adopt the potential-outcomes framework \citep{wager2024causal}. For each consumer-session $i$:
-\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=2pt]
-\item $\X_i$ denotes the pre-treatment context (the query, conversation history, stated preferences, budget, and any session covariates available before recommendation);
-\item $\catalog_i \subseteq \mathcal{J}$ denotes the feasible product catalog for the session;
-\item $\J_i \in \catalog_i$ is the recommended product;
-\item $\E_i \in \Real$ is the realized expression intensity;\footnote{We model $\E$ as a real-valued scalar throughout the analytical results. The intensity encodes observable features such as endorsement strength, comparative framing, or quality emphasis. The framework extends to multivariate $\E$ without altering the identification results.}
-\item $\Y_i \in \{0, 1\}$ is the outcome.
-\end{itemize}
+We denote the selected product by $\J_i \in \catalog_i$ and the generated recommendation text by $T_i$. The consumer then takes an action $\Y_i \in \{0,1\}$, such as clicking, purchasing, or continuing search.\footnote{We use binary outcomes for tractability, but the framework applies to any scalar outcome.} The recommendation text can also be summarized by a scalar measure $E_i = h(T_i)$, such as endorsement strength, comparative framing, use of review evidence, or emphasis on product quality. This scalar is useful descriptively, but the treatment shown to the consumer is the full product-text pair, not the scalar alone.
 
-We write the joint potential outcome as $\Y_i(j, e)$, the outcome that consumer-session $i$ would realize if shown product $j$ with expression state $e$. Policy assignments are denoted $\Z_i \in \{0, 1\}$ for the one-shot bundled policy and $(\Qreg_i, \Rreg_i) \in \{0, 1\}^2$ for the modular policies.\footnote{We use $\Qreg$ and $\Rreg$ for policy assignments and reserve $\Q_{ij}$ (with two subscripts) for the latent product-consumer fit score introduced in Section~\ref{section:empirics}. The two uses of the letter $Q$ are contextually distinct: $\Qreg_i \in \{0,1\}$ is a binary treatment indicator, while $\Q_{ij} \in [0,1]$ is a continuous covariate.} Realized assignments determine which potential outcome is observed under SUTVA and consistency.
+Let $\Y_i(j,t)$ denote the potential outcome that consumer session $i$ would realize if the platform showed product $j$ with text $t$. This notation makes explicit that consumer response may depend on both components of the recommendation. A consumer may respond differently to the same product if the explanation is more credible, more personalized, or more persuasive. Similarly, the same language may have different effects depending on whether the selected product is a strong or weak match for the consumer.
 
-\subsection{Policy kernels}\label{section:kernels}
+We treat the object of interest as a recommender treatment: a change in the backend AI system that may alter the distribution of product-text recommendations. Let $D_i \in \{0,1\}$ denote assignment to two versions of the recommender, where $D_i = 0$ is the baseline system and $D_i = 1$ is the modified system. The total effect of $D_i$ answers the platform's first-order question: does the modified AI recommender improve consumer outcomes relative to the baseline? The unbundling problem asks the next question: how much of this effect comes from changing product selection, how much comes from changing recommendation text, and how much comes from the interaction between the two?
 
-A backend policy induces a distribution over $(j, e)$ pairs through a stochastic kernel. We write the one-shot kernel under policy $z$ as
+As a running example, consider a treatment that gives the recommender access to historical marketplace information, such as reviews, sales or popularity signals, and buyer-feedback summaries. In this example, the baseline system observes product features only, while the modified system also observes historical information. This example is useful because the treatment can naturally affect both what the system recommends and how it justifies the recommendation. However, the framework is not specific to history access. The same logic applies to any backend change that can be routed separately to the product-selection stage and the text-generation stage.
+
+To decompose a recommender treatment, we define a modular design. Let $(D_i^J,D_i^T) \in \{0,1\}^2$, where the superscripts $J$ and $T$ refer to the product-selection and text-generation stages. The first indicator determines whether the treatment is applied to product selection, and the second determines whether the treatment is applied to text generation. Thus, $(0,0)$ uses the baseline system for both stages, $(1,0)$ applies the treatment only to product selection, $(0,1)$ applies the treatment only to text generation, and $(1,1)$ applies the treatment to both stages.
+
+In the history-access example, $D_i^J$ controls whether historical information is available when selecting the product, and $D_i^T$ controls whether historical information is available when writing the recommendation text. In a prompt-change example, $D_i^J$ controls whether the new prompt affects product selection, and $D_i^T$ controls whether the new prompt affects text generation. In a model-upgrade example, the two indicators control whether the upgraded model is used in each stage. The notation therefore represents a general stage-specific routing of the recommender treatment.
+
+The modular design should not be interpreted as a claim that a monolithic LLM internally separates product selection and text generation in exactly this way. Instead, it is a design for learning. It asks what would happen if the same backend treatment were routed to different parts of an engineered two-stage recommender. This is useful for platform design because the answer indicates whether a recommender improvement is mainly valuable for retrieval, for communication, or for the joint operation of both.
+
+Because LLM outputs are stochastic, a recommendation policy is a distribution over product-text pairs rather than a deterministic rule. For the bundled black-box system, define
 \begin{equation}
-\KOS_z(j, e \mid x, \catalog) = \Pr(\J_i = j, \E_i = e \mid \X_i = x, \catalog_i = \catalog, \Z_i = z).
-\label{eq:kernel-oneshot}
+K^{BB}_d(j,t \mid x,\catalog) = \Pr(\J_i = j, T_i = t \mid X_i = x, \catalog_i = \catalog, D_i = d).
+\label{eq:kernel-blackbox}
 \end{equation}
-By the chain rule, this kernel factorizes as $\KOS_z(j, e \mid x, \catalog) = \KOS_z^{\J}(j \mid x, \catalog) \cdot \KOS_z^{\E}(e \mid x, \catalog, j)$.
+This object describes what the deployed recommender does for a consumer with characteristics $x$ facing catalog $\catalog$. It includes all randomness in the LLM system, including which product is selected, how the product is described, and any dependence between selection and description.
 
-The modular kernel replaces the single policy index with two independent indices:
+For the modular system, define
 \begin{equation}
-\KMO_{q,r}(j, e \mid x, \catalog) = K_q^{\J}(j \mid x, \catalog) \cdot K_r^{\E}(e \mid x, \catalog, j).
+K^{MO}_{d_J,d_T}(j,t \mid x,\catalog) = K^J_{d_J}(j \mid x,\catalog) K^T_{d_T}(t \mid x,\catalog,j), \qquad d_J,d_T \in \{0,1\}.
 \label{eq:kernel-modular}
 \end{equation}
-The substantive difference is the bundle structure: in the one-shot kernel, $z$ enters both the retrieval factor and the expression factor; in the modular kernel, $q$ enters only the retrieval factor and $r$ enters only the expression factor.
+The first component, $K^J_{d_J}(j \mid x,\catalog)$, describes product selection. The second component, $K^T_{d_T}(t \mid x,\catalog,j)$, describes text generation after the product has been selected. The hybrid regimes $K^{MO}_{1,0}$ and $K^{MO}_{0,1}$ are not observed in a standard bundled experiment, but they are the key counterfactual policies that allow us to isolate the two channels.
 
-\subsection{Estimands}\label{section:estimands}
+\subsection{Policy effects and their interpretation}
 
-We define four estimands. The \emph{total one-shot effect} is the expected-outcome difference between two bundled policies:
+We now define the average outcome that would arise under each policy. For the bundled and modular systems, respectively,
 \begin{equation}
-\dtotal = \Expect\!\left[\textstyle\sum_{j,e} \KOS_1(j, e \mid \X, \catalog) \Y(j, e)\right]
-          - \Expect\!\left[\textstyle\sum_{j,e} \KOS_0(j, e \mid \X, \catalog) \Y(j, e)\right]. \label{eq:total}
+\mu_d^{BB} = \Expect\!\left[\sum_{j,t} K^{BB}_d(j,t \mid X,\catalog)\Y(j,t)\right], \qquad \mu_{d_Jd_T}^{MO} = \Expect\!\left[\sum_{j,t} K^{MO}_{d_J,d_T}(j,t \mid X,\catalog)\Y(j,t)\right].
+\label{eq:policy-means}
 \end{equation}
-The three modular estimands decompose the effect by channel:
-\begin{align}
-\dR     &= \Expect\!\left[\textstyle\sum_{j,e} \KMO_{1,0}(j, e \mid \X, \catalog) \Y(j, e)\right]
-          - \Expect\!\left[\textstyle\sum_{j,e} \KMO_{0,0}(j, e \mid \X, \catalog) \Y(j, e)\right] \label{eq:retrieval} \\
-\dP     &= \Expect\!\left[\textstyle\sum_{j,e} \KMO_{0,1}(j, e \mid \X, \catalog) \Y(j, e)\right]
-          - \Expect\!\left[\textstyle\sum_{j,e} \KMO_{0,0}(j, e \mid \X, \catalog) \Y(j, e)\right] \label{eq:persuasion} \\
-\dRP    &= \Expect\!\left[\Y(\KMO_{1,1}) - \Y(\KMO_{1,0}) - \Y(\KMO_{0,1}) + \Y(\KMO_{0,0})\right].
-          \label{eq:interaction}
-\end{align}
-These estimands map onto distinct firm investments. The retrieval effect $\dR$ measures the return to better product selection (catalog grounding, improved consumer profiling). The persuasion effect $\dP$ measures the return to better expression (prompt engineering, copywriting templates). The interaction $\dRP$ measures whether the two channels are complements or substitutes.
+The first mean is the expected outcome from deploying black-box recommender version $d$. The second is the expected outcome from a modular recommender that routes the treatment separately to product selection and text generation. In both cases, the expectation averages over consumers, catalogs, and the stochastic product-text pairs generated by the LLM.
 
-\subsection{Identification}\label{section:identification}
-
-The identification of $\dtotal$ from one-shot randomized data is a standard result: under SUTVA, consistency, and randomized assignment of $\Z$, the total effect equals $\Expect[\Y \mid \Z = 1] - \Expect[\Y \mid \Z = 0]$ \citep{wager2024causal}. We take this as a benchmark.
-
-However, the one-shot difference does not identify $\dR$, $\dP$, or $\dRP$ separately. The intuition is that a bundled policy change $z = 0 \to z = 1$ realizes only two of the four modular cells --- $(q=0, r=0)$ and $(q=1, r=1)$ --- so the hybrid cells $(q=1, r=0)$ and $(q=0, r=1)$ that distinguish the retrieval channel from the expression channel are never observed.\footnote{A formal counterexample is given in Appendix~\ref{section:proof-nonid}: two potential-outcome arrays yield the same $\dtotal$ but different $(\dR, \dP, \dRP)$ triples. The one-shot data cannot distinguish them.}
-
-The modular $2 \times 2$ design resolves this by spanning all four cells. Under SUTVA, consistency, randomized assignment of $(\Qreg, \Rreg)$, and overlap, the cell-mean contrasts identify each component:
-\begin{align*}
-\dR  &= \Expect[\Y \mid \Qreg = 1, \Rreg = 0] - \Expect[\Y \mid \Qreg = 0, \Rreg = 0], \\
-\dP  &= \Expect[\Y \mid \Qreg = 0, \Rreg = 1] - \Expect[\Y \mid \Qreg = 0, \Rreg = 0], \\
-\dRP &= \Expect[\Y \mid \Qreg = 1, \Rreg = 1] - \Expect[\Y \mid \Qreg = 1, \Rreg = 0] \\
-     &\quad{}- \Expect[\Y \mid \Qreg = 0, \Rreg = 1] + \Expect[\Y \mid \Qreg = 0, \Rreg = 0].
-\end{align*}
-This follows directly from the standard identification argument for factorial experiments \citep{egami2019causal}: randomized assignment makes each cell mean an unbiased estimate of the expected potential outcome under the corresponding modular policy. The contribution is the definition of the marketing-relevant estimands --- $\dR$, $\dP$, and $\dRP$ --- and a deployable experiment that identifies them.
-
-\subsection{Naive realized-expression regression}\label{section:naive-bias}
-
-While the modular design identifies each channel cleanly, a researcher might instead regress outcomes on the \emph{realized} expression intensity $\E_i$, hoping to estimate the persuasion channel without the factorial design. We show that this approach is biased whenever $\E$ covaries with latent product-consumer fit.
-
-\begin{result}[Naive realized-expression bias]\label{res:naive}
-Suppose $\E_i = e_0 + \tau \Rreg_i + \lambda_{\mathrm{fit}} \tilde{\Q}_{i, \J_i} + \sigma_E \eta_i$, where $\tilde{\Q}_{i, \J_i}$ is a latent product-consumer fit channel that enters the outcome equation $\Y_i = \beta_0 + \beta_E \E_i + \beta_Q \tilde{\Q}_{i, \J_i} + \nu_i$. If the researcher does not observe $\tilde{\Q}_{i, \J_i}$, the OLS coefficient of $\Y_i$ on $\E_i$ converges in probability to
+The black-box effect and the modular diagonal effect are
 \begin{equation}
-\beta_E^{\mathrm{naive}} \;=\; \beta_E + \frac{\lambda_{\mathrm{fit}} \mathrm{Var}(\tilde{\Q})}{\lambda_{\mathrm{fit}}^2 \mathrm{Var}(\tilde{\Q}) + \sigma_E^2} \beta_Q,
-\label{eq:naive-bias}
+\tau^{BB} = \mu_1^{BB} - \mu_0^{BB}, \qquad \tau^{MO} = \mu_{11}^{MO} - \mu_{00}^{MO}.
+\label{eq:main-policy-effects}
 \end{equation}
-and the bias is positive whenever $\lambda_{\mathrm{fit}} \beta_Q > 0$.
-\end{result}
+The black-box effect is the total effect of moving from the baseline recommender to the modified recommender. It is the most managerially direct estimand. If a platform only wants to know whether the new AI recommender improves outcomes, $\tau^{BB}$ is the relevant quantity. The modular diagonal effect asks what the same treatment would do when the recommender is implemented as an explicit two-stage system and the treatment is applied to both stages.
 
-\noindent\textbf{Interpretation.} The bias formula in Equation~\eqref{eq:naive-bias} follows from standard omitted-variable algebra (the derivation is in Appendix~\ref{section:proof-naive}). The practically relevant observation is that the bias is \emph{non-monotonic} in $\lambda_{\mathrm{fit}}$: the numerator is linear while the denominator is quadratic, so the bias rises to a maximum at $\lambda_{\mathrm{fit}}^\star = \sigma_E / \sqrt{\mathrm{Var}(\tilde{\Q})}$ and falls back toward zero at the extremes. This means that a firm cannot bound the bias simply by arguing that expression-fit endogeneity is ``small'' or ``large'' --- the worst case is at moderate endogeneity, precisely the empirically plausible range.
+The difference between the two effects is
+\begin{equation}
+\Gamma = \tau^{BB} - \tau^{MO} = (\mu_1^{BB} - \mu_0^{BB}) - (\mu_{11}^{MO} - \mu_{00}^{MO}).
+\label{eq:gamma-gap}
+\end{equation}
+This gap tells us whether the modular design is a good description of the black-box policy change. If $\Gamma$ is small, the modular design captures the main effect of the black-box treatment and its decomposition is informative about the original system. If $\Gamma$ is large, the modular design remains useful as a policy experiment, but it should be interpreted as the decomposition of an engineered recommender rather than as a complete explanation of the black-box LLM.
+
+The modular design lets us decompose the policy effect into three parts:
+\begin{equation}
+\Delta_J = \mu_{10}^{MO} - \mu_{00}^{MO}, \qquad \Delta_T = \mu_{01}^{MO} - \mu_{00}^{MO}, \qquad \Delta_{JT} = \mu_{11}^{MO} - \mu_{10}^{MO} - \mu_{01}^{MO} + \mu_{00}^{MO}.
+\label{eq:component-effects}
+\end{equation}
+The product-selection effect, $\Delta_J$, measures the value of applying the recommender treatment only to product selection while keeping text generation at baseline. It is positive when the modified selection stage chooses products that are better matched to consumers. It may be small or negative if the treatment pushes the system toward products that are popular, heavily reviewed, sponsored, or easy to justify, but not necessarily better for the specific session.
+
+The text-generation effect, $\Delta_T$, measures the value of applying the recommender treatment only to text generation while keeping product selection at baseline. It is positive when the modified text stage writes recommendations that are more useful, credible, or persuasive for the same selected products. For example, a history-access treatment may help the system mention relevant product strengths or clarify tradeoffs. A prompt-change treatment may make the explanation more concise or more personalized. The effect may be small or negative if the modified text is longer, more promotional, or less helpful for consumer decisions.
+
+The interaction effect, $\Delta_{JT}$, measures whether the two channels reinforce or substitute for each other. A positive interaction means that the modified text stage is especially valuable when paired with the modified product-selection stage. This can happen if better-selected products are easier to explain or if the new text policy works best for products chosen by the new selection policy. A negative interaction means that the two channels partly substitute for each other. This can happen if improving product choice leaves little additional value for better language, or if both stages use the same signal in redundant ways.
+
+The modular decomposition is
+\begin{equation}
+\tau^{MO} = \Delta_J + \Delta_T + \Delta_{JT}.
+\label{eq:modular-decomposition}
+\end{equation}
+This decomposition converts a single average treatment effect into a diagnosis of the recommender. A large $\Delta_J$ suggests that the main value of the treatment comes from product retrieval. A large $\Delta_T$ suggests that the main value comes from communication and explanation. A large $\Delta_{JT}$ suggests that the platform should not optimize selection and text independently, because the value of one stage depends on how the other stage is designed.
+
+\subsection{Identification and diagnostic evidence}
+
+The effects above can be estimated directly in an experiment. Under SUTVA, consistency, and randomized assignment of $D_i$, the black-box effect is identified by the difference in average outcomes between the modified and baseline recommenders:
+\begin{equation}
+\tau^{BB} = \Expect[\Y_i \mid D_i = 1] - \Expect[\Y_i \mid D_i = 0].
+\label{eq:identify-bb}
+\end{equation}
+
+Under the same assumptions for the modular design, each modular policy mean is identified by the corresponding experimental cell:
+\begin{equation}
+\mu_{d_Jd_T}^{MO} = \Expect[\Y_i \mid D_i^J = d_J, D_i^T = d_T].
+\label{eq:identify-modular-cell}
+\end{equation}
+Therefore, the three modular components are estimated by simple differences in cell means:
+\begin{equation*}
+\Delta_J = \Expect[\Y_i \mid D_i^J = 1, D_i^T = 0] - \Expect[\Y_i \mid D_i^J = 0, D_i^T = 0],
+\end{equation*}
+\begin{equation*}
+\Delta_T = \Expect[\Y_i \mid D_i^J = 0, D_i^T = 1] - \Expect[\Y_i \mid D_i^J = 0, D_i^T = 0],
+\end{equation*}
+\begin{equation*}
+\Delta_{JT} = \Expect[\Y_i \mid D_i^J = 1, D_i^T = 1] - \Expect[\Y_i \mid D_i^J = 1, D_i^T = 0] - \Expect[\Y_i \mid D_i^J = 0, D_i^T = 1] + \Expect[\Y_i \mid D_i^J = 0, D_i^T = 0].
+\end{equation*}
+Similarly, the black-box/modular gap is identified by comparing the bundled experimental contrast with the modular diagonal contrast:
+\begin{equation*}
+\Gamma = \{\Expect[\Y_i \mid D_i = 1] - \Expect[\Y_i \mid D_i = 0]\} - \{\Expect[\Y_i \mid D_i^J = 1, D_i^T = 1] - \Expect[\Y_i \mid D_i^J = 0, D_i^T = 0]\}.
+\end{equation*}
+In a field experiment, these quantities are identified by random assignment across consumer sessions. In controlled LLM exercises, we evaluate the same persona or query under the relevant policy conditions and compare outcomes within persona. This design does not require observing the LLM's internal reasoning. It only requires controlling which recommender version is used at each stage and observing the product, text, and outcome generated under each condition.
+
+Two additional comparisons are useful for interpreting the mechanism, but they should not be confused with the main causal effects. The first is a same-product comparison. This comparison holds the realized product fixed and asks whether the modified system writes different text when the baseline and modified systems happen to select the same product. Such evidence is useful as a descriptive audit of the language channel. However, it conditions on product agreement, which is a post-treatment event. Therefore, same-product comparisons are diagnostic rather than generally equal to $\Delta_T$.
+
+The modular text effect is defined relative to baseline product selection:
+\begin{equation*}
+\Delta_T = \mu_{01}^{MO} - \mu_{00}^{MO}.
+\end{equation*}
+If text is instead changed after modified product selection, the corresponding contrast is
+\begin{equation*}
+\mu_{11}^{MO} - \mu_{10}^{MO}.
+\end{equation*}
+The difference between these two text contrasts is the interaction term $\Delta_{JT}$. Thus, whether the modified text stage appears valuable can depend on which product-selection policy puts products in front of the text generator.
+
+The second diagnostic comparison uses the realized text summary $E_i = h(T_i)$. It may be tempting to regress outcomes on $E_i$ and interpret the coefficient as the effect of persuasive or informative language. This is generally not valid because realized language is itself chosen by the recommender. Stronger language may appear when the product is a better match, when the product has more favorable reviews, or when the LLM finds it easier to justify the recommendation. In that case, expression intensity partly reflects latent product-consumer fit.
+
+A simple omitted-variable calculation illustrates the problem. Suppose
+\begin{equation*}
+E_i = e_0 + \alpha_T D_i^T + \lambda_{\mathrm{fit}}\tilde{Q}_{i,\J_i} + \sigma_E\eta_i, \qquad \Y_i = \beta_0 + \beta_E E_i + \beta_Q \tilde{Q}_{i,\J_i} + \nu_i.
+\end{equation*}
+Here $\tilde{Q}_{i,\J_i}$ is latent product-consumer fit, and $D_i^T$ indicates whether the recommender treatment is applied to text generation. If the researcher regresses $\Y_i$ on $E_i$ without observing $\tilde{Q}_{i,\J_i}$ or controlling for $D_i^T$, the coefficient on realized expression converges to
+\begin{equation}
+\beta_E^{\mathrm{naive}} = \beta_E + \frac{\lambda_{\mathrm{fit}}\Var(\tilde{Q})}{\alpha_T^2\Var(D^T) + \lambda_{\mathrm{fit}}^2\Var(\tilde{Q}) + \sigma_E^2}\beta_Q.
+\label{eq:naive-expression-bias}
+\end{equation}
+The bias is positive whenever $\lambda_{\mathrm{fit}}\beta_Q > 0$. Intuitively, if better-matched products receive stronger recommendation language and better product fit also raises conversion, then a realized-expression regression partly attributes product fit to language. The modular experiment avoids this problem by manipulating the recommender version used for text generation directly, rather than relying only on naturally occurring variation in realized text.
+
+% \subsection{Estimands}\label{section:estimands}
+
+% We define four estimands. The \emph{total one-shot effect} is the expected-outcome difference between two bundled policies:
+% \begin{equation}
+% \dtotal = \Expect\!\left[\textstyle\sum_{j,e} \KOS_1(j, e \mid \X, \catalog) \Y(j, e)\right]
+%           - \Expect\!\left[\textstyle\sum_{j,e} \KOS_0(j, e \mid \X, \catalog) \Y(j, e)\right]. \label{eq:total}
+% \end{equation}
+% The three modular estimands decompose the effect by channel:
+% \begin{align}
+% \dR     &= \Expect\!\left[\textstyle\sum_{j,e} \KMO_{1,0}(j, e \mid \X, \catalog) \Y(j, e)\right]
+%           - \Expect\!\left[\textstyle\sum_{j,e} \KMO_{0,0}(j, e \mid \X, \catalog) \Y(j, e)\right] \label{eq:retrieval} \\
+% \dP     &= \Expect\!\left[\textstyle\sum_{j,e} \KMO_{0,1}(j, e \mid \X, \catalog) \Y(j, e)\right]
+%           - \Expect\!\left[\textstyle\sum_{j,e} \KMO_{0,0}(j, e \mid \X, \catalog) \Y(j, e)\right] \label{eq:persuasion} \\
+% \dRP    &= \Expect\!\left[\Y(\KMO_{1,1}) - \Y(\KMO_{1,0}) - \Y(\KMO_{0,1}) + \Y(\KMO_{0,0})\right].
+%           \label{eq:interaction}
+% \end{align}
+% These estimands map onto distinct firm investments. The retrieval effect $\dR$ measures the return to better product selection (catalog grounding, improved consumer profiling). The persuasion effect $\dP$ measures the return to better expression (prompt engineering, copywriting templates). The interaction $\dRP$ measures whether the two channels are complements or substitutes.
+
+% \subsection{Identification}\label{section:identification}
+
+% The identification of $\dtotal$ from one-shot randomized data is a standard result: under SUTVA, consistency, and randomized assignment of $\Z$, the total effect equals $\Expect[\Y \mid \Z = 1] - \Expect[\Y \mid \Z = 0]$ \citep{wager2024causal}. We take this as a benchmark.
+
+% However, the one-shot difference does not identify $\dR$, $\dP$, or $\dRP$ separately. The intuition is that a bundled policy change $z = 0 \to z = 1$ realizes only two of the four modular cells --- $(q=0, r=0)$ and $(q=1, r=1)$ --- so the hybrid cells $(q=1, r=0)$ and $(q=0, r=1)$ that distinguish the retrieval channel from the expression channel are never observed.\footnote{A formal counterexample is given in Appendix~\ref{section:proof-nonid}: two potential-outcome arrays yield the same $\dtotal$ but different $(\dR, \dP, \dRP)$ triples. The one-shot data cannot distinguish them.}
+
+% The modular $2 \times 2$ design resolves this by spanning all four cells. Under SUTVA, consistency, randomized assignment of $(\Qreg, \Rreg)$, and overlap, the cell-mean contrasts identify each component:
+% \begin{align*}
+% \dR  &= \Expect[\Y \mid \Qreg = 1, \Rreg = 0] - \Expect[\Y \mid \Qreg = 0, \Rreg = 0], \\
+% \dP  &= \Expect[\Y \mid \Qreg = 0, \Rreg = 1] - \Expect[\Y \mid \Qreg = 0, \Rreg = 0], \\
+% \dRP &= \Expect[\Y \mid \Qreg = 1, \Rreg = 1] - \Expect[\Y \mid \Qreg = 1, \Rreg = 0] \\
+%      &\quad{}- \Expect[\Y \mid \Qreg = 0, \Rreg = 1] + \Expect[\Y \mid \Qreg = 0, \Rreg = 0].
+% \end{align*}
+% This follows directly from the standard identification argument for factorial experiments \citep{egami2019causal}: randomized assignment makes each cell mean an unbiased estimate of the expected potential outcome under the corresponding modular policy. The contribution is the definition of the marketing-relevant estimands --- $\dR$, $\dP$, and $\dRP$ --- and a deployable experiment that identifies them.
+
+% \subsection{Naive realized-expression regression}\label{section:naive-bias}
+
+% While the modular design identifies each channel cleanly, a researcher might instead regress outcomes on the \emph{realized} expression intensity $\E_i$, hoping to estimate the persuasion channel without the factorial design. We show that this approach is biased whenever $\E$ covaries with latent product-consumer fit.
+
+% \begin{result}[Naive realized-expression bias]\label{res:naive}
+% Suppose $\E_i = e_0 + \tau \Rreg_i + \lambda_{\mathrm{fit}} \tilde{\Q}_{i, \J_i} + \sigma_E \eta_i$, where $\tilde{\Q}_{i, \J_i}$ is a latent product-consumer fit channel that enters the outcome equation $\Y_i = \beta_0 + \beta_E \E_i + \beta_Q \tilde{\Q}_{i, \J_i} + \nu_i$. If the researcher does not observe $\tilde{\Q}_{i, \J_i}$, the OLS coefficient of $\Y_i$ on $\E_i$ converges in probability to
+% \begin{equation}
+% \beta_E^{\mathrm{naive}} \;=\; \beta_E + \frac{\lambda_{\mathrm{fit}} \mathrm{Var}(\tilde{\Q})}{\lambda_{\mathrm{fit}}^2 \mathrm{Var}(\tilde{\Q}) + \sigma_E^2} \beta_Q,
+% \label{eq:naive-bias}
+% \end{equation}
+% and the bias is positive whenever $\lambda_{\mathrm{fit}} \beta_Q > 0$.
+% \end{result}
+
+% \noindent\textbf{Interpretation.} The bias formula in Equation~\eqref{eq:naive-bias} follows from standard omitted-variable algebra (the derivation is in Appendix~\ref{section:proof-naive}). The practically relevant observation is that the bias is \emph{non-monotonic} in $\lambda_{\mathrm{fit}}$: the numerator is linear while the denominator is quadratic, so the bias rises to a maximum at $\lambda_{\mathrm{fit}}^\star = \sigma_E / \sqrt{\mathrm{Var}(\tilde{\Q})}$ and falls back toward zero at the extremes. This means that a firm cannot bound the bias simply by arguing that expression-fit endogeneity is ``small'' or ``large'' --- the worst case is at moderate endogeneity, precisely the empirically plausible range.
 
 %-------------------------------------------------------------------------
 \section{Experimental Design}\label{section:design}
